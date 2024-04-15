@@ -6,7 +6,7 @@ Antagonista: El señor feudal, Un tirano que junto a otros señores se confabula
 
 Trama: "Nombre", un caballero al servicio del tirano Lord, presencia un acto atroz que le hace abrir los ojos a la crueldad del régimen. Desilusionado y atormentado por la culpa, decide desertar y liderar una rebelión para derrocar al tirano.
 
-Detonante de la rebelión: Un evento realizado por el señor feudal.
+Detonante de la rebelión: Un evento realizado por el señor feudal (Obligar a los plebeyos que no podian rendir tributo a pelear entre ellos, para generar entretenimiento)
 
 Desarrollo de la historia:
 1.-
@@ -15,10 +15,22 @@ Desarrollo de la historia:
 
 Sinopsis: ?
 
+Inspiraciones/Referencias:
 
+Primera opción (Opción preferida):
+Lugar: Inglaterra
+Evento histórico: Rebelión de Wat Tyler (1381) (https://es.wikipedia.org/wiki/Rebeli%C3%B3n_de_Wat_Tyler)
+Personajes:
+-Wat Tyler
+-John Ball
+-Jack Straw
 
-
-
+Segunda opción:
+Lugar: Sacro Imperio Romano Germánico
+Evento histórico: Guerra de los campesinos alemanes (1524-1525) (https://es.wikipedia.org/wiki/Guerra_de_los_campesinos_alemanes)
+Personajes:
+-Florian Geyer von Giebelstadt (Voluntario)
+-Gottfried «Götz» von Berlichingen de Hornberg (Lo obligaron)
 
 Ideas:
 
