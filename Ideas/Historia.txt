@@ -1,12 +1,17 @@
 Tema principal: Edad media
 
-Protagonista: Un ex-caballero del señor feudal, de físico imponente y mirada penetrante. Posee gran destreza en el manejo de la espada y habilidades de liderazgo. En su interior, carga con el remordimiento de las atrocidades cometidas bajo las órdenes del señor feudal.
+Protagonista: Wat, hijo de tejedor y ex-soldado, de físico imponente y mirada penetrante. Posee gran destreza en el manejo de la espada y habilidades de liderazgo.
 
-Antagonista: El señor feudal, Un tirano que junto a otros señores se confabularon para manipular al rey.
+Antagonista: El Duque, Un tirano que junto a otros señores se confabularon para manipular al rey.
 
-Trama: "Nombre", un caballero al servicio del tirano Lord, presencia un acto atroz que le hace abrir los ojos a la crueldad del régimen. Desilusionado y atormentado por la culpa, decide desertar y liderar una rebelión para derrocar al tirano.
+Trama: 
+Wat, un joven comerciante de telas, se encuentra en el mercado semanal, ansioso por vender sus productos y obtener ganancias. Sin embargo, su día se ve interrumpido por la llegada de un soldado del duque, quien exige 
+el pago de unos impuestos exorbitantes. Wat, al igual que los demás comerciantes, se siente indignado por la injusticia de la situación, ya que estos impuestos abusivos amenazan con arruinar su negocio y sumirlos en la pobreza.
 
-Detonante de la rebelión: Un evento realizado por el señor feudal (Obligar a los plebeyos que no podian rendir tributo a pelear entre ellos, para generar entretenimiento)
+Movido por la ira y la determinación, Wat decide tomar cartas en el asunto. Comienza a hablar con los demás comerciantes y los habitantes del pueblo, compartiendo su indignación y motivándolos a unirse a 
+una rebelión contra el duque. A pesar del miedo y la incertidumbre, muchos se unen a la causa de Wat, reconociendo en él un líder con coraje y determinación.
+
+Detonante de la rebelión: La recaudación de unos impuestos injustos durante el mercado semanal.
 
 Desarrollo de la historia:
 1.-
@@ -25,13 +30,6 @@ Personajes:
 -John Ball
 -Jack Straw
 
-Segunda opción:
-Lugar: Sacro Imperio Romano Germánico
-Evento histórico: Guerra de los campesinos alemanes (1524-1525) (https://es.wikipedia.org/wiki/Guerra_de_los_campesinos_alemanes)
-Personajes:
--Florian Geyer von Giebelstadt (Voluntario)
--Gottfried «Götz» von Berlichingen de Hornberg (Lo obligaron)
-
 Ideas:
 
 Un tirano maquiavélico(El señor feudal):
@@ -44,10 +42,9 @@ Tiranía y opresión: El Lord gobierna con tiranía, oprimiendo al pueblo y abus
 
 Un reino en decadencia: Las acciones del Lord y sus aliados han sumido al reino en una profunda decadencia. La economía está en ruinas, el pueblo está empobrecido y la justicia brilla por su ausencia.
 
-Un símbolo de esperanza: En este contexto de oscuridad, surge la figura de "Nombre", un ex-caballero que se rebela contra la tiranía del Lord. "Nombre" representa la esperanza de un futuro mejor para el reino, un futuro donde la justicia y el bienestar del pueblo sean la prioridad.
+Un símbolo de esperanza: En este contexto de oscuridad, surge la figura de Wat, un ex-caballero que se rebela contra la tiranía del Lord. Wat representa la esperanza de un futuro mejor para el reino, un futuro donde la justicia y el bienestar del pueblo sean la prioridad.
 
 Mecánicas de juego:
 -Reclutar rebeldes.
--Levantar la moral.
 -Proporcionar cosas a los rebeldes (Objetos, Comida, Armas, etc.).
 -Nivel de atención o sospecha de los nobles.
