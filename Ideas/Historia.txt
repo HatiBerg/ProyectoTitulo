@@ -11,12 +11,17 @@ el pago de unos impuestos exorbitantes. Wat, al igual que los demás comerciante
 Movido por la ira y la determinación, Wat decide tomar cartas en el asunto. Comienza a hablar con los demás comerciantes y los habitantes del pueblo, compartiendo su indignación y motivándolos a unirse a 
 una rebelión contra el duque. A pesar del miedo y la incertidumbre, muchos se unen a la causa de Wat, reconociendo en él un líder con coraje y determinación.
 
-Detonante de la rebelión: La recaudación de unos impuestos injustos durante el mercado semanal.
+Detonante de la rebelión: La recaudación de unos impuestos injustos durante el mercado semanal para financiar una guerra.
 
 Desarrollo de la historia:
-1.-
-2.-
-3.-
+1.- La chispa de la rebelión: Wat, enfurecido por la injusticia de los impuestos, confronta al soldado del duque. Sus palabras resonantes encienden la ira de los demás comerciantes, quienes se unen a su
+protesta. El mercado se convierte en un hervidero de descontento, y la chispa de la rebelión comienza a arder.
+2.- Un líder emerge: Wat, con su imponente presencia y habilidades de liderazgo, se convierte en el símbolo de la rebelión. Los comerciantes y habitantes del pueblo lo reconocen como su representante y lo siguen con
+fervor. Bajo su guía, organizan un plan para enfrentar al duque y sus secuaces.
+3.- Enfrentamientos y victorias: La rebelión toma las calles. Wat y sus seguidores se arman con lo que encuentran a su paso y se enfrentan a los soldados del duque. Las batallas son cruentas, pero la determinación
+de los rebeldes es inquebrantable. Poco a poco, logran victorias que debilitan al ejército del duque y levantan la moral del pueblo.
+4.- El asedio al castillo: Los rebeldes, envalentonados por sus victorias, deciden tomar el castillo del duque, donde se refugia la tiranía. El asedio es largo y arduo, pero la determinación de Wat y su pueblo no
+flaquea. Finalmente, logran entrar al castillo y capturar al duque y sus cómplices.
 
 Sinopsis: ?
 
@@ -25,7 +30,7 @@ Inspiraciones/Referencias:
 Primera opción (Opción preferida):
 Lugar: Inglaterra
 Evento histórico: Rebelión de Wat Tyler (1381) (https://es.wikipedia.org/wiki/Rebeli%C3%B3n_de_Wat_Tyler)
-Personajes:
+Personajes importantes:
 -Wat Tyler
 -John Ball
 -Jack Straw
