@@ -1,60 +1,99 @@
-title: Start
-tags:
-position: 0,0
----
-Soldado: Buenos días, señor. He venido a recaudar los impuestos del Duque para este mes.
-Wat: ¿Impuestos? Pero si ya pagué los impuestos al principio del año.
-Soldado: El Duque ha decidido aumentar los impuestos debido a la reciente guerra. Todos los ciudadanos deben contribuir al esfuerzo bélico.
-Wat: ¡Pero esto es injusto! Mi negocio apenas está sobreviviendo, y no puedo pagar más impuestos.
-Soldado: ¿Injusto? ¡Esto es lo que manda el duque! No tienes otra opción más que pagar.
--> Pagar el impuesto excesivo.
-    <<jump PayTaxes>>
--> No pagar el impuesto excesivo.
-    <<jump NotPayTaxes>>
--> Intentar convencerlo.
-    <<jump TryToConvince>>
-===
-title: PayTaxes
-position: 118,280
----
-Wat: (Suspirando) Está bien, aquí tiene el dinero.
-Soldado: Perfecto. Puedes volver a tu trabajo.
-===
-title: NotPayTaxes
-position: -217,264
----
-Wat: Lo siento, pero no pienso pagar estos impuestos. Son demasiado altos.
-Soldado: (Furioso) ¡¿Qué?! ¿Me estás desafiando? ¡Te arrepentirás de esto!.
--> Desistir y pagar el impuesto.
-    <<jump PayTaxes>>
--> Volver a negarse a pagar el impuesto.
-    <<jump RefuseAgain>>
--> Ir a la trastienda para armarse.
-    <<jump Equip>>
-===
-title: TryToConvince
-position: 363,39
----
-Wat: Por favor, le pido que me escuche. No puedo pagar estos impuestos ahora mismo. Mi negocio está pasando por un mal momento.
-Soldado: ¡Más excusas! Todos los comerciantes dicen lo mismo.
-Wat: Le prometo que le pagaré el doble de la cantidad que me pide, pero necesito un poco de tiempo. Déjeme unos meses para recuperarme, y luego le daré el dinero sin problemas.
-Soldado: Está bien. Te daré una oportunidad. Pero si me engañas, te arrepentirás. 
-(El soldado se marcha de la tienda)
-===
-title: RefuseAgain
-position: -441,554
----
-Wat: No me sacaras ni un penique.
-Soldado: ¡Te lo advertí, tejedor!.
-(El soldado se abalanza sobre ti y comienza una pelea)
-===
-title: Equip
-position: -131,555
----
-Wat: Está bien, voy a buscar el dinero
-Soldado: Sera mejor que no te demores, tejedor.
-(Wat se equipa con una coraza y una espada)
-Wat: Preparate, porque de aqui no saldras con vida.
-Soldado: ¿Cómo te atreves a desafiar las órdenes del duque?
-(Comienza una intensa pelea entre Wat y el soldado)
-===
+Personajes:
+
+Tejedor Wat Tyler: Líder de la rebelión campesina.
+Soldado del Duque: Representante de la autoridad del Duque.
+Sacerdote John Ball: Defensor de los derechos de los campesinos.
+Campesinos: Población oprimida por los impuestos excesivos.
+
+Escenario:
+
+Una aldea medieval en Inglaterra.
+
+Escena 1:
+
+Introducción:
+
+* La escena se abre en una plaza central de la aldea. Los campesinos se reúnen en grupos, murmurando entre sí con preocupación. El ambiente es de tensión y descontento.
+
+Sacerdote John Ball: (Dirigiéndose a la multitud) ¡Hermanos y hermanas! ¿Hasta cuándo vamos a soportar esta tiranía? El Duque nos impone impuestos exorbitantes para financiar una guerra que no nos beneficia, mientras nosotros nos vemos obligados a vivir en la miseria. ¡Es hora de decir basta!
+
+Campesinos: (Gritando con aprobación) ¡Basta! ¡Basta!
+
+Wat Tyler: (Observando desde la distancia, con el rostro lleno de determinación) Tiene razón el sacerdote. No podemos seguir permitiendo que el Duque nos pisotee.
+
+Escena 2:
+
+Llegada del Soldado del Duque
+
+* De repente, un grupo de soldados irrumpe en la plaza, liderados por un Soldado del Duque.
+
+Soldado del Duque: ¡Silencio! ¡En nombre del Duque, les ordeno que se dispersen inmediatamente!
+
+Campesinos: (Retrocediendo con miedo) ¡Señor! ¡No queremos problemas!
+
+Sacerdote John Ball: (Sin inmutarse) ¡No nos callarás, soldado! ¡El pueblo tiene derecho a expresar su descontento!
+
+Soldado del Duque: (Con tono amenazante) ¡Ya basta de palabras! Arresten a este hombre por incitar a una rebelión.
+
+Escena 3.1:
+
+Wat el valiente
+
+* Los soldados se abalanzan sobre el Sacerdote John Ball para arrestarlo. Wat Tyler, incapaz de tolerar tal injusticia, interviene para defender al sacerdote.
+
+Wat Tyler: (Luchando contra los soldados) ¡No lo permitiré! ¡Suéltenlo ahora mismo!
+
+Soldado del Duque: (Con desprecio) ¡Apártate de mi camino, campesino! ¡Un mero/simple campesino no es rival para mis hombres!
+
+* A pesar de su valentía, Wat Tyler es superado en número y habilidad por los soldados. El Sacerdote John Ball es arrestado y conducido a prisión.
+
+Escena 3.2:
+
+Wat el cobarde
+
+* Los soldados se abalanzan sobre el Sacerdote John Ball para arrestarlo. Wat Tyler, testigo de la injusticia, se debate entre su valentía y su miedo. En un momento de cobardía, decide no intervenir.
+
+Sacerdote John Ball: (Luchando contra los soldados) ¡No me rendiré! ¡El pueblo tiene derecho a la justicia!
+
+Wat Tyler: (Observando la escena) No puedo creerlo... ¿Qué estoy haciendo? Debo hacer algo...
+
+Soldado del Duque: ¡Silencio, rebelde! ¡Tu destino ya está sellado!
+
+Wat Tyler: No puedo... No puedo enfrentarlos...
+
+* Wat Tyler baja la mirada, avergonzado de su cobardía. Los soldados arrestan al Sacerdote John Ball y lo conducen a prisión.
+
+Escena 4: La rebelión de Wat Tyler
+Nota: La escena 4 se divide en dos ramificaciones, dependiendo de la elección realizada en la escena 3:
+
+Escenario 4.1:
+
+La rebelión de Wat Tyler
+
+* En las calles del pueblo. Un grupo de aldeanos, enfurecidos por la injusticia, se reúne alrededor de Wat Tyler.
+
+Wat Tyler: (Con voz firme y decidida) ¡No podemos permitir que el Duque siga oprimiendo al pueblo! ¡Es hora de levantarnos y luchar por nuestra libertad!
+
+Aldeanos: (Aclamando con fervor) ¡Sí! ¡Lucharemos por la libertad! ¡Viva Wat Tyler!
+
+Wat Tyler: (Inspirando a la multitud) ¡Recuerden las palabras del Sacerdote John Ball! ¡Tenemos derecho a la justicia! ¡No nos rendiremos hasta que el Duque sea derrotado!
+
+Los aldeanos, motivados por las palabras de Wat Tyler, se preparan con armas y armaduras de la herrería y se lanzan hacia la prisión.
+
+Escenario 4.2:
+
+La rebelión de Wat Tyler
+
+* En las calles del pueblo. Un grupo de aldeanos, enfurecidos por la injusticia, se reúne alrededor de Wat Tyler.
+
+Wat Tyler: (Lleno de remordimiento y vergüenza) No puedo creer lo que hice... Abandoné al Padre John Ball... Soy un cobarde...
+
+Un aldeano: (Acercándose a Wat Tyler) ¡Wat! ¡No te rindas! ¡El Padre John Ball nos necesita!
+
+Wat Tyler: (Recordando las palabras del sacerdote) Tienes razón... No puedo seguir huyendo de mi miedo... ¡Es hora de luchar por lo que es correcto!
+
+* Las palabras del Sacerdote John Ball resuenan en la mente de Wat Tyler, llenándolo de valor.
+
+Wat Tyler: (Dirigiéndose a los aldeanos) ¡Hermanos y hermanas! ¡He cometido un error! ¡Abandoné al Padre John Ball por miedo! ¡Pero ya no más! ¡Lucharemos juntos por nuestra libertad!
+
+Los aldeanos, conmovidos por la valentía de Wat Tyler, se preparan con armas y armaduras de la herrería y se lanzan hacia la prisión.
