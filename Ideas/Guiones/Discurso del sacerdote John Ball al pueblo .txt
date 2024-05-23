@@ -13,7 +13,7 @@ Escena 1:
 
 Introducción:
 
-* La escena se abre en una plaza central de la aldea. Los campesinos se reúnen en grupos, murmurando entre sí con preocupación. El ambiente es de tensión y descontento.
+* La escena se abre en la plaza central de la aldea. Los campesinos se reúnen en grupos, murmurando entre sí con preocupación. El ambiente es de tensión y descontento.
 
 Sacerdote John Ball: (Dirigiéndose a la multitud) ¡Hermanos y hermanas! ¿Hasta cuándo vamos a soportar esta tiranía? El Duque nos impone impuestos exorbitantes para financiar una guerra que no nos beneficia, mientras nosotros nos vemos obligados a vivir en la miseria. ¡Es hora de decir basta!
 
