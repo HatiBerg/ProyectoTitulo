@@ -35,6 +35,8 @@ Sacerdote John Ball: (Sin inmutarse) ¡No nos callarás, soldado! ¡El pueblo ti
 
 Soldado del Duque: (Con tono amenazante) ¡Ya basta de palabras! Arresten a este hombre por incitar a una rebelión.
 
+Escena 4: Ayudar al sacerdote?
+
 Escena 3.1:
 
 Wat el valiente
@@ -64,7 +66,6 @@ Wat Tyler: No puedo... No puedo enfrentarlos...
 * Wat Tyler baja la mirada, avergonzado de su cobardía. Los soldados arrestan al Sacerdote John Ball y lo conducen a prisión.
 
 Escena 4: La rebelión de Wat Tyler
-Nota: La escena 4 se divide en dos ramificaciones, dependiendo de la elección realizada en la escena 3:
 
 Escenario 4.1:
 
