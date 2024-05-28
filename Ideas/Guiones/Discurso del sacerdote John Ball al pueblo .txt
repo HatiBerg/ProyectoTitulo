@@ -13,7 +13,7 @@ Escena 1:
 
 Introducción:
 
-* La escena se abre en una plaza central de la aldea. Los campesinos se reúnen en grupos, murmurando entre sí con preocupación. El ambiente es de tensión y descontento.
+* La escena se abre en la plaza central de la aldea. Los campesinos se reúnen en grupos, murmurando entre sí con preocupación. El ambiente es de tensión y descontento.
 
 Sacerdote John Ball: (Dirigiéndose a la multitud) ¡Hermanos y hermanas! ¿Hasta cuándo vamos a soportar esta tiranía? El Duque nos impone impuestos exorbitantes para financiar una guerra que no nos beneficia, mientras nosotros nos vemos obligados a vivir en la miseria. ¡Es hora de decir basta!
 
@@ -34,6 +34,8 @@ Campesinos: (Retrocediendo con miedo) ¡Señor! ¡No queremos problemas!
 Sacerdote John Ball: (Sin inmutarse) ¡No nos callarás, soldado! ¡El pueblo tiene derecho a expresar su descontento!
 
 Soldado del Duque: (Con tono amenazante) ¡Ya basta de palabras! Arresten a este hombre por incitar a una rebelión.
+
+Escena 3: Ayudar al sacerdote?
 
 Escena 3.1:
 
@@ -64,36 +66,35 @@ Wat Tyler: No puedo... No puedo enfrentarlos...
 * Wat Tyler baja la mirada, avergonzado de su cobardía. Los soldados arrestan al Sacerdote John Ball y lo conducen a prisión.
 
 Escena 4: La rebelión de Wat Tyler
-Nota: La escena 4 se divide en dos ramificaciones, dependiendo de la elección realizada en la escena 3:
 
 Escenario 4.1:
 
 La rebelión de Wat Tyler
 
-* En las calles del pueblo. Un grupo de aldeanos, enfurecidos por la injusticia, se reúne alrededor de Wat Tyler.
+* En las calles del pueblo. Un grupo de campesinos, enfurecidos por la injusticia, se reúne alrededor de Wat Tyler.
 
 Wat Tyler: (Con voz firme y decidida) ¡No podemos permitir que el Duque siga oprimiendo al pueblo! ¡Es hora de levantarnos y luchar por nuestra libertad!
 
-Aldeanos: (Aclamando con fervor) ¡Sí! ¡Lucharemos por la libertad! ¡Viva Wat Tyler!
+Campesinos: (Aclamando con fervor) ¡Sí! ¡Lucharemos por la libertad! ¡Viva Wat Tyler!
 
 Wat Tyler: (Inspirando a la multitud) ¡Recuerden las palabras del Sacerdote John Ball! ¡Tenemos derecho a la justicia! ¡No nos rendiremos hasta que el Duque sea derrotado!
 
-Los aldeanos, motivados por las palabras de Wat Tyler, se preparan con armas y armaduras de la herrería y se lanzan hacia la prisión.
+Los campesinos, motivados por las palabras de Wat Tyler, se preparan con armas y armaduras de la herrería y se lanzan hacia la prisión.
 
 Escenario 4.2:
 
 La rebelión de Wat Tyler
 
-* En las calles del pueblo. Un grupo de aldeanos, enfurecidos por la injusticia, se reúne alrededor de Wat Tyler.
+* En las calles del pueblo. Un grupo de campesinos, enfurecidos por la injusticia, se reúne alrededor de Wat Tyler.
 
 Wat Tyler: (Lleno de remordimiento y vergüenza) No puedo creer lo que hice... Abandoné al Padre John Ball... Soy un cobarde...
 
-Un aldeano: (Acercándose a Wat Tyler) ¡Wat! ¡No te rindas! ¡El Padre John Ball nos necesita!
+Un campesino: (Acercándose a Wat Tyler) ¡Wat! ¡No te rindas! ¡El Padre John Ball nos necesita!
 
 Wat Tyler: (Recordando las palabras del sacerdote) Tienes razón... No puedo seguir huyendo de mi miedo... ¡Es hora de luchar por lo que es correcto!
 
 * Las palabras del Sacerdote John Ball resuenan en la mente de Wat Tyler, llenándolo de valor.
 
-Wat Tyler: (Dirigiéndose a los aldeanos) ¡Hermanos y hermanas! ¡He cometido un error! ¡Abandoné al Padre John Ball por miedo! ¡Pero ya no más! ¡Lucharemos juntos por nuestra libertad!
+Wat Tyler: (Dirigiéndose a los campesinos) ¡Hermanos y hermanas! ¡He cometido un error! ¡Abandoné al Padre John Ball por miedo! ¡Pero ya no más! ¡Lucharemos juntos por nuestra libertad!
 
-Los aldeanos, conmovidos por la valentía de Wat Tyler, se preparan con armas y armaduras de la herrería y se lanzan hacia la prisión.
+Los campesinos, conmovidos por la valentía de Wat Tyler, se preparan con armas y armaduras de la herrería y se lanzan hacia la prisión.
