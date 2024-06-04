@@ -26,3 +26,15 @@ https://arxiv.org/pdf/1601.04574
 https://aclanthology.org/W00-0306.pdf
 https://aclanthology.org/P18-2033.pdf
 https://aclanthology.org/H01-1016.pdf
+https://upcommons.upc.edu/bitstream/handle/2117/394010/221_Memoria_TFG.pdf
+https://eprints.gla.ac.uk/291596/1/291596.pdf
+https://d1wqtxts1xzle7.cloudfront.net/96247631/978-3-030-41913-4-libre.pdf?1671797343=&response-content-disposition=inline%3B+filename%3DOptimization_and_Learning.pdf&Expires=1717444148&Signature=Ke67BSHKtnXoPJRGCkNF5Jn6VCQBz7HwRnnH7KFEfK-U3nYTPC4ejUE0qkJEW0IuQiPyWMJugO6iO9h0TCnHr-yY558b08fJ~TJOwzrs1RytS4gM8L6MizUVL0XIiYQMcE3jfbwVnBgiA7P0xirqMjK8QsiwQVjvS1TOzmiHnHvnZyXVceQJK1JTCHpL-nQTYt9GCUjXxsjT4T4aIr~HSsHQeimC8B8T5S~bfiMowFRBDFKKBtEbihCxN6V9lD8yWf427N0-1fvHFMj8V87k41SukPnKhiz~dSD5vtSs2CUPa4TLYaIbGBXP0P3gGjGJ7Cpr4Gs15HrjrxKiSNc0OQ__&Key-Pair-Id=APKAJLOHF5GGSLRBV4ZA#page=219
+https://dragn.ai/wp-content/uploads/2023/03/Personalized_Quest_and_Dialogue_Generation_in_Role_Playing_Games.pdf
+https://cs.uns.edu.ar/~ragis/Agis%20et%20al.%20(2020)%20-%20An%20event-driven%20behavior%20trees%20extension%20to%20facilitate%20non-player%20multi-agent%20coordination%20in%20video%20games.pdf
+https://eprints.gla.ac.uk/252546/2/252546.pdf
+https://essay.utwente.nl/97909/1/Mishra_MA_EEMCS.pdf
+https://books.google.es/books?hl=es&lr=&id=1uzeDwAAQBAJ&oi=fnd&pg=PP1&dq=dialogue+tree+and+video+games&ots=rARJf02Kyb&sig=I9LiDVG1YHQEzScrQW1kvYFCOO0#v=onepage&q=dialogue%20tree%20and%20video%20games&f=false
+https://arxiv.org/pdf/2212.10618
+https://www.researchgate.net/profile/Sf-Luthfie-Arguby-Purnomo/publication/339089687_Narrative_Junction_Revisiting_Branching_Narrative_Design_Approach_for_Role_Playing_Video_Games_from_the_Perspectives_of_Cognitive_Linguistics/links/5e3d0d5992851c7f7f233778/Narrative-Junction-Revisiting-Branching-Narrative-Design-Approach-for-Role-Playing-Video-Games-from-the-Perspectives-of-Cognitive-Linguistics.pdf
+https://people.cs.umass.edu/~nsa/papers/discoelysium_aaai_2023.pdf
+https://www.diva-portal.org/smash/get/diva2:1446282/FULLTEXT01.pdf
