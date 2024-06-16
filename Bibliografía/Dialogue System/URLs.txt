@@ -38,3 +38,4 @@ https://arxiv.org/pdf/2212.10618
 https://www.researchgate.net/profile/Sf-Luthfie-Arguby-Purnomo/publication/339089687_Narrative_Junction_Revisiting_Branching_Narrative_Design_Approach_for_Role_Playing_Video_Games_from_the_Perspectives_of_Cognitive_Linguistics/links/5e3d0d5992851c7f7f233778/Narrative-Junction-Revisiting-Branching-Narrative-Design-Approach-for-Role-Playing-Video-Games-from-the-Perspectives-of-Cognitive-Linguistics.pdf
 https://people.cs.umass.edu/~nsa/papers/discoelysium_aaai_2023.pdf
 https://www.diva-portal.org/smash/get/diva2:1446282/FULLTEXT01.pdf
+https://www.gamedeveloper.com/design/defining-dialogue-systems
