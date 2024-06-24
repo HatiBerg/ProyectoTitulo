@@ -1,0 +1,31 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 849860506a594c6429185ed4557473b4, type: 3}
+  m_Name: SoldierTryToConvence
+  m_EditorClassIdentifier: 
+  unlocked: 1
+  finalized: 1
+  reuse: 1
+  dialogues:
+  - character: {fileID: 11400000, guid: ec08ff065a7d41048a699ad0931229b7, type: 2}
+    dialogue: "Por favor, le pido que me escuche. No puedo pagar estos impuestos
+      ahora mismo. Mi negocio est\xE1 pasando por un mal momento."
+  - character: {fileID: 11400000, guid: 891c2cc167719ca42838c6c706248f20, type: 2}
+    dialogue: "\xA1M\xE1s excusas! Todos los comerciantes dicen lo mismo."
+  - character: {fileID: 11400000, guid: ec08ff065a7d41048a699ad0931229b7, type: 2}
+    dialogue: "Le prometo que le pagar\xE9 el doble de la cantidad que me pide, pero
+      necesito un poco de tiempo. D\xE9jeme unos meses para recuperarme, y luego
+      le dar\xE9 el dinero sin problemas."
+  - character: {fileID: 11400000, guid: 891c2cc167719ca42838c6c706248f20, type: 2}
+    dialogue: "Est\xE1 bien. Te dar\xE9 una oportunidad. Pero si me enga\xF1as, te
+      arrepentir\xE1s. (Se marcha de la tienda.)"
+  question: {fileID: 0}

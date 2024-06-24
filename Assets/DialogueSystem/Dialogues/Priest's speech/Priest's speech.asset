@@ -1,0 +1,41 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 849860506a594c6429185ed4557473b4, type: 3}
+  m_Name: Priest's speech
+  m_EditorClassIdentifier: 
+  unlocked: 1
+  finalized: 0
+  reuse: 1
+  dialogues:
+  - character: {fileID: 11400000, guid: beead63a376de7a4db4777d6c30d3774, type: 2}
+    dialogue: "(Dirigi\xE9ndose a la multitud) \xA1Hermanos y hermanas! \xBFHasta
+      cu\xE1ndo vamos a soportar esta tiran\xEDa? El Duque nos impone impuestos exorbitantes
+      para financiar una guerra que no nos beneficia, mientras nosotros nos vemos
+      obligados a vivir en la miseria. \xA1Es hora de decir basta!"
+  - character: {fileID: 11400000, guid: 2f720855d85f22240a224437c0f3c003, type: 2}
+    dialogue: "(Gritando con aprobaci\xF3n) \xA1BASTA! \xA1BASTA!"
+  - character: {fileID: 11400000, guid: ec08ff065a7d41048a699ad0931229b7, type: 2}
+    dialogue: "(Observando desde la distancia, con el rostro lleno de determinaci\xF3n)
+      Tiene raz\xF3n el sacerdote. No podemos seguir permitiendo que el Duque nos
+      pisotee."
+  - character: {fileID: 11400000, guid: 891c2cc167719ca42838c6c706248f20, type: 2}
+    dialogue: "\xA1Silencio! \xA1En nombre del Duque, les ordeno que se dispersen
+      inmediatamente!"
+  - character: {fileID: 11400000, guid: 2f720855d85f22240a224437c0f3c003, type: 2}
+    dialogue: "(Retrocediendo con miedo) \xA1Se\xF1or! \xA1No queremos problemas!"
+  - character: {fileID: 11400000, guid: beead63a376de7a4db4777d6c30d3774, type: 2}
+    dialogue: "(Sin inmutarse) \xA1No nos callar\xE1s, soldado! \xA1El pueblo tiene
+      derecho a expresar su descontento!"
+  - character: {fileID: 11400000, guid: 891c2cc167719ca42838c6c706248f20, type: 2}
+    dialogue: "(Con tono amenazante) \xA1Ya basta de palabras! Arresten a este hombre
+      por incitar a una rebeli\xF3n."
+  question: {fileID: 11400000, guid: 333fbe5ddf2f13148844d5ae37bc2fb1, type: 2}

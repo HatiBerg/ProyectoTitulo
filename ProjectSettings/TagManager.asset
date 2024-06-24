@@ -3,7 +3,13 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Floor
+  - Health
+  - NPC
+  - Suspicion
+  - GameManager
+  - Enemy
   layers:
   - Default
   - TransparentFX
@@ -11,12 +17,12 @@ TagManager:
   - 
   - Water
   - UI
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
+  - Background
+  - Floor
+  - Wall
+  - Enemy
+  - NPC
+  - Player
   - 
   - 
   - 
@@ -40,4 +46,22 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: Background
+    uniqueID: 1941915899
+    locked: 0
+  - name: Floor
+    uniqueID: 1023871709
+    locked: 0
+  - name: Wall
+    uniqueID: 2393190061
+    locked: 0
+  - name: Enemy
+    uniqueID: 4084385385
+    locked: 0
+  - name: NPC
+    uniqueID: 1349285301
+    locked: 0
+  - name: Player
+    uniqueID: 1237310073
     locked: 0
