@@ -1,0 +1,8 @@
+version: "3.1"
+
+rules:
+
+- rule: Decir adiós cada vez que el usuario diga adiós
+  steps:
+  - intent: goodbye
+  - action: utter_goodbye

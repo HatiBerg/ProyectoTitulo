@@ -1,0 +1,55 @@
+version: "3.1"
+
+intents:
+  - greet
+  - goodbye
+  - affirm
+  - deny
+  - mood_great
+  - mood_unhappy
+  - bot_challenge
+  - who_wat_tyler
+  - tyler_death
+  - what_peasants_rebellion
+  - peasants_rebellion_reason
+
+responses:
+  utter_greet:
+  - text: "Hola, ¿cómo estás?"
+  - text: "Hola, ¿cómo te va?"
+  - text: "Hola, ¿qué tal tu dia?"
+
+  utter_cheer_up:
+  - text: "Aquí hay algo para animarte:"
+    image: "https://i.imgur.com/nGF1K8f.jpg"
+
+  utter_did_that_help:
+  - text: "¿Te ayudó eso?"
+  - text: "¿Te sirvio de ayuda?"
+
+  utter_happy:
+  - text: "¡Genial!, ¿En qué puedo ayudarte?"
+  - text: "¡Me alegra escucharlo!, ¿En qué puedo ayudarte?"
+
+  utter_goodbye:
+  - text: "Adiós"
+  - text: "Hasta luego"
+
+  utter_iamabot:
+  - text: "Soy un bot construido con Rasa"
+
+  utter_who_wat_tyler:
+  - text: "Wat Tyler fue el líder de la Rebelión de los Campesinos de 1381 en Inglaterra"
+
+  utter_tyler_death:
+  - text: "Wat Tyler murió el 15 de junio de 1381. Fue asesinado durante una reunión con el rey Ricardo II en Londres, en medio de la Rebelión de los Campesinos"
+
+  utter_what_peasants_rebellion:
+  - text: "La Rebelión de los Campesinos fue un levantamiento popular que tuvo lugar en Inglaterra en 1381"
+
+  utter_peasants_rebellion_reason:
+  - text: "Fue provocado por la insatisfacción generalizada con los altos impuestos y las difíciles condiciones de vida de los campesinos"
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true

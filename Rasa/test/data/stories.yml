@@ -1,0 +1,45 @@
+version: "3.1"
+
+stories:
+
+- story: camino feliz
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_great
+  - action: utter_happy
+
+- story: camino triste 1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+
+- story: camino triste 2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_goodbye
+
+- story: quien es wat tyler
+  steps:
+  - intent: who_wat_tyler
+  - action: utter_who_wat_tyler
+  - intent: tyler_death
+  - action: utter_tyler_death
+  - intent: tyler_death
+
+- story: que es la rebelion de los campesinos
+  steps:
+  - intent: what_peasants_rebellion
+  - action: utter_what_peasants_rebellion
+  - intent: peasants_rebellion_reason
+  - action: utter_peasants_rebellion_reason
