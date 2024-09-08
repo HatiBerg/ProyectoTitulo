@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
-
+/*
 public class DialogueSystem : MonoBehaviour
 {
     public Dialogue dialogue;
@@ -18,7 +18,7 @@ public class DialogueSystem : MonoBehaviour
     private bool didDialogueStart;
     private bool isPlayerSelectingAChoice;
     private int lineIndex = 0;
-
+    
     void Start()
     {
         namePanel.SetActive(false);
@@ -91,4 +91,4 @@ public class DialogueSystem : MonoBehaviour
             Debug.Log("Diálogo no disponible");
         }
     }
-}
+}*/
