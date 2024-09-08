@@ -1,0 +1,283 @@
+version: "3.1"
+
+nlu:
+- intent: greet
+  examples: |
+    - hola
+    - hey
+    - buenas
+    - qué tal
+    - cómo estás
+    - buenos días
+    - buenas tardes
+    - buenas noches
+    - hola qué tal
+    - qué onda
+    - buenas, cómo estás
+    - hola, cómo te va
+    - holi
+    - saludos
+    - buenas, qué hay
+    - qué pasa
+    - buenas noches, cómo estás
+    - qué cuentas
+    - qué hubo
+    - cómo andas
+    - ey, cómo te va
+    - hola, buenas
+    - cómo te va
+    - todo bien
+    - holaaa
+    - buenas, todo bien
+    - buen día
+    - qué más
+    - qué tal va todo
+    - hola amigo/a
+    - qué gusto verte
+    - cómo va eso
+    - buenas, qué tal
+    - qué fue
+    - cómo va
+    - qué hay de nuevo
+    - qué onda, todo bien
+    - buenas noches, cómo te encuentras
+    - hola, cómo has estado
+
+- intent: goodbye
+  examples: |
+    - adiós
+    - hasta luego
+    - hasta pronto
+    - hasta mañana
+    - chao
+    - chau
+    - nos vemos
+    - que te vaya bien
+    - que tengas un buen día
+    - hasta la próxima
+    - hasta la vista
+    - cuídate
+    - nos vemos pronto
+    - que descanses
+    - hasta luego, amigo
+    - que estés bien
+    - buen viaje
+    - hasta la próxima vez
+    - un abrazo
+    - me despido
+    - cuidate mucho
+    - te veo luego
+    - adiós por ahora
+    - suerte
+    - hasta la próxima
+    - que tengas un buen día
+    - nos vemos más tarde
+    - adiós, que te vaya bien
+    - hasta luego, cuídate
+    - un placer conocerte
+    - hasta pronto, cuídate
+
+- intent: affirm
+  examples: |
+    - sí
+    - claro
+    - por supuesto
+    - exacto
+    - correcto
+    - así es
+    - de acuerdo
+    - cierto
+    - efectivamente
+    - sin duda
+    - definitivamente
+    - por supuesto
+    - absolutamente
+    - claro que sí
+    - totalmente
+    - tienes razón
+    - así es
+    - es verdad
+    - está bien
+    - bien dicho
+    - correcto
+    - sí, claro
+    - sin lugar a dudas
+
+- intent: deny
+  examples: |
+    - no
+    - nunca
+    - no creo
+    - no me gusta
+    - de ninguna manera
+    - no realmente
+    - para nada
+    - en absoluto
+    - nada de eso
+    - no es cierto
+    - no es así
+    - definitivamente no
+    - no lo creo
+    - no estoy de acuerdo
+    - no es correcto
+    - no tengo interés
+    - no es posible
+    - no lo acepto
+    - no es verdad
+    - ni hablar
+    - no es adecuado
+
+- intent: mood_great
+  examples: |
+    - perfecto
+    - genial
+    - increíble
+    - me siento como un rey
+    - maravilloso
+    - me siento muy bien
+    - estoy genial
+    - soy increíble
+    - estoy en camino a salvar el mundo
+    - súper emocionado
+    - extremadamente bien
+    - tan tan perfecto
+    - tan bien
+    - tan perfecto
+    - estupendo
+    - fabuloso
+    - espectacular
+    - me siento de maravilla
+    - estoy en la cima del mundo
+    - radiante
+    - fenomenal
+    - increíblemente feliz
+    - en mi mejor momento
+    - de lo más feliz
+    - sobre la luna
+    - muy contento
+    - feliz como nunca
+    - al máximo
+    - bien
+
+- intent: mood_unhappy
+  examples: |
+    - mi día fue horrible
+    - estoy triste
+    - no me siento muy bien
+    - estoy decepcionado
+    - súper triste
+    - estoy tan triste
+    - triste
+    - muy triste
+    - infeliz
+    - no estoy bien
+    - no estoy muy bien
+    - extremadamente triste
+    - tan triste
+    - tan tan triste
+    - desolado
+    - abatido
+    - desalentado
+    - melancólico
+    - cabizbajo
+    - desanimado
+    - en un bajón
+    - no tengo ánimo
+    - desolado
+    - angustiado
+    - en el suelo
+    - de mal humor
+
+- intent: who_wat_tyler
+  examples: |
+    - quien es wat tyler
+    - sabes quien es wat tyler
+    - me puedes decir quien es wat tyler
+    - me podrías explicar quien es wat tyler
+    - que sabes de wat tyler
+    - puedes contarme quien es wat tyler
+    - tienes información sobre wat tyler
+    - quien fue wat tyler
+    - cual es la historia de wat tyler
+    - puedes decirme quien es wat tyler
+    - quien era wat tyler
+    - a que se dedicaba wat tyler
+    - me puedes hablar de wat tyler
+    - quien fue wat tyler en la historia
+    - conoces a wat tyler
+    - quien es ese wat tyler
+    - de quien fue wat tyler
+    - dime quien es wat tyler
+    - podrías contarme quien es wat tyler
+    - quien era wat tyler en la historia
+
+- intent: tyler_death
+  examples: |
+    - cuando murio wat tyler
+    - sabes cuando murio wat tyler
+    - me puedes decir cuando murio wat tyler
+    - me podrías decir cuando murio wat tyler
+    - en que año murio wat tyler
+    - en que fecha murio wat tyler
+    - sabes en que año murio wat tyler
+    - sabes en que fecha murio wat tyler
+    - cual es la fecha en que murio wat tyler
+    - cuando fue que murio wat tyler
+    - me puedes contar cuando murio wat tyler
+    - cuando fallecio wat tyler
+    - en que momento murio wat tyler
+    - cuando fue la muerte de wat tyler
+    - me podrías contar cuando murio wat tyler
+    - cuando se produjo la muerte de wat tyler
+    - cuando asesinaron a wat tyler
+    - puedes decirme cuando murio wat tyler
+    - sabes cuando fallecio wat tyler
+    - cuando tuvo lugar la muerte de wat tyler
+
+- intent: what_peasants_rebellion
+  examples: |
+    - que es la rebelión de los campesinos
+    - puedes decirme que es la rebelión de los campesinos
+    - sabes que es la rebelión de los campesinos
+    - me puedes decir que es la rebelión de los campesinos
+    - que fue la rebelión de los campesinos
+    - me podrías explicar que es la rebelión de los campesinos
+    - en que consistió la rebelión de los campesinos
+    - cual es el significado de la rebelión de los campesinos
+    - que significa la rebelión de los campesinos
+    - que fue la rebelión de los campesinos en inglaterra
+    - como fue la rebelión de los campesinos
+    - que sucedió en la rebelión de los campesinos
+    - me puedes contar que es la rebelión de los campesinos
+    - podrías explicarme que es la rebelión de los campesinos
+    - sabes en que consistió la rebelión de los campesinos
+    - a que se refiere la rebelión de los campesinos
+    - en que año ocurrió la rebelión de los campesinos
+    - que ocurrió durante la rebelión de los campesinos
+    - puedes explicarme que es la rebelión de los campesinos
+    - que sabes de la rebelión de los campesinos
+    - termino la rebelión
+    - cuando se termino la rebelion
+
+- intent: peasants_rebellion_reason
+  examples: |
+    - cual fue la causa de la rebelión de los campesinos
+    - cuales fueron las causas de la rebelión de los campesinos
+    - que causo la rebelión de los campesinos
+    - por que ocurrió la rebelión de los campesinos
+    - cual fue el motivo de la rebelión de los campesinos
+    - que motivo la rebelión de los campesinos
+    - que provoco la rebelión de los campesinos
+    - que origino la rebelión de los campesinos
+    - cual fue el origen de la rebelión de los campesinos
+    - que razones llevaron a la rebelión de los campesinos
+    - por que sucedió la rebelión de los campesinos
+    - cual fue la razón de la rebelión de los campesinos
+    - que desencadeno la rebelión de los campesinos
+    - cuales fueron las razones de la rebelión de los campesinos
+    - por que se produjo la rebelión de los campesinos
+    - cual fue el desencadenante de la rebelión de los campesinos
+    - cual es la causa de la rebelión de los campesinos
+    - por que se dio la rebelión de los campesinos
+    - cual fue el motivo principal de la rebelión de los campesinos
+    - que factores causaron la rebelión de los campesinos
