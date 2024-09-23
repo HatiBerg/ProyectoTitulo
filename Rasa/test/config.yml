@@ -22,12 +22,6 @@ pipeline:
   analyzer: char_wb
   min_ngram: 1
   max_ngram: 4
-#------------------------------------
-# No me funcionó
-# - name: HFTransformersNLP
-#   model_name: "bert"
-#   model_weights: "bert-base-uncased"
-#------------------------------------
 - name: LanguageModelFeaturizer
   # Name of the language model to use
   model_name: "bert"
