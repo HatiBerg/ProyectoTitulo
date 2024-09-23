@@ -1,5 +1,7 @@
 # ProyectoTitulo
- 
+
+Repositorio original: https://github.com/IanFPFerreira/Rasa-Unity
+
 ### Versiones Usadas:
 - Python 3.10.14
 - rasa 3.6.20
