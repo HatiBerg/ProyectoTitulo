@@ -6,3 +6,8 @@ rules:
   steps:
   - intent: goodbye
   - action: utter_goodbye
+
+# - rule: Decir el puntaje actual
+#   steps:
+#   - intent: actual_score
+#   - action: utter_actual_score
