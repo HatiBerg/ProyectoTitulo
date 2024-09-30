@@ -193,48 +193,117 @@ nlu:
     - ask_rebellion_year_start
     - ask_rebellion_year_start1
 
+- intent: ask_rebellion_start
+  examples: |
+    -ask_rebellion_start
+    -ask_rebellion_start1
+
+- intent: ask_rebellion_protagonist
+  examples: |
+    - ask_rebellion_protagonist
+    - ask_rebellion_protagonist1
+
+- intent: ask_rebellion_priest
+  examples: |
+    - ask_rebellion_priest
+    - ask_rebellion_priest1
+
+- intent: ask_rebellion_economic_motivation
+  examples: |
+    - ask_rebellion_economic_motivation
+    - ask_rebellion_economic_motivation1
+
+- intent: ask_rebellion_religious_motivation
+  examples: |
+    - ask_rebellion_religious_motivation
+    - ask_rebellion_religious_motivation1
+
+- intent: ask_rebellion_social_motivation
+  examples: |
+    - ask_rebellion_social_motivation
+    - ask_rebellion_social_motivation1
+
+- intent: ask_rebellion_taxes
+  examples: |
+    - ask_rebellion_taxes
+    - ask_rebellion_taxes1
+
+- intent: ask_rebellion_antagonist
+  examples: |
+    - ask_rebellion_antagonist
+    - ask_rebellion_antagonist1
+
+- intent: ask_rebellion_county
+  examples: |
+    - ask_rebellion_county
+    - ask_rebellion_county1
+
+- intent: ask_rebellion_demands
+  examples: |
+    - ask_rebellion_demands
+    - ask_rebellion_demands1
+
+- intent: ask_rebellion_response_to_demands
+  examples: |
+    - ask_rebellion_response_to_demands
+    - ask_rebellion_response_to_demands1
+
+- intent: ask_rebellion_end
+  examples: |
+    - ask_rebellion_end
+    - ask_rebellion_end1
+
+- intent: ask_rebellion_place_end
+  examples: |
+    - ask_rebellion_place_end
+    - ask_rebellion_place_end1
+
 - intent: rebellion_year_start
   examples: |
-    - La rebelión de los campesinos comenzó en 1380.
-    - La rebelión de los campesinos inició en el año 1380.
-    - La rebelión comenzó en 1380.
-    - En 1380 comenzó la rebelión de los campesinos.
-    - La rebelión de los campesinos tuvo su inicio en 1380.
-    - El año 1380 marca el comienzo de la rebelión de los campesinos.
-    - La rebelión se inició en 1380.
-    - La rebelión de los campesinos empezó en el año 1380.
-    - En el año 1380.
-    - En 1380.
-    - 1380.
-    - Comenzó en 1380.
+    - La rebelión de los campesinos comenzó en [1380](year).
+    - La rebelión de los campesinos inició en el año [1380](year).
+    - La rebelión comenzó en [1380](year).
+    - En [1380](year) comenzó la rebelión de los campesinos.
+    - La rebelión de los campesinos tuvo su inicio en [1380](year).
+    - El año [1380](year) marca el comienzo de la rebelión de los campesinos.
+    - La rebelión se inició en [1380](year).
+    - La rebelión de los campesinos empezó en el año [1380](year).
+    - En el año [1380](year).
+    - En [1380](year).
+    - [1380](year).
+    - Comenzó en [1380](year).
 
 - intent: rebellion_start
   examples: |
-    - En el tercer impuesto electoral emitido en 1380
-    - La imposición del tercer impuesto electoral en 1380.
-    - El aumento del impuesto electoral en 1380.
-    - La decisión del rey de cobrar un nuevo impuesto en 1380.
-    - El tercer impuesto electoral, que fue emitido en 1380.
-    - La rebelión fue provocada por el tercer impuesto electoral de 1380.
-    - La insatisfacción con el tercer impuesto electoral de 1380.
-    - El descontento por el tercer impuesto electoral en 1380.
-    - La carga fiscal del tercer impuesto electoral en 1380.
+    - En el [tercer impuesto electoral](event) emitido en [1380](year).
+    - La imposición del [tercer impuesto electoral](event) en [1380](year).
+    - La decisión del rey de cobrar un nuevo [impuesto electoral](event) en [1380](year).
+    - El [tercer impuesto electoral](event), que fue emitido en [1380](year).
+    - La rebelión fue provocada por el [tercer impuesto electoral](event) de [1380](year).
+    - La insatisfacción con el [tercer impuesto electoral](event) de [1380](year).
+    - El descontento por el [tercer impuesto electoral](event) en [1380](year).
+    - La carga fiscal del [tercer impuesto electoral](event) en [1380](year).
+- synonym: taxes
+  examples: |
+    - tercer impuesto electoral
+    - impuesto electoral
+    - tercer impuesto
+    - impuesto
 
 - intent: rebellion_protagonist
   examples: |
-    - La figura clave que lideró la rebelión de los campesinos fue Wat Tyler
-    - Wat Tyler fue la figura clave que lideró la rebelión de los campesinos.
-    - La rebelión fue liderada por Wat Tyler.
-    - Wat Tyler es reconocido como el líder de la rebelión de los campesinos.
-    - La figura central de la rebelión fue Wat Tyler.
-    - Wat Tyler desempeñó un papel crucial en la dirección de la rebelión de los campesinos.
-    - La rebelión de los campesinos tuvo a Wat Tyler como su líder principal.
-    - Wat Tyler fue el líder que organizó la rebelión de los campesinos.
-    - La figura clave detrás de la rebelión de los campesinos fue Wat Tyler.
+    - La figura clave que lideró la rebelión de los campesinos fue [Wat Tyler](name).
+    - [Wat Tyler](name) fue la figura clave que lideró la rebelión de los campesinos.
+    - La rebelión fue liderada por [Wat Tyler](name).
+    - [Wat Tyler](name) es reconocido como el líder de la rebelión de los campesinos.
+    - La figura central de la rebelión fue [Wat Tyler](name).
+    - [Wat Tyler](name) desempeñó un papel crucial en la dirección de la rebelión de los campesinos.
+    - La rebelión de los campesinos tuvo a [Wat Tyler](name) como su líder principal.
+    - [Wat Tyler](name) fue el líder que organizó la rebelión de los campesinos.
+    - La figura clave detrás de la rebelión de los campesinos fue [Wat Tyler](name).
 
 - intent: rebellion_priest
   examples: |
-    - John Ball predicaba que todas las personas debían ser iguales
     - John Ball predicaba que todas las personas debían ser iguales.
     - La enseñanza de John Ball era que la igualdad entre todos los seres humanos era esencial.
     - John Ball abogaba por la igualdad entre las personas.
@@ -243,10 +312,14 @@ nlu:
     - John Ball sostenía que la igualdad era un derecho de todos los individuos.
     - La principal idea de John Ball era que no debía haber distinción entre las personas.
     - John Ball defendía la igualdad social y la justicia para todos.
+- synonym: priest
+  examples: |
+    - iguales
+    - igualdad
+    - igual
 
 - intent: rebellion_economic_motivation
   examples: |
-    - La principal motivación económica fueron los altos impuestos y los bajos salarios
     - La principal motivación económica fueron los altos impuestos y los bajos salarios.
     - Los campesinos se rebelaron debido a la carga de altos impuestos y salarios insuficientes.
     - Los altos impuestos y los bajos salarios fueron factores económicos clave en la rebelión.
@@ -258,7 +331,6 @@ nlu:
 
 - intent: rebellion_religious_motivation
   examples: |
-    - Los campesinos pensaban que eran corruptos
     - Los campesinos pensaban que eran corruptos.
     - La percepción de los campesinos sobre la iglesia era de corrupción.
     - Los campesinos veían a la iglesia como una institución corrupta.
@@ -271,7 +343,6 @@ nlu:
 - intent: rebellion_social_motivation
   examples: |
     - La principal motivación social fue la enorme desigualdad entre campesinos y nobles.
-    - La principal motivación social fue la enorme desigualdad entre campesinos y nobles.
     - La gran brecha social entre campesinos y nobles fue un factor clave en la rebelión.
     - La rebelión fue impulsada por la desigualdad social entre las clases campesinas y nobiliarias.
     - Los campesinos se levantaron debido a la significativa desigualdad que existía entre ellos y los nobles.
@@ -282,7 +353,7 @@ nlu:
 
 - intent: rebellion_taxes
   examples: |
-    - Para financiar la guerra que había en contra Francia durante esa época
+    - Para financiar la guerra que había en contra Francia durante esa época.
     - Para financiar la guerra que había contra Francia durante esa época.
     - Los impuestos electorales fueron emitidos para costear la guerra contra Francia.
     - La razón detrás de la emisión de los tres impuestos fue la necesidad de financiamiento para la guerra con Francia.
@@ -306,14 +377,14 @@ nlu:
 
 - intent: rebellion_county
   examples: |
-    - La rebelión de los campesinos comenzó en el condado de Essex.
-    - El condado de Essex fue el lugar donde se inició la rebelión de los campesinos.
-    - La rebelión tuvo su origen en el condado de Essex.
-    - Los primeros levantamientos de la rebelión de los campesinos ocurrieron en Essex.
-    - En Essex comenzó la famosa rebelión de los campesinos.
-    - La rebelión de los campesinos se inició en el condado de Essex.
-    - Essex fue el condado en el que estalló la rebelión de los campesinos.
-    - El inicio de la rebelión de los campesinos se localiza en el condado de Essex.
+    - La rebelión de los campesinos comenzó en el condado de [Essex](place).
+    - El condado de [Essex](place) fue el lugar donde se inició la rebelión de los campesinos.
+    - La rebelión tuvo su origen en el condado de [Essex](place).
+    - Los primeros levantamientos de la rebelión de los campesinos ocurrieron en [Essex](place).
+    - En [Essex](place) comenzó la famosa rebelión de los campesinos.
+    - La rebelión de los campesinos se inició en el condado de [Essex](place).
+    - [Essex](place) fue el condado en el que estalló la rebelión de los campesinos.
+    - El inicio de la rebelión de los campesinos se localiza en el condado de [Essex](place).
 
 - intent: rebellion_demands
   examples: |
@@ -347,22 +418,50 @@ nlu:
 
 - intent: rebellion_end
   examples: |
-    - La rebelión de los campesinos termino con la muerte de Wat Tyler
-    - La rebelión concluyó con la muerte de Wat Tyler.
-    - La rebelión de los campesinos finalizó tras la muerte de Wat Tyler.
-    - La muerte de Wat Tyler marcó el fin de la rebelión.
-    - La rebelión terminó cuando Wat Tyler fue asesinado.
-    - La rebelión se extinguió con la muerte de Wat Tyler.
-    - El fin de la rebelión se produjo con la muerte de Wat Tyler.
-    - Wat Tyler fue asesinado, lo que puso fin a la rebelión de los campesinos.
+    - La rebelión de los campesinos termino con la [muerte](event) de [Wat Tyler](name).
+    - La rebelión concluyó con la [muerte](event) de [Wat Tyler](name).
+    - La rebelión de los campesinos finalizó tras la [muerte](event) de [Wat Tyler](name).
+    - La [muerte](event) de [Wat Tyler](name) marcó el fin de la rebelión.
+    - La rebelión terminó cuando [Wat Tyler](name) fue [muerte](event).
+    - La rebelión se extinguió con la [muerte](event) de [Wat Tyler](name).
+    - El fin de la rebelión se produjo con la [muerte](event) de [Wat Tyler](name).
+    - [Wat Tyler](name) fue [muerte](event), lo que puso fin a la rebelión de los campesinos.
+- synonym: death
+  examples: |
+    - muerte
+    - asesinado
+    - asesinato
 
 - intent: rebellion_place_end
   examples: |
-    - La rebelión de los campesinos termino en Mile End
-    - La rebelión concluyó en Mile End.
-    - La rebelión de los campesinos finalizó en Mile End.
-    - El desenlace de la rebelión ocurrió en Mile End.
-    - La rebelión terminó en el área de Mile End.
-    - Mile End fue el lugar donde finalizó la rebelión.
-    - La rebelión se dio por concluida en Mile End.
-    - La rebelión de los campesinos terminó en Mile End.
+    - La rebelión de los campesinos termino en [Mile End](place).
+    - La rebelión concluyó en [Mile End](place).
+    - La rebelión de los campesinos finalizó en [Mile End](place).
+    - El desenlace de la rebelión ocurrió en [Mile End](place).
+    - La rebelión terminó en el área de [Mile End](place).
+    - [Mile End](place) fue el lugar donde finalizó la rebelión.
+    - La rebelión se dio por concluida en [Mile End](place).
+    - La rebelión de los campesinos terminó en [Mile End](place).
+
+- intent: irrelevant_years
+  examples: |
+    - 1100
+    - 1200
+    - 1300
+    - 1400
+    - 1500
+    - 1600
+    - 1700
+    - 1800
+    - 1900
+    - 2000
+    - 1150
+    - 1250
+    - 1350
+    - 1450
+    - 1550
+    - 1650
+    - 1750
+    - 1850
+    - 1950
+    - 2024
