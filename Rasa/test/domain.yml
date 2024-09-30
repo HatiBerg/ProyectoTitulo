@@ -9,6 +9,19 @@ intents:
   - mood_unhappy
   - bot_challenge
   - ask_rebellion_year_start
+  - ask_rebellion_start
+  - ask_rebellion_protagonist
+  - ask_rebellion_priest
+  - ask_rebellion_economic_motivation
+  - ask_rebellion_religious_motivation
+  - ask_rebellion_social_motivation
+  - ask_rebellion_taxes
+  - ask_rebellion_antagonist
+  - ask_rebellion_county
+  - ask_rebellion_demands
+  - ask_rebellion_response_to_demands
+  - ask_rebellion_end
+  - ask_rebellion_place_end
   - rebellion_year_start
   - rebellion_start
   - rebellion_protagonist
@@ -23,6 +36,16 @@ intents:
   - rebellion_response_to_demands
   - rebellion_end
   - rebellion_place_end
+
+entities:
+  - year
+  - name
+  - demand
+  - motivation
+  - county
+  - place
+  - reason
+  - event
 
 responses:
   utter_greet:
@@ -49,47 +72,47 @@ responses:
   utter_iamabot:
   - text: "Soy un bot construido con Rasa"
 
-  # utter_rebellion_year_start:
-  # - text: "¿En qué año empezó la rebelión de los campesinos?"
+  utter_rebellion_year_start:
+  - text: "¿En qué año empezó la rebelión de los campesinos?"
 
-  # utter_rebellion_start:
-  # - text: "¿Qué evento especifico desencadeno la rebelión de los campesinos?"
+  utter_rebellion_start:
+  - text: "¿Qué evento especifico desencadeno la rebelión de los campesinos?"
 
-  # utter_rebellion_protagonist:
-  # - text: "¿Qué figura clave lideró la rebelión de los campesinos?"
+  utter_rebellion_protagonist:
+  - text: "¿Qué figura clave lideró la rebelión de los campesinos?"
 
-  # utter_rebellion_priest:
-  # - text: "¿Qué predicaba John Ball durante la rebelión de los campesinos?"
+  utter_rebellion_priest:
+  - text: "¿Qué predicaba John Ball durante la rebelión de los campesinos?"
 
-  # utter_rebellion_economic_motivation:
-  # - text: "¿Cuál fue la principal motivación económica que aporto a la rebelión?"
+  utter_rebellion_economic_motivation:
+  - text: "¿Cuál fue la principal motivación económica que aporto a la rebelión?"
 
-  # utter_rebellion_religious_motivation:
-  # - text: "¿Cuáles eran los pensamientos de los campesinos sobre la iglesia?"
+  utter_rebellion_religious_motivation:
+  - text: "¿Cuáles eran los pensamientos de los campesinos sobre la iglesia?"
 
-  # utter_rebellion_social_motivation:
-  # - text: "¿Cuál fue la principal motivación social que aporto a la rebelión?"
+  utter_rebellion_social_motivation:
+  - text: "¿Cuál fue la principal motivación social que aporto a la rebelión?"
 
-  # utter_rebellion_taxes:
-  # - text: "¿Por qué razón el parlamento emitido tres impuestos electorales entre 1377 y 1381?"
+  utter_rebellion_taxes:
+  - text: "¿Por qué razón el parlamento emitido tres impuestos electorales entre 1377 y 1381?"
 
-  # utter_rebellion_antagonist:
-  # - text: "¿Quién fue la persona más rica, poderosa y odiada de Inglaterra durante esa época?"
+  utter_rebellion_antagonist:
+  - text: "¿Quién fue la persona más rica, poderosa y odiada de Inglaterra durante esa época?"
 
-  # utter_rebellion_county:
-  # - text: "¿En qué condado comenzó la rebelión de los campesinos?"
+  utter_rebellion_county:
+  - text: "¿En qué condado comenzó la rebelión de los campesinos?"
 
-  # utter_rebellion_demands:
-  # - text: "¿Qué demandas tenían los campesinos?"
+  utter_rebellion_demands:
+  - text: "¿Qué demandas tenían los campesinos?"
 
-  # utter_rebellion_response_to_demands:
-  # - text: "¿Cuál fue la respuesta del rey Ricardo II ante las demandas?"
+  utter_rebellion_response_to_demands:
+  - text: "¿Cuál fue la respuesta del rey Ricardo II ante las demandas?"
 
-  # utter_rebellion_end:
-  # - text: "¿Cómo terminó la rebelión?"
+  utter_rebellion_end:
+  - text: "¿Cómo terminó la rebelión?"
 
-  # utter_rebellion_place_end:
-  # - text: "¿En dónde termino la rebelión?"
+  utter_rebellion_place_end:
+  - text: "¿En dónde termino la rebelión?"
 
   # utter_actual_score:
   # - text: "Tu puntaje actual es de {score}"
@@ -108,6 +131,19 @@ responses:
 actions:
   - action_ask_rebellion_year_start
   - action_evaluate_rebellion_year_start
+  - action_evaluate_rebellion_start
+  - action_evaluate_rebellion_protagonist
+  - action_evaluate_rebellion_priest
+  - action_evaluate_rebellion_economic_motivation
+  - action_evaluate_rebellion_religious_motivation
+  - action_evaluate_rebellion_social_motivation
+  - action_evaluate_rebellion_taxes
+  - action_evaluate_rebellion_antagonist
+  - action_evaluate_rebellion_county
+  - action_evaluate_rebellion_demands
+  - action_evaluate_rebellion_response_to_demands
+  - action_evaluate_rebellion_end
+  - action_evaluate_rebellion_place_end
 
 session_config:
   session_expiration_time: 60
