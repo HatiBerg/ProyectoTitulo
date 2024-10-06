@@ -7,23 +7,28 @@
 
 # This is a simple example for a custom action which utters "Hello World!"
 
+import json
 from typing import Any, Text, Dict, List
-
 from rasa_sdk import Action, Tracker 
 from rasa_sdk.executor import CollectingDispatcher
 from rasa_sdk.events import SlotSet
 
-class ActionHacerPregunta(Action):
-    def name(self) -> Text:
-        return "action_ask_rebellion_year_start"
+class ActionSaveUnclassifiedExample(Action):
+    def name(self) -> str:
+        return "action_default_fallback"
 
-    def run(self, dispatcher: CollectingDispatcher, 
-            tracker: Tracker, 
-            domain: Dict[Text, Any]) -> List[Dict[Text,Any]]:
+    def run(self, dispatcher: CollectingDispatcher,
+            tracker: Tracker,
+            domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
 
-        pregunta = "¿En qué año empezó la rebelión de los campesinos?"
-        dispatcher.utter_message(text=pregunta)
+        unclassified_message = tracker.latest_message.get('text')
+        target_intent = "out_of_scope"
+        with open("unclassified_examples.json", "a") as file:
+            json.dump({"intent": target_intent, "example": unclassified_message}, file)
+            file.write("\n")
 
+        dispatcher.utter_message(text="Incorrecto")
+        
         return []
 
 class ActionEvaluarRespuesta1(Action):
