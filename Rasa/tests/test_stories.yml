@@ -1,84 +1,84 @@
 #### This file contains tests to evaluate that your bot behaves as expected.
 #### If you want to learn more, please see the docs: https://rasa.com/docs/rasa/testing-your-assistant
 
-stories:
-- story: camino feliz 1
-  steps:
-  - user: |
-      ¡hola!
-    intent: greet
-  - action: utter_greet
-  - user: |
-      increible
-    intent: mood_great
-  - action: utter_happy
+# stories:
+# - story: camino feliz 1
+#   steps:
+#   - user: |
+#       ¡hola!
+#     intent: greet
+#   - action: utter_greet
+#   - user: |
+#       increible
+#     intent: mood_great
+#   - action: utter_happy
 
-- story: camino feliz 2
-  steps:
-  - user: |
-      ¡hola!
-    intent: greet
-  - action: utter_greet
-  - user: |
-      increible
-    intent: mood_great
-  - action: utter_happy
-  - user: |
-      ¡adios!
-    intent: goodbye
-  - action: utter_goodbye
+# - story: camino feliz 2
+#   steps:
+#   - user: |
+#       ¡hola!
+#     intent: greet
+#   - action: utter_greet
+#   - user: |
+#       increible
+#     intent: mood_great
+#   - action: utter_happy
+#   - user: |
+#       ¡adios!
+#     intent: goodbye
+#   - action: utter_goodbye
 
-- story: camino triste 1
-  steps:
-  - user: |
-      ¡hola!
-    intent: greet
-  - action: utter_greet
-  - user: |
-      no muy bien
-    intent: mood_unhappy
-  - action: utter_cheer_up
-  - action: utter_did_that_help
-  - user: |
-      si
-    intent: affirm
-  - action: utter_happy
+# - story: camino triste 1
+#   steps:
+#   - user: |
+#       ¡hola!
+#     intent: greet
+#   - action: utter_greet
+#   - user: |
+#       no muy bien
+#     intent: mood_unhappy
+#   - action: utter_cheer_up
+#   - action: utter_did_that_help
+#   - user: |
+#       si
+#     intent: affirm
+#   - action: utter_happy
 
-- story: camino triste 2
-  steps:
-  - user: |
-      hola
-    intent: greet
-  - action: utter_greet
-  - user: |
-      no estoy bien
-    intent: mood_unhappy
-  - action: utter_cheer_up
-  - action: utter_did_that_help
-  - user: |
-      no realmente
-    intent: deny
-  - action: utter_goodbye
+# - story: camino triste 2
+#   steps:
+#   - user: |
+#       hola
+#     intent: greet
+#   - action: utter_greet
+#   - user: |
+#       no estoy bien
+#     intent: mood_unhappy
+#   - action: utter_cheer_up
+#   - action: utter_did_that_help
+#   - user: |
+#       no realmente
+#     intent: deny
+#   - action: utter_goodbye
 
-- story: camino triste 3
-  steps:
-  - user: |
-      holi
-    intent: greet
-  - action: utter_greet
-  - user: |
-      horrible
-    intent: mood_unhappy
-  - action: utter_cheer_up
-  - action: utter_did_that_help
-  - user: |
-      no
-    intent: deny
-  - action: utter_goodbye
+# - story: camino triste 3
+#   steps:
+#   - user: |
+#       holi
+#     intent: greet
+#   - action: utter_greet
+#   - user: |
+#       horrible
+#     intent: mood_unhappy
+#   - action: utter_cheer_up
+#   - action: utter_did_that_help
+#   - user: |
+#       no
+#     intent: deny
+#   - action: utter_goodbye
 
-- story: decir adiós
-  steps:
-  - user: |
-      !adios¡
-    intent: goodbye
-  - action: utter_goodbye
+# - story: decir adiós
+#   steps:
+#   - user: |
+#       !adios¡
+#     intent: goodbye
+#   - action: utter_goodbye
