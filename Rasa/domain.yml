@@ -72,6 +72,9 @@ responses:
   utter_iamabot:
   - text: "Soy un bot construido con Rasa"
 
+  utter_incorrect:
+  - text: "Incorrecto"
+
   utter_rebellion_year_start:
   - text: "¿En qué año empezó la rebelión de los campesinos?"
 
