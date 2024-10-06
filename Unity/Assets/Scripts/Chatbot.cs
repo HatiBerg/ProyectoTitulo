@@ -35,9 +35,49 @@ public class Chatbot : MonoBehaviour
     public string npcMsg;
     [Header("UI")]
     public TextMeshProUGUI npcText;
+    public TMP_InputField playerText;
+    public Button nextQuestion;
+    private int currentMessageIndex = 0;
+    private bool responseReceived = false;
+    private string lastQuestion;
+    private List<string> hiddenMessages;
+    private int score = 0;
 
+    public GameObject enemySoldier;
 
     private const string rasa_url = "http://localhost:5005/webhooks/rest/webhook";
+
+    void Start()
+    {
+        // Mensajes ocultos
+        hiddenMessages = new List<string> {
+            "ask_rebellion_year_start",
+            "ask_rebellion_start",
+            "ask_rebellion_protagonist",
+            "ask_rebellion_priest",
+            "ask_rebellion_economic_motivation",
+            "ask_rebellion_religious_motivation",
+            "ask_rebellion_social_motivation",
+        };
+
+        // Desactivar el botón al inicio del juego
+        nextQuestion.interactable = false;
+
+        // Enviar el primer mensaje oculto automáticamente al iniciar el quiz
+        SendMessageToRasa(hiddenMessages[currentMessageIndex]);
+
+        // Asignar el evento OnClick al botón para enviar mensajes ocultos después del primero
+        nextQuestion.onClick.AddListener(SendNextHiddenMessage);
+    }
+
+    void Update()
+    {
+        if (responseReceived)
+        {
+            nextQuestion.interactable = true;
+            responseReceived = false;  // Resetear para la siguiente interacción
+        }
+    }
 
 	public void SendMessageToRasa(string s)
 	{
@@ -74,11 +114,76 @@ public class Chatbot : MonoBehaviour
         // Deserialize response recieved from the bot
         RootReceiveMessageJson root = JsonUtility.FromJson<RootReceiveMessageJson>("{\"messages\":" + response + "}");
 
+        // Mostrar la respuesta del chatbot en la consola
         Debug.Log("Bot: " + root.messages[0].text);
 
-        // Display the bot's response
+        // Mostrar la respuesta del chatbot
         npcText.text = root.messages[0].text;
 
+        // Verificar si la respuesta es "¡Correcto!" y sumar la puntuación
+        if (npcText.text == "¡Correcto!")
+        {
+            // Incrementar la puntuación
+            score++;
+            Debug.Log("Puntuación: " + score);
+
+            // Desencadenar el evento correspondiente basado en la pregunta
+            TriggerEventForCurrentQuestion();
+        }
+
+        // Habilitar el botón solo si la respuesta es "¡Correcto!" o "Incorrecto"
+        if (npcText.text == "¡Correcto!" || npcText.text == "Incorrecto")
+        {
+            responseReceived = true;
+            playerText.interactable = false;
+            playerText.text = string.Empty;
+        }
     }
 
+    // Método que desencadena eventos específicos para cada pregunta correcta
+    void TriggerEventForCurrentQuestion()
+    {
+        Enemy enemyScript = enemySoldier.GetComponent<Enemy>();
+        switch (currentMessageIndex)
+        {
+            case 0:
+                Debug.Log("Evento para la primera pregunta correcta.");
+                enemyScript.TakeDamage(100);
+                break;
+            case 1:
+                Debug.Log("Evento para la segunda pregunta correcta.");
+                break;
+            case 2:
+                Debug.Log("Evento para la tercera pregunta correcta.");
+                break;
+            case 3:
+                Debug.Log("Evento para la cuarta pregunta correcta.");
+                break;
+            case 4:
+                Debug.Log("Evento para la quinta pregunta correcta.");
+                break;
+            default:
+                Debug.Log("No hay más eventos.");
+                break;
+        }
+    }
+
+    void SendNextHiddenMessage()
+    {
+        nextQuestion.interactable = false;
+
+        // Asegurarse de que el índice no se salga de los límites de la lista
+        if (currentMessageIndex < hiddenMessages.Count - 1)
+        {
+            // Aumenta el índice para enviar el siguiente mensaje oculto
+            currentMessageIndex++;
+            // Enviar el siguiente mensaje oculto
+            SendMessageToRasa(hiddenMessages[currentMessageIndex]);
+            playerText.interactable = true;
+        }
+        else
+        {
+            Debug.Log("No hay más mensajes ocultos que enviar.");
+        }
+    }
 }
