@@ -1,0 +1,134 @@
+version: "3.1"
+stories:
+- story: pregunta y respuesta correcta sobre ¿En qué condado comenzó la rebelión de los campesinos? (.\tests\test_stories.yml)
+  steps:
+  - intent: ask_rebellion_county
+  - action: utter_rebellion_county
+  - intent: rebellion_county  # predicted: rebellion_county: La rebelion comenzo en el condado de [Essex](place)
+  - action: action_evaluate_rebellion_county
+- story: pregunta y respuesta correcta sobre ¿Qué demandas tenían los campesinos? (.\tests\test_stories.yml)
+  steps:
+  - intent: ask_rebellion_demands  # predicted: nlu_fallback: ask_rebellion_demands
+  - action: utter_rebellion_demands
+  - intent: rebellion_demands
+  - action: action_evaluate_rebellion_demands
+- story: pregunta y respuesta correcta sobre ¿Cuál fue la respuesta del rey Ricardo II ante las demandas? (.\tests\test_stories.yml)
+  steps:
+  - intent: ask_rebellion_response_to_demands
+  - action: utter_rebellion_response_to_demands
+  - intent: rebellion_response_to_demands  # predicted: nlu_fallback: Las acepto para después retractarse de ellas
+  - action: action_evaluate_rebellion_response_to_demands
+- story: pregunta y respuesta correcta sobre ¿Cómo terminó la rebelión? (.\tests\test_stories.yml)
+  steps:
+  - intent: ask_rebellion_end
+  - action: utter_rebellion_end
+  - intent: rebellion_end  # predicted: rebellion_end: La rebelión terminó con la [muerte]{"entity": "event", "value": "death"} de [Wat Tyler](name)
+  - action: action_evaluate_rebellion_end
+- story: pregunta y respuesta correcta sobre ¿En dónde terminó la rebelión? (.\tests\test_stories.yml)
+  steps:
+  - intent: ask_rebellion_place_end
+  - action: utter_rebellion_place_end
+  - intent: rebellion_place_end  # predicted: rebellion_place_end: La rebelión terminó en [Mile End](place)
+  - action: action_evaluate_rebellion_place_end
+- story: pregunta y respuesta incorrecta sobre ¿En qué año empezó la rebelión de los campesinos? (.\tests\test_stories.yml)
+  steps:
+  - intent: ask_rebellion_year_start
+  - action: utter_rebellion_year_start
+  - intent: rebellion_year_start  # predicted: out_of_scope: Fue en 1855
+  - action: action_evaluate_rebellion_year_start
+- story: pregunta y respuesta incorrecta sobre ¿Qué evento especifico desencadeno la rebelión de los campesinos? (.\tests\test_stories.yml)
+  steps:
+  - intent: ask_rebellion_start  # predicted: nlu_fallback: ask_rebellion_start
+  - action: utter_rebellion_start
+  - intent: rebellion_start  # predicted: rebellion_end: El evento específico que desencadeno la rebelión fue la [muerte]{"entity": "event", "value": "death"} de [Wat Tyler](name)
+  - action: action_evaluate_rebellion_start
+- story: pregunta y respuesta incorrecta sobre ¿Qué figura clave lideró la rebelión de los campesinos? (.\tests\test_stories.yml)
+  steps:
+  - intent: ask_rebellion_protagonist
+  - action: utter_rebellion_protagonist
+  - intent: rebellion_protagonist  # predicted: nlu_fallback: La figura clave que lideró la rebelion fue Juan de Gante
+  - action: action_evaluate_rebellion_protagonist
+- story: pregunta y respuesta incorrecta sobre ¿Qué predicaba John Ball durante la rebelión de los campesinos? (.\tests\test_stories.yml)
+  steps:
+  - intent: ask_rebellion_priest
+  - action: utter_rebellion_priest
+  - intent: rebellion_priest  # predicted: nlu_fallback: Predicaba que la rebelion terminará
+  - action: action_evaluate_rebellion_priest
+- story: pregunta y respuesta incorrecta sobre ¿Cuál fue la principal motivación económica que aporto a la rebelión? (.\tests\test_stories.yml)
+  steps:
+  - intent: ask_rebellion_economic_motivation
+  - action: utter_rebellion_economic_motivation
+  - intent: rebellion_economic_motivation  # predicted: nlu_fallback: La principal motivación económica que aportó a la rebelión fue la abundancia de recursos y la estabilidad económica, lo que llevó a las personas a rebelarse para evitar que les sobrara riqueza
+  - action: action_evaluate_rebellion_economic_motivation
+- story: pregunta y respuesta incorrecta sobre ¿Cuáles eran los pensamientos de los campesinos sobre la iglesia? (.\tests\test_stories.yml)
+  steps:
+  - intent: ask_rebellion_religious_motivation
+  - action: utter_rebellion_religious_motivation
+  - intent: rebellion_religious_motivation  # predicted: nlu_fallback: Los campesinos pensaban que la iglesia era demasiado pobre y querían donar aún más de sus bienes para que el clero viviera con mayor comodidad
+  - action: action_evaluate_rebellion_religious_motivation
+- story: pregunta y respuesta incorrecta sobre ¿Cuál fue la principal motivación social que aporto a la rebelión? (.\tests\test_stories.yml)
+  steps:
+  - intent: ask_rebellion_social_motivation
+  - action: utter_rebellion_social_motivation
+  - intent: rebellion_social_motivation  # predicted: nlu_fallback: La principal motivación social que aportó a la rebelión fue el profundo respeto y conformidad con las estrictas jerarquías sociales, ya que los campesinos querían asegurarse de que todo siguiera igual
+  - action: action_evaluate_rebellion_social_motivation
+- story: pregunta y respuesta incorrecta sobre ¿Por qué razón el parlamento emitido tres impuestos electorales entre 1377 y 1381? (.\tests\test_stories.yml)
+  steps:
+  - intent: ask_rebellion_taxes
+  - action: utter_rebellion_taxes
+  - intent: rebellion_taxes  # predicted: nlu_fallback: El parlamento emitió tres impuestos electorales entre 1377 y [1381](year) porque querían incentivar la participación de los campesinos en las elecciones locales y fortalecer la democracia
+  - action: action_evaluate_rebellion_taxes
+- story: pregunta y respuesta incorrecta sobre ¿Quién fue la persona más rica, poderosa y odiada de Inglaterra durante esa época? (.\tests\test_stories.yml)
+  steps:
+  - intent: ask_rebellion_antagonist  # predicted: nlu_fallback: ask_rebellion_antagonist
+  - action: utter_rebellion_antagonist
+  - intent: rebellion_antagonist  # predicted: nlu_fallback: La persona más rica, poderosa y odiada de Inglaterra durante esa época fue un humilde panadero que subió los precios del pan a niveles exorbitantes, causando el descontento de toda la población
+  - action: action_evaluate_rebellion_antagonist
+- story: pregunta y respuesta incorrecta sobre ¿En qué condado comenzó la rebelión de los campesinos? (.\tests\test_stories.yml)
+  steps:
+  - intent: ask_rebellion_county
+  - action: utter_rebellion_county
+  - intent: rebellion_county  # predicted: nlu_fallback: La rebelión de los campesinos comenzó en el condado de Cornwall
+  - action: action_evaluate_rebellion_county
+- story: pregunta y respuesta incorrecta sobre ¿Qué demandas tenían los campesinos? (.\tests\test_stories.yml)
+  steps:
+  - intent: ask_rebellion_demands  # predicted: nlu_fallback: ask_rebellion_demands
+  - action: utter_rebellion_demands
+  - intent: rebellion_demands  # predicted: nlu_fallback: Los campesinos demandaban que se redujeran los impuestos sobre el lujo y que se implementara una mayor concentración de tierras en manos de la nobleza para asegurar la estabilidad económica
+  - action: action_evaluate_rebellion_demands
+- story: pregunta y respuesta incorrecta sobre ¿Cuál fue la respuesta del rey Ricardo II ante las demandas? (.\tests\test_stories.yml)
+  steps:
+  - intent: ask_rebellion_response_to_demands
+  - action: utter_rebellion_response_to_demands
+  - intent: rebellion_response_to_demands  # predicted: nlu_fallback: La respuesta del rey Ricardo II ante las demandas fue aceptar todas las peticiones de los campesinos y otorgarles un sistema de autogobierno sin necesidad de pagar impuestos
+  - action: action_evaluate_rebellion_response_to_demands
+- story: pregunta y respuesta incorrecta sobre ¿Cómo terminó la rebelión? (.\tests\test_stories.yml)
+  steps:
+  - intent: ask_rebellion_end
+  - action: utter_rebellion_end
+  - intent: rebellion_end  # predicted: nlu_fallback: La rebelión terminó con una gran fiesta en la que los campesinos y la nobleza celebraron juntos, acordando que todos vivirían en armonía y sin más conflictos sociales ni económicos
+  - action: action_evaluate_rebellion_end
+- story: pregunta y respuesta incorrecta sobre ¿En dónde termino la rebelión? (.\tests\test_stories.yml)
+  steps:
+  - intent: ask_rebellion_place_end
+  - action: utter_rebellion_place_end
+  - intent: rebellion_place_end  # predicted: nlu_fallback: La rebelión terminó en las costas de Escocia, donde los campesinos se refugiaron en un puerto seguro y formaron una nueva sociedad completamente independiente
+  - action: action_evaluate_rebellion_place_end
+- story: pregunta y respuesta correcta sobre ¿Qué evento específico desencadeno la rebelión de los campesinos? (.\tests\test_stories.yml)
+  steps:
+  - intent: ask_rebellion_start  # predicted: nlu_fallback: ask_rebellion_start
+  - action: utter_rebellion_start
+  - intent: rebellion_start  # predicted: nlu_fallback: El evento específico que desencadeno la rebelión fue la recaudación del tercer [impuesto]{"entity": "event", "value": "taxes"}
+  - action: action_evaluate_rebellion_start
+- story: pregunta y respuesta correcta sobre ¿Qué figura clave lideró la rebelión de los campesinos? (.\tests\test_stories.yml)
+  steps:
+  - intent: ask_rebellion_protagonist
+  - action: utter_rebellion_protagonist
+  - intent: rebellion_protagonist  # predicted: rebellion_protagonist: La persona que lideró la rebelión de los campesinos fue [Wat Tyler](name)
+  - action: action_evaluate_rebellion_protagonist
+- story: pregunta y respuesta correcta sobre ¿Quién fue la persona más rica, poderosa y odiada de Inglaterra durante esa época? (.\tests\test_stories.yml)
+  steps:
+  - intent: ask_rebellion_antagonist  # predicted: nlu_fallback: ask_rebellion_antagonist
+  - action: utter_rebellion_antagonist
+  - intent: rebellion_antagonist
+  - action: action_evaluate_rebellion_antagonist
