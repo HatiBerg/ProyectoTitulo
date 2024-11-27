@@ -1,13 +1,13 @@
 Nombre del videojuego: Forjando una rebelión / Forging a rebellion
 
-Tema principal: Edad media
+Tema principal: Edad media inglesa
 
 Protagonista: Wat, herrero y ex-soldado, de físico imponente y mirada penetrante. Posee gran destreza en el manejo de la espada y habilidades de liderazgo.
 
-Antagonista: El Duque, Un tirano que junto a otros señores se confabularon para manipular al rey.
+Antagonista: El Duque, Un tirano que junto a otros señores se confabularon para manipular a un joven rey.
 
 Trama: 
-Wat, un joven herrero, un día es interrumpido por la llegada de un soldado del duque, quien exige el pago de unos impuestos exorbitantes. Wat, al igual que los demás comerciantes, se siente indignado por la injusticia de la 
+Wat, el herrero del pueblo, un día es interrumpido por la llegada de un soldado del duque, quien exige el pago de unos impuestos exorbitantes. Wat, al igual que los demás habitantes del pueblo, se siente indignado por la injusticia de la 
 situación, ya que estos impuestos abusivos amenazan con arruinar su negocio y sumirlos en la pobreza.
 
 Movido por la ira y la determinación, Wat decide tomar cartas en el asunto. Comienza a hablar con los demás comerciantes y los habitantes del pueblo, compartiendo su indignación y motivándolos a unirse a 
@@ -24,8 +24,6 @@ fervor. Bajo su guía, organizan un plan para enfrentar al duque y sus secuaces.
 de los rebeldes es inquebrantable. Poco a poco, logran victorias que debilitan al ejército del duque y levantan la moral del pueblo.
 4.- El asedio al castillo: Los rebeldes, envalentonados por sus victorias, deciden tomar el castillo del duque, donde se refugia la tiranía. El asedio es largo y arduo, pero la determinación de Wat y su pueblo no
 flaquea. Finalmente, logran entrar al castillo y capturar al duque y sus cómplices.
-
-Sinopsis: ?
 
 Inspiraciones/Referencias:
 
@@ -51,7 +49,7 @@ Un reino en decadencia: Las acciones del Lord y sus aliados han sumido al reino 
 
 Un símbolo de esperanza: En este contexto de oscuridad, surge la figura de Wat, un ex-caballero que se rebela contra la tiranía del Lord. Wat representa la esperanza de un futuro mejor para el reino, un futuro donde la justicia y el bienestar del pueblo sean la prioridad.
 
-Mecánicas de juego:
+Posibles mecánicas de juego:
 -Reclutar rebeldes.
 -Proporcionar cosas a los rebeldes (Objetos, Comida, Armas, etc.).
 -Nivel de atención o sospecha de los nobles.
