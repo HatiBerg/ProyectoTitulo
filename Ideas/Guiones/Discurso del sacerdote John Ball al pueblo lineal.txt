@@ -1,8 +1,8 @@
 Personajes:
 
-Tejedor Wat Tyler: Líder de la rebelión campesina.
+Wat Tyler: Líder de la rebelión campesina, herrero del pueblo y ex-soldado.
 Soldado del Duque: Representante de la autoridad del Duque.
-Sacerdote John Ball: Defensor de los derechos de los campesinos.
+John Ball: Sacerdote y defensor de los derechos de los campesinos.
 
 Escenario:
 
@@ -13,19 +13,27 @@ Escena:
 (Wat llega al mercado, donde una multitud escucha las palabras del sacerdote. John Ball habla desde una tarima improvisada, gesticulando con pasión.)
 
 John Ball: (Dirigiéndose a la multitud)
-¡Amigos, hermanos! ¿Por qué el rico come y engorda mientras nosotros pasamos hambre? ¿Acaso no somos iguales ante los ojos de Dios? ¡Es hora de alzar nuestras voces!
+¡Amigos, hermanos! ¿Por qué el rico vive en el lujo mientras nosotros luchamos por sobrevivir? ¿Acaso no trabajamos todos con el sudor de nuestra frente? ¡Es hora de reclamar lo que nos pertenece!
 
-Wat: (Se abre paso entre la multitud)
-¡Tienes razón, John! Pero, ¿qué podemos hacer? ¿Qué armas tenemos contra los soldados del Duque?
-
-John Ball: (Con una sonrisa triste)
-Las armas que tenemos son nuestras convicciones, Wat. Y un pueblo unido es más fuerte que cualquier espada.
+(Wat, movido por las palabras del sacerdote, se abre paso entre la multitud.)
 
 Wat:
-Hablas con valor, pero el miedo sigue presente. ¿Crees que los demás estarán dispuestos a luchar?
+¡Tienes razón, John! Pero no es tan fácil. Los soldados del Duque aplastan a cualquiera que se atreva a alzarse. ¿Qué podemos hacer contra ellos?
+
+John Ball: (Mirándolo con atención)
+Wat, te vi en tu taller esta mañana, enfrentando al soldado del Duque. Tus palabras resonaron con valentía y rabia. Ese es el espíritu que necesitamos.
+
+Wat: (Confundido)
+¿Yo? Solo estaba defendiendo mi hogar... No soy más que un herrero.
+
+John Ball: (Con firmeza)
+Eres más que eso. Tus manos forjan herramientas y armas; tu corazón puede forjar esperanza. Este pueblo necesita a alguien con tu coraje para guiarlos.
+
+Wat:
+¿Y si fallo? ¿Y si solo traigo más sufrimiento a nuestra gente?
 
 John Ball: (Colocando una mano en el hombro de Wat)
-Alguien debe encender la llama. Un líder que inspire a los demás a actuar. Tal vez... ese alguien seas tú.
+Ya estás luchando, Wat, aunque no lo veas. Si no tú, ¿quién? El pueblo necesita un líder, alguien que no tema hablar por ellos. Yo creo que ese eres tú.
 
 (Antes de que Wat pueda responder, los soldados del Duque irrumpen, empujando a la multitud y arrestando al sacerdote.)
 
@@ -33,9 +41,9 @@ Soldado: (Gritando)
 ¡Este hombre incita a la rebelión! ¡Llévenlo al calabozo!
 
 Wat: (Tratando de intervenir)
-¡John no ha hecho nada más que hablar la verdad!
+¡John no ha hecho más que decir la verdad!
 
-John Ball: (Mientras es llevado por los soldados)
-¡Wat, no temas! ¡La verdad no puede ser encadenada!
+John Ball: (Mientras lo arrastran los soldados)
+¡Wat, recuerda mis palabras! ¡La justicia necesita de valientes para florecer!
 
-(La multitud se dispersa. Wat, con el corazón pesado, mira a su alrededor, viendo miedo en los rostros de su pueblo. Es el momento en que decide actuar.)
+(La multitud se disuelve en silencio y miedo. Wat queda mirando a su alrededor, con una nueva determinación comenzando a arder en su interior.)
