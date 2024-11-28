@@ -48,8 +48,3 @@ Tiranía y opresión: El Lord gobierna con tiranía, oprimiendo al pueblo y abus
 Un reino en decadencia: Las acciones del Lord y sus aliados han sumido al reino en una profunda decadencia. La economía está en ruinas, el pueblo está empobrecido y la justicia brilla por su ausencia.
 
 Un símbolo de esperanza: En este contexto de oscuridad, surge la figura de Wat, un ex-caballero que se rebela contra la tiranía del Lord. Wat representa la esperanza de un futuro mejor para el reino, un futuro donde la justicia y el bienestar del pueblo sean la prioridad.
-
-Posibles mecánicas de juego:
--Reclutar rebeldes.
--Proporcionar cosas a los rebeldes (Objetos, Comida, Armas, etc.).
--Nivel de atención o sospecha de los nobles.
