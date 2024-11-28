@@ -1,13 +1,13 @@
 Personajes:
 
-Tejedor Wat Tyler: Líder de la rebelión campesina.
+Wat Tyler: Líder de la rebelión campesina, herrero del pueblo y ex-soldado.
 Soldado del Duque: Representante de la autoridad del Duque.
 Sacerdote John Ball: Defensor de los derechos de los campesinos.
 Campesinos: Población oprimida por los impuestos excesivos.
 
 Escenario:
 
-Una aldea medieval (Kent/Essex, Inglaterra, 1381).
+Una aldea medieval (Inglaterra).
 
 Escena 1:
 
