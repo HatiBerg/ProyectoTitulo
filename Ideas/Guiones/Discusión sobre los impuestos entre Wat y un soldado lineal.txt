@@ -1,0 +1,32 @@
+Personajes:
+
+Wat Tyler: Líder de la rebelión campesina, herrero del pueblo y ex-soldado.
+Soldado del Duque: Representante de la autoridad del Duque.
+
+Escenario:
+
+Una aldea medieval (Inglaterra).
+
+Escena:
+
+(El soldado llega al taller de Wat mientras este trabaja. Su expresión es severa, y en sus manos lleva un pergamino con las nuevas órdenes de impuestos.)
+
+Soldado:
+Herrero, vengo en nombre del Duque. Es tiempo de cumplir con tu deber. El nuevo impuesto es de 200 peniques de plata.
+
+Wat:
+¿200 peniques? ¡Eso es el doble de lo que pediste la última vez! Apenas nos alcanza para sobrevivir.
+
+Soldado:
+No es mi problema si no puedes pagar. Todos deben aportar para la guerra.
+
+Wat:
+¡Una guerra que no es nuestra! ¿De qué nos sirve un Duque que nos lleva a la ruina?
+
+Soldado: (Se acerca amenazante)
+Cuidado con tus palabras, herrero. ¿Quieres que la guardia te haga una visita más tarde?
+
+Wat: (Con firmeza, dejando el martillo sobre la mesa)
+Que vengan si quieren. Pero dile al Duque que no nos rendiremos tan fácil.
+
+(El soldado lo mira con desdén y se retira, dejando el aire cargado de tensión.)
