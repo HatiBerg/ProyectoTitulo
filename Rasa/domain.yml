@@ -72,6 +72,9 @@ responses:
   utter_iamabot:
   - text: "Soy un bot construido con Rasa"
 
+  utter_correct:
+  - text: "¡Correcto!"
+
   utter_incorrect:
   - text: "Incorrecto"
 
@@ -120,33 +123,71 @@ responses:
   # utter_actual_score:
   # - text: "Tu puntaje actual es de {score}"
 
-# slots:
-#   score:
-#     type: float
-#     initial_value: 0
-#     mappings:
-#       - type: from_entity
-#         entity: score
-#       - type: from_intent
-#         intent: rebellion_year_start
-#         value: 1  # Incrementar puntaje al responder correctamente
+slots:
+  year:
+    type: text
+    mappings:
+    - type: from_entity
+      entity: year
+  
+  name:
+    type: text
+    mappings:
+    - type: from_entity
+      entity: name
 
-actions:
-  - action_ask_rebellion_year_start
-  - action_evaluate_rebellion_year_start
-  - action_evaluate_rebellion_start
-  - action_evaluate_rebellion_protagonist
-  - action_evaluate_rebellion_priest
-  - action_evaluate_rebellion_economic_motivation
-  - action_evaluate_rebellion_religious_motivation
-  - action_evaluate_rebellion_social_motivation
-  - action_evaluate_rebellion_taxes
-  - action_evaluate_rebellion_antagonist
-  - action_evaluate_rebellion_county
-  - action_evaluate_rebellion_demands
-  - action_evaluate_rebellion_response_to_demands
-  - action_evaluate_rebellion_end
-  - action_evaluate_rebellion_place_end
+  demand:
+    type: text
+    mappings:
+    - type: from_entity
+      entity: demand
+
+  motivation:
+    type: text
+    mappings:
+    - type: from_entity
+      entity: motivation
+
+  county:
+    type: text
+    mappings:
+    - type: from_entity
+      entity: county
+
+  place:
+    type: text
+    mappings:
+    - type: from_entity
+      entity: place
+
+  reason:
+    type: text
+    mappings:
+    - type: from_entity
+      entity: reason
+
+  event:
+    type: text
+    mappings:
+    - type: from_entity
+      entity: event
+
+# actions:
+#   - action_ask_rebellion_year_start
+#   - action_evaluate_rebellion_year_start
+#   - action_evaluate_rebellion_start
+#   - action_evaluate_rebellion_protagonist
+#   - action_evaluate_rebellion_priest
+#   - action_evaluate_rebellion_economic_motivation
+#   - action_evaluate_rebellion_religious_motivation
+#   - action_evaluate_rebellion_social_motivation
+#   - action_evaluate_rebellion_taxes
+#   - action_evaluate_rebellion_antagonist
+#   - action_evaluate_rebellion_county
+#   - action_evaluate_rebellion_demands
+#   - action_evaluate_rebellion_response_to_demands
+#   - action_evaluate_rebellion_end
+#   - action_evaluate_rebellion_place_end
 
 session_config:
   session_expiration_time: 60

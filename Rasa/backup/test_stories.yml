@@ -1,0 +1,321 @@
+#### This file contains tests to evaluate that your bot behaves as expected.
+#### If you want to learn more, please see the docs: https://rasa.com/docs/rasa/testing-your-assistant
+
+stories:
+# Respuestas correctas
+- story: pregunta y respuesta correcta sobre ¿En qué año empezó la rebelión de los campesinos?
+  steps:
+  - user: |
+      ask_rebellion_year_start
+    intent: ask_rebellion_year_start
+  - action: utter_rebellion_year_start
+  - user: |
+      la rebelión fue en 1381
+    intent: rebellion_year_start
+  - action: action_evaluate_rebellion_year_start
+
+- story: pregunta y respuesta correcta sobre ¿Qué evento específico desencadeno la rebelión de los campesinos?
+  steps:
+  - user: |
+      ask_rebellion_start
+    intent: ask_rebellion_start
+  - action: utter_rebellion_start
+  - user: |
+      El evento específico que desencadeno la rebelión fue la recaudación del tercer impuesto
+    intent: rebellion_start
+  - action: action_evaluate_rebellion_start
+
+- story: pregunta y respuesta correcta sobre ¿Qué figura clave lideró la rebelión de los campesinos?
+  steps:
+  - user: |
+      ask_rebellion_protagonist
+    intent: ask_rebellion_protagonist
+  - action: utter_rebellion_protagonist
+  - user: |
+      La persona que lideró la rebelión de los campesinos fue Wat Tyler
+    intent: rebellion_protagonist
+  - action: action_evaluate_rebellion_protagonist
+
+- story: pregunta y respuesta correcta sobre ¿Qué predicaba John Ball durante la rebelión de los campesinos?
+  steps:
+  - user: |
+      ask_rebellion_priest
+    intent: ask_rebellion_priest
+  - action: utter_rebellion_priest
+  - user: |
+      Jhon Ball predicaba la igualdad para todas las personas
+    intent: rebellion_priest
+  - action: action_evaluate_rebellion_priest
+
+- story: pregunta y respuesta correcta sobre ¿Cuál fue la principal motivación económica que aporto a la rebelión?
+  steps:
+  - user: |
+      ask_rebellion_economic_motivation
+    intent: ask_rebellion_economic_motivation
+  - action: utter_rebellion_economic_motivation
+  - user: |
+      La principal motivación económica fueron los altos impuestos
+    intent: rebellion_economic_motivation
+  - action: action_evaluate_rebellion_economic_motivation
+
+- story: pregunta y respuesta correcta sobre ¿Cuáles eran los pensamientos de los campesinos sobre la iglesia?
+  steps:
+  - user: |
+      ask_rebellion_religious_motivation
+    intent: ask_rebellion_religious_motivation
+  - action: utter_rebellion_religious_motivation
+  - user: |
+      Los campesinos pensaban que la iglesia estaba corrupta
+    intent: rebellion_religious_motivation
+  - action: action_evaluate_rebellion_religious_motivation
+
+- story: pregunta y respuesta correcta sobre ¿Cuál fue la principal motivación social que aporto a la rebelión?
+  steps:
+  - user: |
+      ask_rebellion_social_motivation
+    intent: ask_rebellion_social_motivation
+  - action: utter_rebellion_social_motivation
+  - user: |
+      La desigualdad entre los campesinos y los nobles
+    intent: rebellion_social_motivation
+  - action: action_evaluate_rebellion_social_motivation
+
+- story: pregunta y respuesta correcta sobre ¿Por qué razón el parlamento emitido tres impuestos electorales entre 1377 y 1381?
+  steps:
+  - user: |
+      ask_rebellion_taxes
+    intent: ask_rebellion_taxes
+  - action: utter_rebellion_taxes
+  - user: |
+      Porque el parlamento necesitaba dinero para financiar una guerra contra francia
+    intent: rebellion_taxes
+  - action: action_evaluate_rebellion_taxes
+
+- story: pregunta y respuesta correcta sobre ¿Quién fue la persona más rica, poderosa y odiada de Inglaterra durante esa época?
+  steps:
+  - user: |
+      ask_rebellion_antagonist
+    intent: ask_rebellion_antagonist
+  - action: utter_rebellion_antagonist
+  - user: |
+      Esa persona fue el Juan de Gante, el Duque de Lancaster
+    intent: rebellion_antagonist
+  - action: action_evaluate_rebellion_antagonist
+
+- story: pregunta y respuesta correcta sobre ¿En qué condado comenzó la rebelión de los campesinos?
+  steps:
+  - user: |
+      ask_rebellion_county
+    intent: ask_rebellion_county
+  - action: utter_rebellion_county
+  - user: |
+      La rebelion comenzo en el condado de Essex
+    intent: rebellion_county
+  - action: action_evaluate_rebellion_county
+
+- story: pregunta y respuesta correcta sobre ¿Qué demandas tenían los campesinos?
+  steps:
+  - user: |
+      ask_rebellion_demands
+    intent: ask_rebellion_demands
+  - action: utter_rebellion_demands
+  - user: |
+      Los campesinos exigían el fin de la servidumbre
+    intent: rebellion_demands
+  - action: action_evaluate_rebellion_demands
+
+- story: pregunta y respuesta correcta sobre ¿Cuál fue la respuesta del rey Ricardo II ante las demandas?
+  steps:
+  - user: |
+      ask_rebellion_response_to_demands
+    intent: ask_rebellion_response_to_demands
+  - action: utter_rebellion_response_to_demands
+  - user: |
+      Las acepto para después retractarse de ellas
+    intent: rebellion_response_to_demands
+  - action: action_evaluate_rebellion_response_to_demands
+
+- story: pregunta y respuesta correcta sobre ¿Cómo terminó la rebelión?
+  steps:
+  - user: |
+      ask_rebellion_end
+    intent: ask_rebellion_end
+  - action: utter_rebellion_end
+  - user: |
+      La rebelión terminó con la muerte de Wat Tyler
+    intent: rebellion_end
+  - action: action_evaluate_rebellion_end
+
+- story: pregunta y respuesta correcta sobre ¿En dónde terminó la rebelión?
+  steps:
+  - user: |
+      ask_rebellion_place_end
+    intent: ask_rebellion_place_end
+  - action: utter_rebellion_place_end
+  - user: |
+      La rebelión terminó en Mile End
+    intent: rebellion_place_end
+  - action: action_evaluate_rebellion_place_end
+
+# Respuestas incorrectas
+- story: pregunta y respuesta incorrecta sobre ¿En qué año empezó la rebelión de los campesinos?
+  steps:
+  - user: |
+      ask_rebellion_year_start
+    intent: ask_rebellion_year_start
+  - action: utter_rebellion_year_start
+  - user: |
+      Fue en 1855
+    intent: rebellion_year_start
+  - action: action_evaluate_rebellion_year_start
+
+- story: pregunta y respuesta incorrecta sobre ¿Qué evento especifico desencadeno la rebelión de los campesinos?
+  steps:
+  - user: |
+      ask_rebellion_start
+    intent: ask_rebellion_start
+  - action: utter_rebellion_start
+  - user: |
+      El evento específico que desencadeno la rebelión fue la muerte de Wat Tyler
+    intent: rebellion_start
+  - action: action_evaluate_rebellion_start
+
+- story: pregunta y respuesta incorrecta sobre ¿Qué figura clave lideró la rebelión de los campesinos?
+  steps:
+  - user: |
+      ask_rebellion_protagonist
+    intent: ask_rebellion_protagonist
+  - action: utter_rebellion_protagonist
+  - user: |
+      La figura clave que lideró la rebelion fue Juan de Gante
+    intent: rebellion_protagonist
+  - action: action_evaluate_rebellion_protagonist
+
+- story: pregunta y respuesta incorrecta sobre ¿Qué predicaba John Ball durante la rebelión de los campesinos?
+  steps:
+  - user: |
+      ask_rebellion_priest
+    intent: ask_rebellion_priest
+  - action: utter_rebellion_priest
+  - user: |
+      Predicaba que la rebelion terminará
+    intent: rebellion_priest
+  - action: action_evaluate_rebellion_priest
+
+- story: pregunta y respuesta incorrecta sobre ¿Cuál fue la principal motivación económica que aporto a la rebelión?
+  steps:
+  - user: |
+      ask_rebellion_economic_motivation
+    intent: ask_rebellion_economic_motivation
+  - action: utter_rebellion_economic_motivation
+  - user: |
+      La principal motivación económica que aportó a la rebelión fue la abundancia de recursos y la estabilidad económica, lo que llevó a las personas a rebelarse para evitar que les sobrara riqueza
+    intent: rebellion_economic_motivation
+  - action: action_evaluate_rebellion_economic_motivation
+
+- story: pregunta y respuesta incorrecta sobre ¿Cuáles eran los pensamientos de los campesinos sobre la iglesia?
+  steps:
+  - user: |
+      ask_rebellion_religious_motivation
+    intent: ask_rebellion_religious_motivation
+  - action: utter_rebellion_religious_motivation
+  - user: |
+      Los campesinos pensaban que la iglesia era demasiado pobre y querían donar aún más de sus bienes para que el clero viviera con mayor comodidad
+    intent: rebellion_religious_motivation
+  - action: action_evaluate_rebellion_religious_motivation
+
+- story: pregunta y respuesta incorrecta sobre ¿Cuál fue la principal motivación social que aporto a la rebelión?
+  steps:
+  - user: |
+      ask_rebellion_social_motivation
+    intent: ask_rebellion_social_motivation
+  - action: utter_rebellion_social_motivation
+  - user: |
+      La principal motivación social que aportó a la rebelión fue el profundo respeto y conformidad con las estrictas jerarquías sociales, ya que los campesinos querían asegurarse de que todo siguiera igual
+    intent: rebellion_social_motivation
+  - action: action_evaluate_rebellion_social_motivation
+
+- story: pregunta y respuesta incorrecta sobre ¿Por qué razón el parlamento emitido tres impuestos electorales entre 1377 y 1381?
+  steps:
+  - user: |
+      ask_rebellion_taxes
+    intent: ask_rebellion_taxes
+  - action: utter_rebellion_taxes
+  - user: |
+      El parlamento emitió tres impuestos electorales entre 1377 y 1381 porque querían incentivar la participación de los campesinos en las elecciones locales y fortalecer la democracia
+    intent: rebellion_taxes
+  - action: action_evaluate_rebellion_taxes
+
+- story: pregunta y respuesta incorrecta sobre ¿Quién fue la persona más rica, poderosa y odiada de Inglaterra durante esa época?
+  steps:
+  - user: |
+      ask_rebellion_antagonist
+    intent: ask_rebellion_antagonist
+  - action: utter_rebellion_antagonist
+  - user: |
+      La persona más rica, poderosa y odiada de Inglaterra durante esa época fue un humilde panadero que subió los precios del pan a niveles exorbitantes, causando el descontento de toda la población
+    intent: rebellion_antagonist
+  - action: action_evaluate_rebellion_antagonist
+
+- story: pregunta y respuesta incorrecta sobre ¿En qué condado comenzó la rebelión de los campesinos?
+  steps:
+  - user: |
+      ask_rebellion_county
+    intent: ask_rebellion_county
+  - action: utter_rebellion_county
+  - user: |
+      La rebelión de los campesinos comenzó en el condado de Cornwall
+    intent: rebellion_county
+  - action: action_evaluate_rebellion_county
+
+- story: pregunta y respuesta incorrecta sobre ¿Qué demandas tenían los campesinos?
+  steps:
+  - user: |
+      ask_rebellion_demands
+    intent: ask_rebellion_demands
+  - action: utter_rebellion_demands
+  - user: |
+      Los campesinos demandaban que se redujeran los impuestos sobre el lujo y que se implementara una mayor concentración de tierras en manos de la nobleza para asegurar la estabilidad económica
+    intent: rebellion_demands
+  - action: action_evaluate_rebellion_demands
+
+- story: pregunta y respuesta incorrecta sobre ¿Cuál fue la respuesta del rey Ricardo II ante las demandas?
+  steps:
+  - user: |
+      ask_rebellion_response_to_demands
+    intent: ask_rebellion_response_to_demands
+  - action: utter_rebellion_response_to_demands
+  - user: |
+      La respuesta del rey Ricardo II ante las demandas fue aceptar todas las peticiones de los campesinos y otorgarles un sistema de autogobierno sin necesidad de pagar impuestos
+    intent: rebellion_response_to_demands
+  - action: action_evaluate_rebellion_response_to_demands
+
+- story: pregunta y respuesta incorrecta sobre ¿Cómo terminó la rebelión?
+  steps:
+  - user: |
+      ask_rebellion_end
+    intent: ask_rebellion_end
+  - action: utter_rebellion_end
+  - user: |
+      La rebelión terminó con una gran fiesta en la que los campesinos y la nobleza celebraron juntos, acordando que todos vivirían en armonía y sin más conflictos sociales ni económicos
+    intent: rebellion_end
+  - action: action_evaluate_rebellion_end
+
+- story: pregunta y respuesta incorrecta sobre ¿En dónde termino la rebelión?
+  steps:
+  - user: |
+      ask_rebellion_place_end
+    intent: ask_rebellion_place_end
+  - action: utter_rebellion_place_end
+  - user: |
+      La rebelión terminó en las costas de Escocia, donde los campesinos se refugiaron en un puerto seguro y formaron una nueva sociedad completamente independiente
+    intent: rebellion_place_end
+  - action: action_evaluate_rebellion_place_end
+
+# Otros
+- story: decir adiós
+  steps:
+  - user: |
+      !adios¡
+    intent: goodbye
+  - action: utter_goodbye

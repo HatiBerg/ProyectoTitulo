@@ -7,10 +7,10 @@ rules:
   - intent: goodbye
   - action: utter_goodbye
 
-- rule: Decir "Incorrecto" cuando no se detecta la intención
-  steps:
-  - intent: nlu_fallback
-  - action: utter_incorrect
+# - rule: Decir "Incorrecto" cuando no se detecta la intención
+#   steps:
+#   - intent: nlu_fallback
+#   - action: utter_incorrect
 
 - rule: Decir "Incorrecto" cuando se detecte una intención fuera de rango
   steps:
