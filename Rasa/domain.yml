@@ -2,193 +2,50 @@ version: "3.1"
 
 intents:
   - greet
-  - goodbye
-  - affirm
+  - request_taxes
+  - pay
+  - pay_more
+  - pay_less
   - deny
-  - mood_great
-  - mood_unhappy
-  - bot_challenge
-  - ask_rebellion_year_start
-  - ask_rebellion_start
-  - ask_rebellion_protagonist
-  - ask_rebellion_priest
-  - ask_rebellion_economic_motivation
-  - ask_rebellion_religious_motivation
-  - ask_rebellion_social_motivation
-  - ask_rebellion_taxes
-  - ask_rebellion_antagonist
-  - ask_rebellion_county
-  - ask_rebellion_demands
-  - ask_rebellion_response_to_demands
-  - ask_rebellion_end
-  - ask_rebellion_place_end
-  - rebellion_year_start
-  - rebellion_start
-  - rebellion_protagonist
-  - rebellion_priest
-  - rebellion_economic_motivation
-  - rebellion_religious_motivation
-  - rebellion_social_motivation
-  - rebellion_taxes
-  - rebellion_antagonist
-  - rebellion_county
-  - rebellion_demands
-  - rebellion_response_to_demands
-  - rebellion_end
-  - rebellion_place_end
+  - challenge
+  # - challenge_with_entities
 
 entities:
-  - year
-  - name
-  - demand
-  - motivation
-  - county
-  - place
-  - reason
-  - event
+  - amount
+  # - excuse
+
+slots:
+  amount:
+    type: float
+    mappings:
+    - type: from_entity
+      entity: amount
+  # excuse:
+  #   type: text
+  #   mappings:
+  #   - type: from_entity
+  #     entity: excuse
 
 responses:
   utter_greet:
-  - text: "Hola, ¿cómo estás?"
-  - text: "Hola, ¿cómo te va?"
-  - text: "Hola, ¿qué tal tu dia?"
+    - text: "Saludos herrero, llegó la hora de pagar el impuesto de capitación."
 
-  utter_cheer_up:
-  - text: "Aquí hay algo para animarte:"
-    image: "https://i.imgur.com/nGF1K8f.jpg"
+  utter_inform_taxes:
+    - text: "Debes pagar 4 peniques."
 
-  utter_did_that_help:
-  - text: "¿Te ayudó eso?"
-  - text: "¿Te sirvio de ayuda?"
+  utter_refuse_payment:
+    - text: "¿Qué no quieres pagar? ¡Esto es inaceptable!, ¿cuál es tu excusa?"
 
-  utter_happy:
-  - text: "¡Genial!, ¿En qué puedo ayudarte?"
-  - text: "¡Me alegra escucharlo!, ¿En qué puedo ayudarte?"
+  utter_fight:
+    - text: "Te arrepentirás de tus acciones."
 
-  utter_goodbye:
-  - text: "Adiós"
-  - text: "Hasta luego"
+  utter_out_of_scope:
+    - text: "No te entiendo, vuelve a repetirlo."
 
-  utter_iamabot:
-  - text: "Soy un bot construido con Rasa"
-
-  utter_correct:
-  - text: "¡Correcto!"
-
-  utter_incorrect:
-  - text: "Incorrecto"
-
-  utter_rebellion_year_start:
-  - text: "¿En qué año empezó la rebelión de los campesinos?"
-
-  utter_rebellion_start:
-  - text: "¿Qué evento especifico desencadeno la rebelión de los campesinos?"
-
-  utter_rebellion_protagonist:
-  - text: "¿Qué figura clave lideró la rebelión de los campesinos?"
-
-  utter_rebellion_priest:
-  - text: "¿Qué predicaba John Ball durante la rebelión de los campesinos?"
-
-  utter_rebellion_economic_motivation:
-  - text: "¿Cuál fue la principal motivación económica que aporto a la rebelión?"
-
-  utter_rebellion_religious_motivation:
-  - text: "¿Cuáles eran los pensamientos de los campesinos sobre la iglesia?"
-
-  utter_rebellion_social_motivation:
-  - text: "¿Cuál fue la principal motivación social que aporto a la rebelión?"
-
-  utter_rebellion_taxes:
-  - text: "¿Por qué razón el parlamento emitido tres impuestos electorales entre 1377 y 1381?"
-
-  utter_rebellion_antagonist:
-  - text: "¿Quién fue la persona más rica, poderosa y odiada de Inglaterra durante esa época?"
-
-  utter_rebellion_county:
-  - text: "¿En qué condado comenzó la rebelión de los campesinos?"
-
-  utter_rebellion_demands:
-  - text: "¿Qué demandas tenían los campesinos?"
-
-  utter_rebellion_response_to_demands:
-  - text: "¿Cuál fue la respuesta del rey Ricardo II ante las demandas?"
-
-  utter_rebellion_end:
-  - text: "¿Cómo terminó la rebelión?"
-
-  utter_rebellion_place_end:
-  - text: "¿En dónde termino la rebelión?"
-
-  # utter_actual_score:
-  # - text: "Tu puntaje actual es de {score}"
-
-slots:
-  year:
-    type: text
-    mappings:
-    - type: from_entity
-      entity: year
-  
-  name:
-    type: text
-    mappings:
-    - type: from_entity
-      entity: name
-
-  demand:
-    type: text
-    mappings:
-    - type: from_entity
-      entity: demand
-
-  motivation:
-    type: text
-    mappings:
-    - type: from_entity
-      entity: motivation
-
-  county:
-    type: text
-    mappings:
-    - type: from_entity
-      entity: county
-
-  place:
-    type: text
-    mappings:
-    - type: from_entity
-      entity: place
-
-  reason:
-    type: text
-    mappings:
-    - type: from_entity
-      entity: reason
-
-  event:
-    type: text
-    mappings:
-    - type: from_entity
-      entity: event
-
-# actions:
-#   - action_ask_rebellion_year_start
-#   - action_evaluate_rebellion_year_start
-#   - action_evaluate_rebellion_start
-#   - action_evaluate_rebellion_protagonist
-#   - action_evaluate_rebellion_priest
-#   - action_evaluate_rebellion_economic_motivation
-#   - action_evaluate_rebellion_religious_motivation
-#   - action_evaluate_rebellion_social_motivation
-#   - action_evaluate_rebellion_taxes
-#   - action_evaluate_rebellion_antagonist
-#   - action_evaluate_rebellion_county
-#   - action_evaluate_rebellion_demands
-#   - action_evaluate_rebellion_response_to_demands
-#   - action_evaluate_rebellion_end
-#   - action_evaluate_rebellion_place_end
+actions:
+  - action_check_amount
+  - action_extract_data
 
 session_config:
   session_expiration_time: 60
-  carry_over_slots_to_new_session: true
+  carry_over_slots_to_new_session: false

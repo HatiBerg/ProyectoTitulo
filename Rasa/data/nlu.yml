@@ -1,447 +1,164 @@
 version: "3.1"
 
 nlu:
+
 - intent: greet
   examples: |
-    - hola
-    - hey
-    - buenas
-    - qué tal
-    - cómo estás
-    - buenos días
-    - buenas tardes
-    - buenas noches
-    - hola qué tal
-    - qué onda
-    - buenas, cómo estás
-    - hola, cómo te va
-    - holi
-    - saludos
-    - buenas, qué hay
-    - qué pasa
-    - buenas noches, cómo estás
-    - qué cuentas
-    - qué hubo
-    - cómo andas
-    - ey, cómo te va
-    - hola, buenas
-    - cómo te va
-    - todo bien
-    - holaaa
-    - buenas, todo bien
-    - buen día
-    - qué más
-    - qué tal va todo
-    - hola amigo/a
-    - qué gusto verte
-    - cómo va eso
-    - buenas, qué tal
-    - qué fue
-    - cómo va
-    - qué hay de nuevo
-    - qué onda, todo bien
-    - buenas noches, cómo te encuentras
-    - hola, cómo has estado
+    - Saludos.
+    - Hola.
+    - Buenas.
+    - Hola, ¿qué tal?
+    - Buenas tardes.
+    - Buen día.
+    - ¡Saludos!
+    - ¿Cómo estás?
+    - ¡Hola, buen día!
+    - Buenas noches.
+    - ¡Qué tal!
+    - ¡Hola, hola!
+    - ¡Buenos días!
+    - ¡Qué hay!
+    - ¿Cómo va todo?
+    - ¿Cómo estás hoy?
+    - ¡Hola, amigo!
 
-- intent: goodbye
+- intent: request_taxes
   examples: |
-    - adiós
-    - hasta luego
-    - hasta pronto
-    - hasta mañana
-    - chao
-    - chau
-    - nos vemos
-    - que te vaya bien
-    - que tengas un buen día
-    - hasta la próxima
-    - hasta la vista
-    - cuídate
-    - nos vemos pronto
-    - que descanses
-    - hasta luego, amigo
-    - que estés bien
-    - buen viaje
-    - hasta la próxima vez
-    - un abrazo
-    - me despido
-    - cuidate mucho
-    - te veo luego
-    - adiós por ahora
-    - suerte
-    - hasta la próxima
-    - que tengas un buen día
-    - nos vemos más tarde
-    - adiós, que te vaya bien
-    - hasta luego, cuídate
-    - un placer conocerte
-    - hasta pronto, cuídate
+    - ¿Cuánto debo pagar?
+    - ¿con cuánto debo contribuir?
+    - ¿Cuánto tengo que pagar?
+    - ¿Qué cantidad debo entregar?
+    - ¿Cuánto es mi deuda?
+    - ¿Qué monto debo pagar?
+    - ¿Cuánto me corresponde pagar?
+    - ¿Cuál es el impuesto que debo pagar?
+    - ¿Qué cantidad tengo que contribuir?
+    - ¿Cuál es mi contribución?
+    - ¿Cuánto debo de impuestos?
+    - ¿Cuánto es lo que tengo que pagar?
+    - ¿Qué tengo que aportar?
+    - ¿Cuánto tengo que dar?
+    - ¿Cuál es el monto que debo pagar?
+    - ¿Cuánto es lo que debo?
+    - ¿Cuánto debería pagar?
 
-- intent: affirm
+- intent: pay
   examples: |
-    - sí
-    - claro
-    - por supuesto
-    - exacto
-    - correcto
-    - así es
-    - de acuerdo
-    - cierto
-    - efectivamente
-    - sin duda
-    - definitivamente
-    - por supuesto
-    - absolutamente
-    - claro que sí
-    - totalmente
-    - tienes razón
-    - así es
-    - es verdad
-    - está bien
-    - bien dicho
-    - correcto
-    - sí, claro
-    - sin lugar a dudas
+    - De acuerdo, aquí tienes los [4](amount) peniques que debo pagar.
+    - Voy a pagar los [4](amount) peniques.
+    - Claro, aquí tienes los [4](amount) peniques justos.
+    - Esto es lo que acordamos, [4](amount) peniques.
+    - Te dejo [4](amount) peniques, ni más ni menos.
+    - Aquí tienes todo lo que se debe, [4](amount) peniques exactos.
+    - Estoy dispuesto a pagar los [4](amount) peniques correspondientes.
+    - Como dijimos, aquí tienes los [4](amount) peniques justos.
+    - Esto es lo que se debe, [4](amount) peniques.
+    - Lo prometido es deuda, aquí tienes los [4](amount) peniques exactos.
+    - De acuerdo, aquí tienes todo lo que corresponde.
+    - Voy a pagar exactamente lo que debo.
+    - Claro, aquí tienes lo que corresponde por completo.
+    - Esto es lo que acordamos, está completo.
+    - Te dejo la cantidad exacta que corresponde por los impuestos.
+    - Aquí tienes todo lo que se debe, ni más ni menos.
+    - Estoy dispuesto a cubrir exactamente lo que debo.
+    - Como dijimos, aquí tienes lo justo.
+    - Esto es lo que se acordó, está completo.
+    - Lo prometido es deuda, aquí tienes lo exacto.
+    - Toma, aqui tienes.
+    - Toma.
+
+- intent: pay_more
+  examples: |
+    - Aquí tienes [5](amount) peniques, es más de lo que debía.
+    - Voy a pagarte [6](amount) peniques, un poco más de lo acordado.
+    - Esto es lo que se debe, y te doy [5](amount) peniques en total.
+    - Te dejo [7](amount) peniques para cubrir más de lo debido.
+    - Estoy dispuesto a pagar [6](amount) peniques esta vez.
+    - Aquí tienes lo que pediste, más un extra, [5](amount) peniques.
+    - Voy a darte [6](amount) peniques, espero que sea suficiente.
+    - Esto es más de lo que acordamos, aquí tienes [7](amount) peniques.
+    - Quiero pagar más, aquí tienes [6](amount) peniques.
+    - Lo prometido y algo más, aquí tienes [5](amount) peniques.
+
+- intent: pay_less
+  examples: |
+    - Solo puedo darte [3](amount) peniques, no tengo más.
+    - Esto es todo lo que puedo pagar por ahora, [2](amount) peniques.
+    - Lo siento, solo puedo aportar [3](amount) peniques.
+    - Te voy a dar [2](amount) peniques, no puedo pagar todo.
+    - Aquí tienes [1](amount) penique, es lo único que tengo ahora.
+    - Esto es lo que logré juntar, [3](amount) peniques.
+    - No puedo cubrir todo, pero aquí tienes [2](amount) peniques.
+    - Voy a pagarte solo [3](amount) peniques por ahora.
+    - Esto es lo que puedo aportar, [1](amount) penique.
+    - Lo siento, no puedo pagar todo, aquí tienes [3](amount) peniques.
 
 - intent: deny
   examples: |
-    - no
-    - nunca
-    - no creo
-    - no me gusta
-    - de ninguna manera
-    - no realmente
-    - para nada
-    - en absoluto
-    - nada de eso
-    - no es cierto
-    - no es así
-    - definitivamente no
-    - no lo creo
-    - no estoy de acuerdo
-    - no es correcto
-    - no tengo interés
-    - no es posible
-    - no lo acepto
-    - no es verdad
-    - ni hablar
-    - no es adecuado
+    - No voy a pagar.
+    - No quiero pagar.
+    - No pienso pagar.
+    - No voy a pagar nada.
+    - No tengo intención de pagar.
+    - No pienso contribuir.
+    - No quiero dar ni un penique.
+    - No me parece justo pagar.
+    - No voy a pagar ese impuesto.
+    - No tengo dinero para eso.
+    - No quiero aportar nada.
+    - No pienso dar nada.
+    - No pago impuestos.
+    - No quiero contribuir con eso.
+    - No tengo obligación de pagar.
+    - No pienso pagar ni un penique.
+    - No voy a ceder.
+    - No pago nada de eso.
 
-- intent: mood_great
-  examples: |
-    - perfecto
-    - genial
-    - increíble
-    - me siento como un rey
-    - maravilloso
-    - me siento muy bien
-    - estoy genial
-    - soy increíble
-    - estoy en camino a salvar el mundo
-    - súper emocionado
-    - extremadamente bien
-    - tan tan perfecto
-    - tan bien
-    - tan perfecto
-    - estupendo
-    - fabuloso
-    - espectacular
-    - me siento de maravilla
-    - estoy en la cima del mundo
-    - radiante
-    - fenomenal
-    - increíblemente feliz
-    - en mi mejor momento
-    - de lo más feliz
-    - sobre la luna
-    - muy contento
-    - feliz como nunca
-    - al máximo
-    - bien
+# - intent: challenge_with_entities
+#   examples: |
+#     - [Eso es lo que puedo pagar.](excuse)
+#     - [No puedes obligarme.](excuse)
+#     - [No tengo más.](excuse)
+#     - [Gano muy poco.](excuse)
+#     - [No me alcanza.](excuse)
+#     - [No me alcanza el dinero.](excuse)
+#     - [Eso es todo lo que tengo.](excuse)
+#     - [Es lo máximo que puedo darte.](excuse)
+#     - [Con esto no me alcanza ni para vivir.](excuse)
+#     - No puedo pagar más, ya [es todo lo que tengo.](excuse)
+#     - [No tengo suficiente para pagar eso.](excuse)
+#     - No es justo, [no tengo ese dinero.](excuse)
+#     - [Mis ingresos no cubren esa cantidad.](excuse)
+#     - [Ya pagué lo que pude.](excuse)
+#     - [No me alcanza ni para lo básico.](excuse)
+#     - [No tengo ni para mí](excuse), ¿cómo voy a pagar más?
+#     - [Este es todo el dinero que puedo dar.](excuse)
+#     - [No me llega para eso.](excuse)
+#     - Con lo que tengo, [no puedo cumplir con eso.](excuse)
+#     - [No pienso seguir apoyando este impuesto](excuse)
 
-- intent: mood_unhappy
+- intent: challenge
   examples: |
-    - mi día fue horrible
-    - estoy triste
-    - no me siento muy bien
-    - estoy decepcionado
-    - súper triste
-    - estoy tan triste
-    - triste
-    - muy triste
-    - infeliz
-    - no estoy bien
-    - no estoy muy bien
-    - extremadamente triste
-    - tan triste
-    - tan tan triste
-    - desolado
-    - abatido
-    - desalentado
-    - melancólico
-    - cabizbajo
-    - desanimado
-    - en un bajón
-    - no tengo ánimo
-    - desolado
-    - angustiado
-    - en el suelo
-    - de mal humor
-
-- intent: ask_rebellion_year_start
-  examples: |
-    - ask_rebellion_year_start
-    - ask_rebellion_year_start1
-
-- intent: ask_rebellion_start
-  examples: |
-    -ask_rebellion_start
-    -ask_rebellion_start1
-
-- intent: ask_rebellion_protagonist
-  examples: |
-    - ask_rebellion_protagonist
-    - ask_rebellion_protagonist1
-
-- intent: ask_rebellion_priest
-  examples: |
-    - ask_rebellion_priest
-    - ask_rebellion_priest1
-
-- intent: ask_rebellion_economic_motivation
-  examples: |
-    - ask_rebellion_economic_motivation
-    - ask_rebellion_economic_motivation1
-
-- intent: ask_rebellion_religious_motivation
-  examples: |
-    - ask_rebellion_religious_motivation
-    - ask_rebellion_religious_motivation1
-
-- intent: ask_rebellion_social_motivation
-  examples: |
-    - ask_rebellion_social_motivation
-    - ask_rebellion_social_motivation1
-
-- intent: ask_rebellion_taxes
-  examples: |
-    - ask_rebellion_taxes
-    - ask_rebellion_taxes1
-
-- intent: ask_rebellion_antagonist
-  examples: |
-    - ask_rebellion_antagonist
-    - ask_rebellion_antagonist1
-
-- intent: ask_rebellion_county
-  examples: |
-    - ask_rebellion_county
-    - ask_rebellion_county1
-
-- intent: ask_rebellion_demands
-  examples: |
-    - ask_rebellion_demands
-    - ask_rebellion_demands1
-
-- intent: ask_rebellion_response_to_demands
-  examples: |
-    - ask_rebellion_response_to_demands
-    - ask_rebellion_response_to_demands1
-
-- intent: ask_rebellion_end
-  examples: |
-    - ask_rebellion_end
-    - ask_rebellion_end1
-
-- intent: ask_rebellion_place_end
-  examples: |
-    - ask_rebellion_place_end
-    - ask_rebellion_place_end1
-
-- intent: rebellion_year_start
-  examples: |
-    - La rebelión de los campesinos comenzó en [1380](year).
-    - La rebelión de los campesinos inició en el año [1380](year).
-    - La rebelión comenzó en [1380](year).
-    - En [1380](year) comenzó la rebelión de los campesinos.
-    - La rebelión de los campesinos tuvo su inicio en [1380](year).
-    - El año [1380](year) marca el comienzo de la rebelión de los campesinos.
-    - La rebelión se inició en [1380](year).
-    - La rebelión de los campesinos empezó en el año [1380](year).
-    - En el año [1380](year).
-    - En [1380](year).
-    - [1380](year).
-    - Comenzó en [1380](year).
-
-- intent: rebellion_start
-  examples: |
-    - En el [tercer impuesto electoral](event) emitido en [1380](year).
-    - La imposición del [tercer impuesto electoral](event) en [1380](year).
-    - La decisión del rey de cobrar un nuevo [impuesto electoral](event) en [1380](year).
-    - El [tercer impuesto electoral](event), que fue emitido en [1380](year).
-    - La rebelión fue provocada por el [tercer impuesto electoral](event) de [1380](year).
-    - La insatisfacción con el [tercer impuesto electoral](event) de [1380](year).
-    - El descontento por el [tercer impuesto electoral](event) en [1380](year).
-    - La carga fiscal del [tercer impuesto electoral](event) en [1380](year).
-- synonym: taxes
-  examples: |
-    - tercer impuesto electoral
-    - impuesto electoral
-    - tercer impuesto
-    - impuesto
-
-- intent: rebellion_protagonist
-  examples: |
-    - La figura clave que lideró la rebelión de los campesinos fue [Wat Tyler](name).
-    - [Wat Tyler](name) fue la figura clave que lideró la rebelión de los campesinos.
-    - La rebelión fue liderada por [Wat Tyler](name).
-    - [Wat Tyler](name) es reconocido como el líder de la rebelión de los campesinos.
-    - La figura central de la rebelión fue [Wat Tyler](name).
-    - [Wat Tyler](name) desempeñó un papel crucial en la dirección de la rebelión de los campesinos.
-    - La rebelión de los campesinos tuvo a [Wat Tyler](name) como su líder principal.
-    - [Wat Tyler](name) fue el líder que organizó la rebelión de los campesinos.
-    - La figura clave detrás de la rebelión de los campesinos fue [Wat Tyler](name).
-
-- intent: rebellion_priest
-  examples: |
-    - John Ball predicaba que todas las personas debían ser iguales.
-    - La enseñanza de John Ball era que la igualdad entre todos los seres humanos era esencial.
-    - John Ball abogaba por la igualdad entre las personas.
-    - Durante la rebelión, John Ball proclamaba que todos debían ser tratados por igual.
-    - La predicación de John Ball se centraba en la idea de la igualdad para todos.
-    - John Ball sostenía que la igualdad era un derecho de todos los individuos.
-    - La principal idea de John Ball era que no debía haber distinción entre las personas.
-    - John Ball defendía la igualdad social y la justicia para todos.
-- synonym: priest
-  examples: |
-    - iguales
-    - igualdad
-    - igual
-
-- intent: rebellion_economic_motivation
-  examples: |
-    - La principal motivación económica fueron los altos impuestos y los bajos salarios.
-    - Los campesinos se rebelaron debido a la carga de altos impuestos y salarios insuficientes.
-    - Los altos impuestos y los bajos salarios fueron factores económicos clave en la rebelión.
-    - La rebelión tuvo como motivación económica los impuestos elevados y la falta de salario justo.
-    - La insatisfacción económica provenía de los altos impuestos y los bajos salarios.
-    - La motivación económica principal fue la combinación de altos impuestos y salarios muy bajos.
-    - Los campesinos se levantaron en protesta por los altos impuestos y la precariedad de sus salarios.
-    - La causa económica de la rebelión radicaba en los altos impuestos y la escasa remuneración.
-
-- intent: rebellion_religious_motivation
-  examples: |
-    - Los campesinos pensaban que eran corruptos.
-    - La percepción de los campesinos sobre la iglesia era de corrupción.
-    - Los campesinos veían a la iglesia como una institución corrupta.
-    - La opinión general entre los campesinos era que la iglesia estaba llena de corrupción.
-    - Los campesinos consideraban a la iglesia como corrupta y deshonesta.
-    - La corrupción era una de las principales críticas de los campesinos hacia la iglesia.
-    - Los campesinos denunciaban la corrupción de la iglesia en sus reclamos.
-    - La iglesia era vista por los campesinos como un símbolo de corrupción.
-
-- intent: rebellion_social_motivation
-  examples: |
-    - La principal motivación social fue la enorme desigualdad entre campesinos y nobles.
-    - La gran brecha social entre campesinos y nobles fue un factor clave en la rebelión.
-    - La rebelión fue impulsada por la desigualdad social entre las clases campesinas y nobiliarias.
-    - Los campesinos se levantaron debido a la significativa desigualdad que existía entre ellos y los nobles.
-    - La percepción de una gran desigualdad social motivó a los campesinos a rebelarse.
-    - La injusticia social, manifestada en la desigualdad entre campesinos y nobles, fue una de las motivaciones de la rebelión.
-    - La enorme diferencia de privilegios entre nobles y campesinos provocó el descontento que llevó a la rebelión.
-    - La motivación social detrás de la rebelión se basó en la desigualdad entre las clases sociales.
-
-- intent: rebellion_taxes
-  examples: |
-    - Para financiar la guerra que había en contra Francia durante esa época.
-    - Para financiar la guerra que había contra Francia durante esa época.
-    - Los impuestos electorales fueron emitidos para costear la guerra contra Francia.
-    - La razón detrás de la emisión de los tres impuestos fue la necesidad de financiamiento para la guerra con Francia.
-    - El parlamento necesitaba recaudar fondos para sostener la guerra contra Francia, lo que llevó a la emisión de impuestos.
-    - Los tres impuestos electorales se impusieron con el objetivo de financiar las campañas bélicas contra Francia.
-    - La guerra con Francia fue la causa principal de la recaudación a través de impuestos electorales entre 1377 y 1381.
-    - La necesidad de dinero para la guerra en Francia motivó la decisión del parlamento de emitir esos impuestos.
-    - El parlamento emitió impuestos electorales para obtener recursos financieros para la contienda contra Francia.
-    - Para finianciar la guerra de los cien años
-
-- intent: rebellion_antagonist
-  examples: |
-    - Fue el duque de Lancaster, Juan de Gante.
-    - La figura más rica y poderosa, y también la más odiada, era Juan de Gante, el duque de Lancaster.
-    - Juan de Gante, el duque de Lancaster, fue considerado la persona más rica y poderosa de Inglaterra en ese momento.
-    - El duque de Lancaster, Juan de Gante, se destacaba por su riqueza, poder y el desprecio que generaba.
-    - Durante esa época, la persona más odiada en Inglaterra era el duque de Lancaster, Juan de Gante, debido a su gran riqueza y poder.
-    - Juan de Gante, el duque de Lancaster, era visto como el hombre más influyente y odiado en Inglaterra.
-    - La riqueza y el poder del duque de Lancaster, Juan de Gante, lo convirtieron en una figura muy odiada en su tiempo.
-    - En esa época, el duque de Lancaster, Juan de Gante, era conocido por ser la persona más rica y poderosa, así como la más detestada.
-
-- intent: rebellion_county
-  examples: |
-    - La rebelión de los campesinos comenzó en el condado de [Essex](place).
-    - El condado de [Essex](place) fue el lugar donde se inició la rebelión de los campesinos.
-    - La rebelión tuvo su origen en el condado de [Essex](place).
-    - Los primeros levantamientos de la rebelión de los campesinos ocurrieron en [Essex](place).
-    - En [Essex](place) comenzó la famosa rebelión de los campesinos.
-    - La rebelión de los campesinos se inició en el condado de [Essex](place).
-    - [Essex](place) fue el condado en el que estalló la rebelión de los campesinos.
-    - El inicio de la rebelión de los campesinos se localiza en el condado de [Essex](place).
-
-- intent: rebellion_demands
-  examples: |
-    - Demandaban la abolición de ciertos impuestos, mejores condiciones laborales y derechos de propiedad.
-    - Los campesinos exigían la eliminación de varios impuestos, condiciones laborales más justas y derechos de propiedad.
-    - Demandaban la abolición de impuestos específicos, la mejora de sus condiciones de trabajo y la garantía de derechos sobre sus tierras.
-    - Los campesinos buscaban deshacerse de ciertos impuestos, obtener mejores condiciones laborales y asegurar sus derechos de propiedad.
-    - Su principal demanda era la eliminación de impuestos, así como mejores condiciones de trabajo y derechos sobre sus propiedades.
-    - Los campesinos querían que se abolieran ciertos impuestos, mejoraran sus condiciones laborales y se reconocieran sus derechos de propiedad.
-    - Las demandas incluían la eliminación de impuestos, la mejora de las condiciones laborales y la protección de los derechos de propiedad.
-    - Demandaban la reducción o eliminación de impuestos, mejores condiciones de trabajo y el reconocimiento de sus derechos sobre la tierra.
-    - Los campesinos exigían el fin de la servidumbre
-    - Exigían la abolición de la servidumbre.
-    - Los campesinos pedían que se terminara la servidumbre.
-    - Su principal demanda era el fin de la servidumbre.
-    - Los campesinos solicitaban el cese de la servidumbre.
-    - Demandaban el término de la servidumbre.
-    - Los campesinos querían que se acabara la servidumbre.
-    - Exigían que se pusiera fin a la servidumbre.
-
-- intent: rebellion_response_to_demands
-  examples: |
-    - El rey Ricardo aceptado todas las demandas, pero poco después se retractó de estas.
-    - El rey Ricardo II aceptó todas las demandas, aunque luego se retractó de ellas.
-    - Ricardo II aceptó las demandas, pero poco después cambió de opinión.
-    - La respuesta del rey fue aceptar todas las demandas, pero luego se retractó.
-    - Aceptó todas las demandas inicialmente, pero más tarde se echó atrás.
-    - El rey Ricardo II accedió a las demandas, pero posteriormente se retractó.
-    - Ricardo II accedió a todas las solicitudes, pero pronto se retractó.
-    - El rey aceptó las demandas, pero se retractó poco después.
-
-- intent: rebellion_end
-  examples: |
-    - La rebelión de los campesinos termino con la [muerte](event) de [Wat Tyler](name).
-    - La rebelión concluyó con la [muerte](event) de [Wat Tyler](name).
-    - La rebelión de los campesinos finalizó tras la [muerte](event) de [Wat Tyler](name).
-    - La [muerte](event) de [Wat Tyler](name) marcó el fin de la rebelión.
-    - La rebelión terminó cuando [Wat Tyler](name) fue [muerte](event).
-    - La rebelión se extinguió con la [muerte](event) de [Wat Tyler](name).
-    - El fin de la rebelión se produjo con la [muerte](event) de [Wat Tyler](name).
-    - [Wat Tyler](name) fue [muerte](event), lo que puso fin a la rebelión de los campesinos.
-- synonym: death
-  examples: |
-    - muerte
-    - asesinado
-    - asesinato
-
-- intent: rebellion_place_end
-  examples: |
-    - La rebelión de los campesinos termino en [Mile End](place).
-    - La rebelión concluyó en [Mile End](place).
-    - La rebelión de los campesinos finalizó en [Mile End](place).
-    - El desenlace de la rebelión ocurrió en [Mile End](place).
-    - La rebelión terminó en el área de [Mile End](place).
-    - [Mile End](place) fue el lugar donde finalizó la rebelión.
-    - La rebelión se dio por concluida en [Mile End](place).
-    - La rebelión de los campesinos terminó en [Mile End](place).
+    - Eso es lo que puedo pagar.
+    - No puedes obligarme.
+    - No tengo más.
+    - Con lo que gano, no me alcanza.
+    - No me alcanza.
+    - No me alcanza el dinero.
+    - Eso es todo lo que tengo.
+    - Es lo máximo que puedo darte.
+    - Con esto no me alcanza ni para vivir.
+    - No puedo pagar más, ya es todo lo que tengo.
+    - No tengo suficiente para pagar eso.
+    - No es justo, no tengo ese dinero.
+    - Mis ingresos no cubren esa cantidad.
+    - Ya pagué lo que pude.
+    - No me alcanza ni para lo básico.
+    - No tengo ni para mí, ¿cómo voy a pagar más?
+    - Este es todo el dinero que puedo dar.
+    - No me llega para eso.
+    - Con lo que tengo, no puedo cumplir con eso.
+    - No pienso seguir apoyando este impuesto
 
 - intent: out_of_scope
   examples: |
@@ -595,8 +312,3 @@ nlu:
     - ¿Qué habilidades te gustaría aprender en el futuro?
     - ¿Cómo te gustaría que fuera tu retiro?
     - ¿Qué es lo que más te apasiona en la vida?
-    - porque
-    - que
-    - como
-    - por que
-    - cual

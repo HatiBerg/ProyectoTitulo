@@ -1,0 +1,71 @@
+version: "3.1"
+nlu:
+- intent: pay_more
+  examples: |
+    - Te dejo [7](amount) peniques para cubrir más de lo debido.
+    - Lo prometido y algo más, aquí tienes [5](amount) peniques.
+- intent: pay_less
+  examples: |
+    - No puedo cubrir todo, pero aquí tienes [2](amount) peniques.
+    - Esto es todo lo que puedo pagar por ahora, [2](amount) peniques.
+- intent: greet
+  examples: |
+    - ¡Buenos días!
+    - ¿Cómo estás hoy?
+    - ¡Hola, hola!
+    - Saludos.
+- intent: request_taxes
+  examples: |
+    - ¿Cuánto debo pagar?
+    - ¿Cuál es el impuesto que debo pagar?
+    - ¿Cuánto debo de impuestos?
+- intent: deny
+  examples: |
+    - No quiero dar ni un penique.
+    - No tengo intención de pagar.
+    - No voy a pagar nada.
+    - No tengo obligación de pagar.
+- intent: challenge
+  examples: |
+    - No es justo, no tengo ese dinero.
+    - No me alcanza ni para lo básico.
+    - No puedes obligarme.
+    - No pienso seguir apoyando este impuesto
+- intent: pay
+  examples: |
+    - Te dejo la cantidad exacta que corresponde por los impuestos.
+    - Lo prometido es deuda, aquí tienes lo exacto.
+    - Claro, aquí tienes los [4](amount) peniques justos.
+    - De acuerdo, aquí tienes todo lo que corresponde.
+- intent: out_of_scope
+  examples: |
+    - ¿Puedes ayudarme a estudiar para un examen?
+    - 1800
+    - Dime algo interesante.
+    - no se
+    - ¿Cuál es la capital de Australia?
+    - ¿Dónde está el mejor café de la ciudad?
+    - ¿Quién es el presidente de Francia?
+    - ¿Qué serie de televisión me recomendarías?
+    - No lo tengo claro.
+    - ¿Qué es la meditación?
+    - Cuéntame sobre tus hobbies.
+    - ¿Qué es lo que más te gusta hacer en tu tiempo libre?
+    - No estoy seguro.
+    - ¿Qué opinas sobre las redes sociales?
+    - No tengo respuesta para eso.
+    - ¿Qué lugar del mundo te gustaría visitar y por qué?
+    - 1300
+    - ¿Quién ganó el último partido de fútbol?
+    - Recomiéndame un libro.
+    - ¿Puedes reservar un vuelo para mí?
+    - ¿Qué opinas de la música clásica?
+    - Cuéntame sobre las tradiciones de Navidad.
+    - ¿Cuál es tu comida favorita?
+    - ¿Qué harías si tuvieras un día libre?
+    - Enséñame a programar en Python.
+    - 1350
+    - 1900
+    - 1650
+    - ¿Qué tipo de arte prefieres?
+    - 1750

@@ -7,11 +7,11 @@
 
 # This is a simple example for a custom action which utters "Hello World!"
 
-import json
 from typing import Any, Text, Dict, List
 from rasa_sdk import Action, Tracker 
 from rasa_sdk.executor import CollectingDispatcher
 from rasa_sdk.events import SlotSet
+import sqlite3
 
 class ActionSaveUnclassifiedExample(Action):
     def name(self) -> str:
@@ -20,309 +20,93 @@ class ActionSaveUnclassifiedExample(Action):
     def run(self, dispatcher: CollectingDispatcher,
             tracker: Tracker,
             domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
-
-        unclassified_message = tracker.latest_message.get('text')
-        target_intent = "out_of_scope"
-        with open("unclassified_examples.json", "a") as file:
-            json.dump({"intent": target_intent, "example": unclassified_message}, file)
-            file.write("\n")
-
-        dispatcher.utter_message(text="Incorrecto")
+        
+        dispatcher.utter_message(text = "No te entiendo, vuelve a repetirlo.")
         
         return []
-
-class ActionEvaluarRespuesta1(Action):
-    def name(self) -> str:
-        return "action_evaluate_rebellion_year_start"
-
-    def run(self, dispatcher: CollectingDispatcher, 
-            tracker: Tracker, 
-            domain: Dict[Text, Any]) -> List[Dict[Text,Any]]:
-
-        intent = tracker.latest_message['intent'].get('name')
-        entity_year = next(tracker.get_latest_entity_values('year'), None)
-
-        #dispatcher.utter_message(text=intent)
-        #dispatcher.utter_message(text=entity_year)
-
-        if intent == "rebellion_year_start" and entity_year == "1380":
-            dispatcher.utter_message(text="¡Correcto!")
-        else:
-            dispatcher.utter_message(text="Incorrecto")
-
-        return []
     
-class ActionEvaluarRespuesta2(Action):
+class ActionCheckAmount(Action):
     def name(self) -> str:
-        return "action_evaluate_rebellion_start"
+        return "action_check_amount"
 
-    def run(self, dispatcher: CollectingDispatcher, 
-            tracker: Tracker, 
-            domain: Dict[Text, Any]) -> List[Dict[Text,Any]]:
+    def run(self, dispatcher: CollectingDispatcher,
+            tracker: Tracker,
+            domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
+        
+        amount = tracker.get_slot("amount")
 
-        intent = tracker.latest_message['intent'].get('name')
-        #entity_event = next(tracker.get_latest_entity_values('event'), None)
-        #entity_year = next(tracker.get_latest_entity_values('year'), None)
+        if amount is None:
+            amount = 4
 
-        #dispatcher.utter_message(text=intent)
-        #dispatcher.utter_message(text=entity)
+        # Comprobar si el monto es exactamente 4
+        if int(amount) == 4:
+            dispatcher.utter_message(text = "Gracias por tu contribución. Se lo haré saber al duque.")
+        
+        # Comprobar si el monto es mayor a 4
+        if int(amount) > 4:
+            dispatcher.utter_message(text = f"{amount} peniques es demasiado, solo necesitas pagar 4 peniques.")
+        
+        # Comprobar si el monto es 0
+        if int(amount) == 0:
+            dispatcher.utter_message(text = "¿Qué no quieres pagar? ¡Esto es inaceptable!, ¿cuál es tu excusa?")
+        
+        # Si el monto es 1
+        if int(amount) == 1:
+            dispatcher.utter_message(text = f"¿Solo un penique? ¡Esto es inaceptable!, ¿cuál es tu excusa?")
 
-        if intent == "rebellion_start":
-            dispatcher.utter_message(text="¡Correcto!")
-        else:
-            dispatcher.utter_message(text="Incorrecto")
+        # Si el monto es 2 o 3
+        if int(amount) == 2 or int(amount) == 3:
+            dispatcher.utter_message(text = f"¿Solo {amount} peniques? ¡Esto es inaceptable!, ¿cuál es tu excusa?")
 
-        return []
-    
-class ActionEvaluarRespuesta3(Action):
+        return [SlotSet("amount", amount)]
+
+class ActionExtractData(Action):
     def name(self) -> str:
-        return "action_evaluate_rebellion_protagonist"
+        return "action_extract_data"
 
-    def run(self, dispatcher: CollectingDispatcher, 
-            tracker: Tracker, 
-            domain: Dict[Text, Any]) -> List[Dict[Text,Any]]:
+    def run(self, dispatcher: CollectingDispatcher,
+            tracker: Tracker,
+            domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
 
-        intent = tracker.latest_message['intent'].get('name')
-        entity_name = next(tracker.get_latest_entity_values('name'), None)
+        amount = tracker.get_slot("amount")
+        # excuse = tracker.get_slot("excuse")
+        intent = tracker.latest_message["intent"].get("name")    
+        excuse = tracker.latest_message['text']  # Obtener el texto de la excusa
 
-        #dispatcher.utter_message(text=intent)
-        #dispatcher.utter_message(text=entity)
+        # Conectar a la base de datos SQLite
+        conn = sqlite3.connect('db.db')
+        cursor = conn.cursor()
 
-        if intent == "rebellion_protagonist" and entity_name == "Wat Tyler":
-            dispatcher.utter_message(text="¡Correcto!")
-        else:
-            dispatcher.utter_message(text="Incorrecto")
+        # Crear la tabla 'DIALOGUES' con una columna 'monto'
+        cursor.execute('''
+        CREATE TABLE IF NOT EXISTS DIALOGUES (
+            id INTEGER PRIMARY KEY AUTOINCREMENT,
+            monto INTEGER,
+            excusa TEXT
+        )
+        ''')
 
-        return []
-    
-class ActionEvaluarRespuesta4(Action):
-    def name(self) -> str:
-        return "action_evaluate_rebellion_priest"
+        # Caso 1: Si hay un monto y excusa"
+        if amount is not None and (intent == "challenge" or intent == "deny"):
+        # if amount is not None and excuse is not None:
+            cursor.execute('''
+            INSERT INTO DIALOGUES (monto, excusa) VALUES (?, ?)
+            ''', (amount, excuse))
 
-    def run(self, dispatcher: CollectingDispatcher, 
-            tracker: Tracker, 
-            domain: Dict[Text, Any]) -> List[Dict[Text,Any]]:
+        # Caso 2: Si solo hay un monto y no hay excusa, excusa será None
+        if amount is not None and (intent != "challenge" or intent != "deny"):
+        # if amount is not None and excuse is None:
+            cursor.execute('''
+            INSERT INTO DIALOGUES (monto, excusa) VALUES (?, ?)
+            ''', (amount, None))
 
-        intent = tracker.latest_message['intent'].get('name')
-        #entity = next(tracker.get_latest_entity_values('entity_name'), None)
+        # Caso 3: Si no hay monto pero sí hay excusa, monto será 0 y se guardará excusa
+        if amount is None and (intent == "challenge" or intent == "deny"):
+        # if amount is None and excuse is not None:
+            cursor.execute('''
+            INSERT INTO DIALOGUES (monto, excusa) VALUES (?, ?)
+            ''', (0, excuse))
 
-        #dispatcher.utter_message(text=intent)
-        #dispatcher.utter_message(text=entity)
-
-        if intent == "rebellion_priest":
-            dispatcher.utter_message(text="¡Correcto!")
-        else:
-            dispatcher.utter_message(text="Incorrecto")
-
-        return []
-    
-class ActionEvaluarRespuesta5(Action):
-    def name(self) -> str:
-        return "action_evaluate_rebellion_economic_motivation"
-
-    def run(self, dispatcher: CollectingDispatcher, 
-            tracker: Tracker, 
-            domain: Dict[Text, Any]) -> List[Dict[Text,Any]]:
-
-        intent = tracker.latest_message['intent'].get('name')
-        #entity = next(tracker.get_latest_entity_values('entity_name'), None)
-
-        #dispatcher.utter_message(text=intent)
-        #dispatcher.utter_message(text=entity)
-
-        if intent == "rebellion_economic_motivation":
-            dispatcher.utter_message(text="¡Correcto!")
-        else:
-            dispatcher.utter_message(text="Incorrecto")
-
-        return []
-    
-class ActionEvaluarRespuesta6(Action):
-    def name(self) -> str:
-        return "action_evaluate_rebellion_religious_motivation"
-
-    def run(self, dispatcher: CollectingDispatcher, 
-            tracker: Tracker, 
-            domain: Dict[Text, Any]) -> List[Dict[Text,Any]]:
-
-        intent = tracker.latest_message['intent'].get('name')
-        #entity = next(tracker.get_latest_entity_values('entity_name'), None)
-
-        #dispatcher.utter_message(text=intent)
-        #dispatcher.utter_message(text=entity)
-
-        if intent == "rebellion_religious_motivation":
-            dispatcher.utter_message(text="¡Correcto!")
-        else:
-            dispatcher.utter_message(text="Incorrecto")
-
-        return []
-    
-class ActionEvaluarRespuesta7(Action):
-    def name(self) -> str:
-        return "action_evaluate_rebellion_social_motivation"
-
-    def run(self, dispatcher: CollectingDispatcher, 
-            tracker: Tracker, 
-            domain: Dict[Text, Any]) -> List[Dict[Text,Any]]:
-
-        intent = tracker.latest_message['intent'].get('name')
-        #entity = next(tracker.get_latest_entity_values('entity_name'), None)
-
-        #dispatcher.utter_message(text=intent)
-        #dispatcher.utter_message(text=entity)
-
-        if intent == "rebellion_social_motivation":
-            dispatcher.utter_message(text="¡Correcto!")
-        else:
-            dispatcher.utter_message(text="Incorrecto")
-
-        return []
-    
-class ActionEvaluarRespuesta8(Action):
-    def name(self) -> str:
-        return "action_evaluate_rebellion_taxes"
-
-    def run(self, dispatcher: CollectingDispatcher, 
-            tracker: Tracker, 
-            domain: Dict[Text, Any]) -> List[Dict[Text,Any]]:
-
-        intent = tracker.latest_message['intent'].get('name')
-        #entity = next(tracker.get_latest_entity_values('entity_name'), None)
-
-        #dispatcher.utter_message(text=intent)
-        #dispatcher.utter_message(text=entity)
-
-        if intent == "rebellion_taxes":
-            dispatcher.utter_message(text="¡Correcto!")
-        else:
-            dispatcher.utter_message(text="Incorrecto")
-
-        return []
-    
-class ActionEvaluarRespuesta9(Action):
-    def name(self) -> str:
-        return "action_evaluate_rebellion_antagonist"
-
-    def run(self, dispatcher: CollectingDispatcher, 
-            tracker: Tracker, 
-            domain: Dict[Text, Any]) -> List[Dict[Text,Any]]:
-
-        intent = tracker.latest_message['intent'].get('name')
-        #entity = next(tracker.get_latest_entity_values('entity_name'), None)
-
-        #dispatcher.utter_message(text=intent)
-        #dispatcher.utter_message(text=entity)
-
-        if intent == "rebellion_antagonist":
-            dispatcher.utter_message(text="¡Correcto!")
-        else:
-            dispatcher.utter_message(text="Incorrecto")
-
-        return []
-    
-class ActionEvaluarRespuesta10(Action):
-    def name(self) -> str:
-        return "action_evaluate_rebellion_county"
-
-    def run(self, dispatcher: CollectingDispatcher, 
-            tracker: Tracker, 
-            domain: Dict[Text, Any]) -> List[Dict[Text,Any]]:
-
-        intent = tracker.latest_message['intent'].get('name')
-        entity_place = next(tracker.get_latest_entity_values('place'), None)
-
-        #dispatcher.utter_message(text=intent)
-        #dispatcher.utter_message(text=entity)
-
-        if intent == "rebellion_county" and entity_place == "Essex":
-            dispatcher.utter_message(text="¡Correcto!")
-        else:
-            dispatcher.utter_message(text="Incorrecto")
-
-        return []
-    
-class ActionEvaluarRespuesta11(Action):
-    def name(self) -> str:
-        return "action_evaluate_rebellion_demands"
-
-    def run(self, dispatcher: CollectingDispatcher, 
-            tracker: Tracker, 
-            domain: Dict[Text, Any]) -> List[Dict[Text,Any]]:
-
-        intent = tracker.latest_message['intent'].get('name')
-        #entity = next(tracker.get_latest_entity_values('entity_name'), None)
-
-        #dispatcher.utter_message(text=intent)
-        #dispatcher.utter_message(text=entity)
-
-        if intent == "rebellion_demands":
-            dispatcher.utter_message(text="¡Correcto!")
-        else:
-            dispatcher.utter_message(text="Incorrecto")
-
-        return []
-    
-class ActionEvaluarRespuesta12(Action):
-    def name(self) -> str:
-        return "action_evaluate_rebellion_response_to_demands"
-
-    def run(self, dispatcher: CollectingDispatcher, 
-            tracker: Tracker, 
-            domain: Dict[Text, Any]) -> List[Dict[Text,Any]]:
-
-        intent = tracker.latest_message['intent'].get('name')
-        #entity = next(tracker.get_latest_entity_values('entity_name'), None)
-
-        #dispatcher.utter_message(text=intent)
-        #dispatcher.utter_message(text=entity)
-
-        if intent == "rebellion_response_to_demands":
-            dispatcher.utter_message(text="¡Correcto!")
-        else:
-            dispatcher.utter_message(text="Incorrecto")
-
-        return []
-    
-class ActionEvaluarRespuesta13(Action):
-    def name(self) -> str:
-        return "action_evaluate_rebellion_end"
-
-    def run(self, dispatcher: CollectingDispatcher, 
-            tracker: Tracker, 
-            domain: Dict[Text, Any]) -> List[Dict[Text,Any]]:
-
-        intent = tracker.latest_message['intent'].get('name')
-        entity_name = next(tracker.get_latest_entity_values('name'), None)
-        entity_event = next(tracker.get_latest_entity_values('event'), None)
-
-        #dispatcher.utter_message(text=intent)
-        #dispatcher.utter_message(text=entity)
-
-        if intent == "rebellion_end" and entity_name == "Wat Tyler" and entity_event == "muerte":
-            dispatcher.utter_message(text="¡Correcto!")
-        else:
-            dispatcher.utter_message(text="Incorrecto")
-
-        return []
-    
-class ActionEvaluarRespuesta14(Action):
-    def name(self) -> str:
-        return "action_evaluate_rebellion_place_end"
-
-    def run(self, dispatcher: CollectingDispatcher, 
-            tracker: Tracker, 
-            domain: Dict[Text, Any]) -> List[Dict[Text,Any]]:
-
-        intent = tracker.latest_message['intent'].get('name')
-        entity_place = next(tracker.get_latest_entity_values('place'), None)
-
-        #dispatcher.utter_message(text=intent)
-        #dispatcher.utter_message(text=entity)
-
-        if intent == "rebellion_place_end" and entity_place == "End Mile":
-            dispatcher.utter_message(text="¡Correcto!")
-        else:
-            dispatcher.utter_message(text="Incorrecto")
-
+        conn.commit()
+        conn.close()
         return []

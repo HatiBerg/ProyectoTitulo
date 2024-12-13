@@ -1,0 +1,229 @@
+version: "3.1"
+nlu:
+- intent: pay_more
+  examples: |
+    - Esto es más de lo que acordamos, aquí tienes [7](amount) peniques.
+    - Aquí tienes lo que pediste, más un extra, [5](amount) peniques.
+    - Quiero pagar más, aquí tienes [6](amount) peniques.
+    - Voy a pagarte [6](amount) peniques, un poco más de lo acordado.
+    - Estoy dispuesto a pagar [6](amount) peniques esta vez.
+    - Voy a darte [6](amount) peniques, espero que sea suficiente.
+    - Aquí tienes [5](amount) peniques, es más de lo que debía.
+    - Esto es lo que se debe, y te doy [5](amount) peniques en total.
+- intent: pay_less
+  examples: |
+    - Esto es lo que puedo aportar, [1](amount) penique.
+    - Esto es lo que logré juntar, [3](amount) peniques.
+    - Solo puedo darte [3](amount) peniques, no tengo más.
+    - Lo siento, no puedo pagar todo, aquí tienes [3](amount) peniques.
+    - Voy a pagarte solo [3](amount) peniques por ahora.
+    - Te voy a dar [2](amount) peniques, no puedo pagar todo.
+    - Aquí tienes [1](amount) penique, es lo único que tengo ahora.
+    - Lo siento, solo puedo aportar [3](amount) peniques.
+- intent: greet
+  examples: |
+    - Hola.
+    - ¡Saludos!
+    - Buenas noches.
+    - Hola, ¿qué tal?
+    - ¡Qué hay!
+    - ¡Hola, buen día!
+    - ¡Qué tal!
+    - ¿Cómo va todo?
+    - Buenas tardes.
+    - ¿Cómo estás?
+    - Buen día.
+    - Buenas.
+    - ¡Hola, amigo!
+- intent: request_taxes
+  examples: |
+    - ¿Cuánto es mi deuda?
+    - ¿Cuál es mi contribución?
+    - ¿Qué cantidad tengo que contribuir?
+    - ¿Cuánto debería pagar?
+    - ¿Cuál es el monto que debo pagar?
+    - ¿Qué cantidad debo entregar?
+    - ¿Qué monto debo pagar?
+    - ¿Cuánto tengo que dar?
+    - ¿con cuánto debo contribuir?
+    - ¿Qué tengo que aportar?
+    - ¿Cuánto me corresponde pagar?
+    - ¿Cuánto es lo que tengo que pagar?
+    - ¿Cuánto tengo que pagar?
+    - ¿Cuánto es lo que debo?
+- intent: deny
+  examples: |
+    - No pienso dar nada.
+    - No voy a ceder.
+    - No pago impuestos.
+    - No pago nada de eso.
+    - No me parece justo pagar.
+    - No quiero aportar nada.
+    - No voy a pagar.
+    - No quiero pagar.
+    - No voy a pagar ese impuesto.
+    - No pienso pagar ni un penique.
+    - No tengo dinero para eso.
+    - No pienso pagar.
+    - No quiero contribuir con eso.
+    - No pienso contribuir.
+- intent: challenge
+  examples: |
+    - Ya pagué lo que pude.
+    - Eso es lo que puedo pagar.
+    - No tengo ni para mí, ¿cómo voy a pagar más?
+    - Con lo que gano, no me alcanza.
+    - No tengo suficiente para pagar eso.
+    - No puedo pagar más, ya es todo lo que tengo.
+    - Eso es todo lo que tengo.
+    - Este es todo el dinero que puedo dar.
+    - Es lo máximo que puedo darte.
+    - Con esto no me alcanza ni para vivir.
+    - No tengo más.
+    - No me llega para eso.
+    - No me alcanza el dinero.
+    - Con lo que tengo, no puedo cumplir con eso.
+    - No me alcanza.
+    - Mis ingresos no cubren esa cantidad.
+- intent: pay
+  examples: |
+    - Esto es lo que se debe, [4](amount) peniques.
+    - Esto es lo que acordamos, está completo.
+    - Aquí tienes todo lo que se debe, [4](amount) peniques exactos.
+    - Te dejo [4](amount) peniques, ni más ni menos.
+    - Como dijimos, aquí tienes lo justo.
+    - Esto es lo que se acordó, está completo.
+    - Voy a pagar los [4](amount) peniques.
+    - De acuerdo, aquí tienes los [4](amount) peniques que debo pagar.
+    - Toma, aqui tienes.
+    - Esto es lo que acordamos, [4](amount) peniques.
+    - Aquí tienes todo lo que se debe, ni más ni menos.
+    - Claro, aquí tienes lo que corresponde por completo.
+    - Voy a pagar exactamente lo que debo.
+    - Estoy dispuesto a pagar los [4](amount) peniques correspondientes.
+    - Estoy dispuesto a cubrir exactamente lo que debo.
+    - Como dijimos, aquí tienes los [4](amount) peniques justos.
+    - Lo prometido es deuda, aquí tienes los [4](amount) peniques exactos.
+    - Toma.
+- intent: out_of_scope
+  examples: |
+    - ¿Cuál es la mejor manera de ahorrar dinero?
+    - Dime una curiosidad sobre los gatos.
+    - ¿Qué habilidades te gustaría aprender en el futuro?
+    - Desconozco la respuesta.
+    - Cuéntame sobre tu día.
+    - Hazme una pregunta.
+    - 1600
+    - ¿Cuál es el significado de la vida?
+    - No sé
+    - Dame recomendaciones de películas.
+    - ¿Cómo se hace un cóctel margarita?
+    - Dime algo sobre la biología.
+    - ¿Qué opinas sobre la moda actual?
+    - ¿Qué hace a un buen amigo?
+    - ¿Cómo puedo organizar mi tiempo mejor?
+    - 1100
+    - ¿Qué es lo que más te gusta de tu ciudad?
+    - ¿Cuál es la mejor manera de aprender un nuevo idioma?
+    - ¿Qué hora es?
+    - Ayúdame a encontrar un restaurante cercano.
+    - ¿Cuál es tu destino de viaje soñado?
+    - Cuéntame sobre un momento memorable de tu infancia.
+    - ¿Qué opinas sobre la educación en línea?
+    - No lo se
+    - ¿Qué opinas sobre la inteligencia artificial?
+    - Cuéntame sobre las últimas tendencias en tecnología.
+    - Dame ideas para una cita romántica.
+    - ¿Dónde puedo comprar zapatos en línea?
+    - No lo he averiguado aún.
+    - No me queda claro.
+    - 2000
+    - ¿Cuál es tu videojuego favorito?
+    - ¿Cómo se llama tu mascota?
+    - Me temo que no lo sé.
+    - No tengo idea.
+    - 1150
+    - No estoy al tanto.
+    - ¿Cómo te sientes sobre el voluntariado?
+    - Quiero hacer una pregunta.
+    - ¿Qué puedo hacer para relajarme?
+    - Cuéntame sobre una tradición en tu país.
+    - ¿Cuál es la última película que has visto?
+    - No lo sé con certeza.
+    - Cuéntame un chiste.
+    - No estoy familiarizada con eso.
+    - No tengo información al respecto.
+    - Lo desconozco completamente.
+    - ¿Cuál es tu animal favorito y por qué?
+    - Cuéntame sobre una comida típica de tu país.
+    - ¿Cuál es tu deporte favorito?
+    - Dame tips para una vida saludable.
+    - Dame consejos para viajar solo.
+    - ¿Cómo puedo mejorar mis habilidades de escritura?
+    - 1250
+    - ¿Qué tipo de música te gusta?
+    - No estoy familiarizado con eso.
+    - ¿Qué es lo que te inspira a ser mejor?
+    - ¿Cuál es tu color favorito?
+    - Dame consejos para superar el estrés.
+    - 1850
+    - ¿Qué harías si tuvieras un millón de dólares?
+    - No tengo la menor idea.
+    - No estoy informada.
+    - Cuéntame una historia de terror.
+    - ¿Cómo te gustaría que fuera tu retiro?
+    - Dame información sobre la historia de España.
+    - ¿Cuál es el evento histórico más importante para ti?
+    - Háblame sobre el espacio exterior.
+    - Dime una frase inspiradora.
+    - Cuéntame una anécdota divertida.
+    - ¿Cómo te preparas para una entrevista de trabajo?
+    - No te podría decir.
+    - ¿Cuánto es 2+2?
+    - 1700
+    - ¿Qué opinas sobre el cambio climático?
+    - 1400
+    - ¿Qué opinas de las películas de ciencia ficción?
+    - No estoy segura.
+    - No puedo responder eso.
+    - 1200
+    - No estoy informado.
+    - no sé
+    - 1450
+    - ¿Qué significa la palabra 'epistemología'?
+    - Muéstrame las noticias más recientes.
+    - Cuéntame un secreto interesante.
+    - 1550
+    - ¿Cuál es la canción que más te gusta?
+    - Dame consejos para hacer ejercicio.
+    - Dame información sobre el arte contemporáneo.
+    - Dame una receta para hacer pizza.
+    - ¿Cuál es el mejor consejo que te han dado?
+    - Dame ideas para un regalo de cumpleaños.
+    - Recomiéndame un destino turístico.
+    - 1500
+    - No tengo datos sobre eso.
+    - ¿Cómo se celebra tu cumpleaños?
+    - 2024
+    - ¿Cómo puedo aprender a tocar un instrumento musical?
+    - No lo sé
+    - No estoy segura de la respuesta.
+    - ¿Cómo se dice "hola" en japonés?
+    - ¿Qué tal está tu semana?
+    - ¿Qué es lo que más te apasiona en la vida?
+    - No estoy seguro de la respuesta.
+    - Cuéntame sobre un sueño que hayas tenido.
+    - No sabría decirte.
+    - ¿Cómo puedo mejorar mis habilidades interpersonales?
+    - Recomiéndame un juego de mesa.
+    - No se
+    - Dime el clima de hoy.
+    - ¿Qué harías en un día perfecto?
+    - Recomiéndame una serie de televisión.
+    - ¿Cómo está el tráfico hoy?
+    - Dame consejos sobre jardinería.
+    - 1950
+    - ¿Qué es lo que más valoras en la vida?
+    - ¿Cómo puedo aprender a bailar?
+    - ¿Cómo puedo ser más productivo en mi trabajo?
+    - ¿Cuál es tu libro favorito?
