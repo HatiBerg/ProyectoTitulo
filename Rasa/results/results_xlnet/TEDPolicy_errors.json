@@ -1,0 +1,54 @@
+[
+  {
+    "text": "Aqui tienes 4 peniques.",
+    "entities": [
+      {
+        "text": "Aqui tienes 4 peniques.",
+        "start": 12,
+        "end": 13,
+        "entity": "amount",
+        "value": "4"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "ten 8 peniques.",
+    "entities": [
+      {
+        "text": "ten 8 peniques.",
+        "start": 4,
+        "end": 5,
+        "entity": "amount",
+        "value": "8"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "solo te puedo dar 2 peniques.",
+    "entities": [
+      {
+        "text": "solo te puedo dar 2 peniques.",
+        "start": 18,
+        "end": 19,
+        "entity": "amount",
+        "value": "2"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "solo te puedo dar 2 peniques.",
+    "entities": [
+      {
+        "text": "solo te puedo dar 2 peniques.",
+        "start": 18,
+        "end": 19,
+        "entity": "amount",
+        "value": "2"
+      }
+    ],
+    "predicted_entities": []
+  }
+]

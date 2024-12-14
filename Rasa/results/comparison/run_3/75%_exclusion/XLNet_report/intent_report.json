@@ -1,0 +1,97 @@
+{
+  "deny": {
+    "precision": 0.5,
+    "recall": 0.25,
+    "f1-score": 0.3333333333333333,
+    "support": 4,
+    "confused_with": {
+      "out_of_scope": 3
+    }
+  },
+  "greet": {
+    "precision": 1.0,
+    "recall": 0.5,
+    "f1-score": 0.6666666666666666,
+    "support": 4,
+    "confused_with": {
+      "out_of_scope": 2
+    }
+  },
+  "pay": {
+    "precision": 0.6666666666666666,
+    "recall": 0.5,
+    "f1-score": 0.5714285714285715,
+    "support": 4,
+    "confused_with": {
+      "pay_more": 1,
+      "out_of_scope": 1
+    }
+  },
+  "pay_more": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1-score": 0.0,
+    "support": 2,
+    "confused_with": {
+      "pay_less": 1,
+      "pay": 1
+    }
+  },
+  "challenge": {
+    "precision": 1.0,
+    "recall": 0.5,
+    "f1-score": 0.6666666666666666,
+    "support": 4,
+    "confused_with": {
+      "request_taxes": 1,
+      "out_of_scope": 1
+    }
+  },
+  "out_of_scope": {
+    "precision": 0.7777777777777778,
+    "recall": 0.9333333333333333,
+    "f1-score": 0.8484848484848485,
+    "support": 30,
+    "confused_with": {
+      "pay_less": 1,
+      "deny": 1
+    }
+  },
+  "request_taxes": {
+    "precision": 0.6666666666666666,
+    "recall": 0.6666666666666666,
+    "f1-score": 0.6666666666666666,
+    "support": 3,
+    "confused_with": {
+      "out_of_scope": 1
+    }
+  },
+  "pay_less": {
+    "precision": 0.3333333333333333,
+    "recall": 0.5,
+    "f1-score": 0.4,
+    "support": 2,
+    "confused_with": {
+      "pay_more": 1
+    }
+  },
+  "accuracy": 0.7169811320754716,
+  "macro avg": {
+    "precision": 0.6180555555555556,
+    "recall": 0.48124999999999996,
+    "f1-score": 0.5191558441558441,
+    "support": 53
+  },
+  "weighted avg": {
+    "precision": 0.7295597484276729,
+    "recall": 0.7169811320754716,
+    "f1-score": 0.70201747937597,
+    "support": 53
+  },
+  "micro avg": {
+    "precision": 0.7169811320754716,
+    "recall": 0.7169811320754716,
+    "f1-score": 0.7169811320754716,
+    "support": 53
+  }
+}

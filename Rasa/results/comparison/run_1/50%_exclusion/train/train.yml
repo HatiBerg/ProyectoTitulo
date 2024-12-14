@@ -1,0 +1,124 @@
+version: "3.1"
+nlu:
+- intent: pay_more
+  examples: |
+    - Voy a pagarte [6](amount) peniques, un poco más de lo acordado.
+    - Aquí tienes lo que pediste, más un extra, [5](amount) peniques.
+    - Te dejo [7](amount) peniques para cubrir más de lo debido.
+    - Aquí tienes [5](amount) peniques, es más de lo que debía.
+- intent: pay_less
+  examples: |
+    - Esto es todo lo que puedo pagar por ahora, [2](amount) peniques.
+    - Te voy a dar [2](amount) peniques, no puedo pagar todo.
+    - Lo siento, no puedo pagar todo, aquí tienes [3](amount) peniques.
+    - No puedo cubrir todo, pero aquí tienes [2](amount) peniques.
+- intent: greet
+  examples: |
+    - Buenas noches.
+    - Buenas tardes.
+    - ¡Hola, buen día!
+    - Saludos.
+    - Hola.
+    - Buenas.
+    - ¡Hola, amigo!
+- intent: request_taxes
+  examples: |
+    - ¿Cuánto es lo que debo?
+    - ¿Qué cantidad tengo que contribuir?
+    - ¿con cuánto debo contribuir?
+    - ¿Cuánto es mi deuda?
+    - ¿Cuánto tengo que dar?
+    - ¿Cuánto tengo que pagar?
+    - ¿Cuál es el monto que debo pagar?
+- intent: deny
+  examples: |
+    - No quiero pagar.
+    - No tengo intención de pagar.
+    - No pienso pagar.
+    - No voy a pagar ese impuesto.
+    - No voy a pagar.
+    - No tengo obligación de pagar.
+    - No me parece justo pagar.
+- intent: challenge
+  examples: |
+    - Con lo que gano, no me alcanza.
+    - No puedo pagar más, ya es todo lo que tengo.
+    - No me alcanza el dinero.
+    - Eso es todo lo que tengo.
+    - Mis ingresos no cubren esa cantidad.
+    - No tengo ni para mí, ¿cómo voy a pagar más?
+    - Eso es lo que puedo pagar.
+    - Ya pagué lo que pude.
+- intent: pay
+  examples: |
+    - Lo prometido es deuda, aquí tienes los [4](amount) peniques exactos.
+    - De acuerdo, aquí tienes todo lo que corresponde.
+    - Voy a pagar exactamente lo que debo.
+    - Como dijimos, aquí tienes lo justo.
+    - Esto es lo que se debe, [4](amount) peniques.
+    - De acuerdo, aquí tienes los [4](amount) peniques que debo pagar.
+    - Claro, aquí tienes los [4](amount) peniques justos.
+    - Esto es lo que acordamos, está completo.
+    - Esto es lo que se acordó, está completo.
+- intent: out_of_scope
+  examples: |
+    - Hazme una pregunta.
+    - 1850
+    - ¿Cuál es el significado de la vida?
+    - Háblame sobre el espacio exterior.
+    - ¿Cómo te preparas para una entrevista de trabajo?
+    - 1150
+    - ¿Cuál es tu comida favorita?
+    - Cuéntame un secreto interesante.
+    - No tengo la menor idea.
+    - No estoy segura.
+    - Desconozco la respuesta.
+    - ¿Cuál es el mejor consejo que te han dado?
+    - Dime algo interesante.
+    - ¿Qué harías si tuvieras un millón de dólares?
+    - 1500
+    - Cuéntame sobre un sueño que hayas tenido.
+    - ¿Qué es lo que más valoras en la vida?
+    - 1300
+    - ¿Cuál es la mejor manera de ahorrar dinero?
+    - ¿Cómo te gustaría que fuera tu retiro?
+    - Dime algo sobre la biología.
+    - No sabría decirte.
+    - ¿Qué opinas sobre la moda actual?
+    - 1700
+    - No estoy segura de la respuesta.
+    - ¿Qué harías en un día perfecto?
+    - ¿Cuánto es 2+2?
+    - Recomiéndame una serie de televisión.
+    - No estoy familiarizada con eso.
+    - ¿Qué es lo que más te gusta hacer en tu tiempo libre?
+    - ¿Cómo puedo aprender a bailar?
+    - ¿Cuál es tu animal favorito y por qué?
+    - ¿Puedes ayudarme a estudiar para un examen?
+    - ¿Qué opinas sobre la educación en línea?
+    - Cuéntame una anécdota divertida.
+    - 2024
+    - Cuéntame sobre tu día.
+    - Cuéntame sobre una tradición en tu país.
+    - ¿Qué es lo que más te apasiona en la vida?
+    - ¿Cuál es la capital de Australia?
+    - ¿Cuál es la última película que has visto?
+    - ¿Qué harías si tuvieras un día libre?
+    - 1350
+    - ¿Qué opinas sobre las redes sociales?
+    - 1750
+    - ¿Qué lugar del mundo te gustaría visitar y por qué?
+    - Recomiéndame un juego de mesa.
+    - Me temo que no lo sé.
+    - ¿Cómo puedo ser más productivo en mi trabajo?
+    - ¿Qué es lo que te inspira a ser mejor?
+    - ¿Cómo te sientes sobre el voluntariado?
+    - 1950
+    - ¿Qué hora es?
+    - No estoy informada.
+    - No lo se
+    - ¿Cuál es la mejor manera de aprender un nuevo idioma?
+    - Cuéntame un chiste.
+    - Cuéntame una historia de terror.
+    - Recomiéndame un libro.
+    - no se

@@ -1,0 +1,71 @@
+version: "3.1"
+nlu:
+- intent: pay_more
+  examples: |
+    - Voy a darte [6](amount) peniques, espero que sea suficiente.
+    - Esto es lo que se debe, y te doy [5](amount) peniques en total.
+- intent: pay_less
+  examples: |
+    - Esto es lo que logré juntar, [3](amount) peniques.
+    - Voy a pagarte solo [3](amount) peniques por ahora.
+- intent: greet
+  examples: |
+    - ¿Cómo estás hoy?
+    - ¡Buenos días!
+    - ¿Cómo va todo?
+    - Buen día.
+- intent: request_taxes
+  examples: |
+    - ¿Cuánto es lo que tengo que pagar?
+    - ¿Qué cantidad debo entregar?
+    - ¿Cuánto debo pagar?
+- intent: deny
+  examples: |
+    - No pienso pagar ni un penique.
+    - No pago impuestos.
+    - No voy a ceder.
+    - No quiero dar ni un penique.
+- intent: challenge
+  examples: |
+    - No es justo, no tengo ese dinero.
+    - Este es todo el dinero que puedo dar.
+    - No me llega para eso.
+    - Es lo máximo que puedo darte.
+- intent: pay
+  examples: |
+    - Aquí tienes todo lo que se debe, ni más ni menos.
+    - Estoy dispuesto a cubrir exactamente lo que debo.
+    - Lo prometido es deuda, aquí tienes lo exacto.
+    - Como dijimos, aquí tienes los [4](amount) peniques justos.
+- intent: out_of_scope
+  examples: |
+    - No tengo datos sobre eso.
+    - ¿Qué habilidades te gustaría aprender en el futuro?
+    - ¿Quién es el presidente de Francia?
+    - ¿Cómo está el tráfico hoy?
+    - ¿Cuál es tu destino de viaje soñado?
+    - No puedo responder eso.
+    - 1200
+    - ¿Cómo puedo aprender a tocar un instrumento musical?
+    - No te podría decir.
+    - 1400
+    - No lo sé con certeza.
+    - ¿Qué tipo de música te gusta?
+    - 1800
+    - ¿Qué opinas sobre el cambio climático?
+    - No tengo información al respecto.
+    - Dame consejos para superar el estrés.
+    - ¿Cuál es tu color favorito?
+    - 1550
+    - ¿Qué opinas de las películas de ciencia ficción?
+    - ¿Cuál es la canción que más te gusta?
+    - ¿Qué es lo que más te gusta de tu ciudad?
+    - ¿Qué es la meditación?
+    - ¿Cuál es tu libro favorito?
+    - No sé
+    - 1900
+    - No estoy informado.
+    - ¿Cómo puedo organizar mi tiempo mejor?
+    - ¿Cuál es tu videojuego favorito?
+    - Dame consejos sobre jardinería.
+    - ¿Cuál es el evento histórico más importante para ti?

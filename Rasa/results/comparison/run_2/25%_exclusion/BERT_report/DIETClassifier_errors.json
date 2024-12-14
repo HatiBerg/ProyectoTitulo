@@ -1,0 +1,16 @@
+[
+  {
+    "text": "2024",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "amount",
+        "start": 0,
+        "end": 4,
+        "confidence_entity": 0.6390541195869446,
+        "value": "2024",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  }
+]

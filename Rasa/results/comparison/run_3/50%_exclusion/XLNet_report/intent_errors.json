@@ -1,0 +1,66 @@
+[
+  {
+    "text": "Estoy dispuesto a pagar 6 peniques esta vez.",
+    "intent": "pay_more",
+    "intent_prediction": {
+      "name": "pay_less",
+      "confidence": 0.6331959366798401
+    }
+  },
+  {
+    "text": "¿Cómo va todo?",
+    "intent": "greet",
+    "intent_prediction": {
+      "name": "out_of_scope",
+      "confidence": 0.8799881935119629
+    }
+  },
+  {
+    "text": "¿Cuál es mi contribución?",
+    "intent": "request_taxes",
+    "intent_prediction": {
+      "name": "out_of_scope",
+      "confidence": 0.9999980926513672
+    }
+  },
+  {
+    "text": "No voy a ceder.",
+    "intent": "deny",
+    "intent_prediction": {
+      "name": "out_of_scope",
+      "confidence": 0.5623433589935303
+    }
+  },
+  {
+    "text": "No pienso contribuir.",
+    "intent": "deny",
+    "intent_prediction": {
+      "name": "out_of_scope",
+      "confidence": 0.6574780344963074
+    }
+  },
+  {
+    "text": "Mis ingresos no cubren esa cantidad.",
+    "intent": "challenge",
+    "intent_prediction": {
+      "name": "out_of_scope",
+      "confidence": 0.9998338222503662
+    }
+  },
+  {
+    "text": "Ya pagué lo que pude.",
+    "intent": "challenge",
+    "intent_prediction": {
+      "name": "request_taxes",
+      "confidence": 0.49835875630378723
+    }
+  },
+  {
+    "text": "No puedo responder eso.",
+    "intent": "out_of_scope",
+    "intent_prediction": {
+      "name": "challenge",
+      "confidence": 0.6781637668609619
+    }
+  }
+]

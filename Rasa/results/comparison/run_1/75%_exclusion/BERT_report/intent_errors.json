@@ -1,0 +1,42 @@
+[
+  {
+    "text": "Esto es lo que se debe, y te doy 5 peniques en total.",
+    "intent": "pay_more",
+    "intent_prediction": {
+      "name": "pay",
+      "confidence": 0.9956554174423218
+    }
+  },
+  {
+    "text": "Voy a pagarte solo 3 peniques por ahora.",
+    "intent": "pay_less",
+    "intent_prediction": {
+      "name": "pay_more",
+      "confidence": 0.4608963131904602
+    }
+  },
+  {
+    "text": "¿Cómo estás hoy?",
+    "intent": "greet",
+    "intent_prediction": {
+      "name": "out_of_scope",
+      "confidence": 0.9269140958786011
+    }
+  },
+  {
+    "text": "¿Cómo va todo?",
+    "intent": "greet",
+    "intent_prediction": {
+      "name": "out_of_scope",
+      "confidence": 0.7272021174430847
+    }
+  },
+  {
+    "text": "Este es todo el dinero que puedo dar.",
+    "intent": "challenge",
+    "intent_prediction": {
+      "name": "pay_less",
+      "confidence": 0.642993152141571
+    }
+  }
+]

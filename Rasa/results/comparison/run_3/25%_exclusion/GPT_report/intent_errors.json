@@ -1,0 +1,34 @@
+[
+  {
+    "text": "Estoy dispuesto a pagar 6 peniques esta vez.",
+    "intent": "pay_more",
+    "intent_prediction": {
+      "name": "pay",
+      "confidence": 0.9752061367034912
+    }
+  },
+  {
+    "text": "¿Cómo va todo?",
+    "intent": "greet",
+    "intent_prediction": {
+      "name": "challenge",
+      "confidence": 0.7240915894508362
+    }
+  },
+  {
+    "text": "¿Cuál es mi contribución?",
+    "intent": "request_taxes",
+    "intent_prediction": {
+      "name": "out_of_scope",
+      "confidence": 0.9422659277915955
+    }
+  },
+  {
+    "text": "Mis ingresos no cubren esa cantidad.",
+    "intent": "challenge",
+    "intent_prediction": {
+      "name": "out_of_scope",
+      "confidence": 0.9994420409202576
+    }
+  }
+]

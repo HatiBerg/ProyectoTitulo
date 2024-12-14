@@ -1,0 +1,18 @@
+[
+  {
+    "text": "¿Qué tal está tu semana?",
+    "intent": "out_of_scope",
+    "intent_prediction": {
+      "name": "greet",
+      "confidence": 0.7049399614334106
+    }
+  },
+  {
+    "text": "¿Cuánto es 2+2?",
+    "intent": "out_of_scope",
+    "intent_prediction": {
+      "name": "request_taxes",
+      "confidence": 0.7301379442214966
+    }
+  }
+]

@@ -1,0 +1,177 @@
+version: "3.1"
+nlu:
+- intent: pay_more
+  examples: |
+    - Lo prometido y algo más, aquí tienes [5](amount) peniques.
+    - Esto es lo que se debe, y te doy [5](amount) peniques en total.
+    - Aquí tienes lo que pediste, más un extra, [5](amount) peniques.
+    - Voy a darte [6](amount) peniques, espero que sea suficiente.
+    - Esto es más de lo que acordamos, aquí tienes [7](amount) peniques.
+    - Aquí tienes [5](amount) peniques, es más de lo que debía.
+- intent: pay_less
+  examples: |
+    - Aquí tienes [1](amount) penique, es lo único que tengo ahora.
+    - Esto es lo que logré juntar, [3](amount) peniques.
+    - Solo puedo darte [3](amount) peniques, no tengo más.
+    - Esto es lo que puedo aportar, [1](amount) penique.
+    - Te voy a dar [2](amount) peniques, no puedo pagar todo.
+    - Esto es todo lo que puedo pagar por ahora, [2](amount) peniques.
+- intent: greet
+  examples: |
+    - ¡Qué tal!
+    - ¡Saludos!
+    - ¿Cómo va todo?
+    - Hola.
+    - Buen día.
+    - Saludos.
+    - ¡Hola, hola!
+    - ¡Buenos días!
+    - ¡Hola, amigo!
+    - ¡Hola, buen día!
+- intent: request_taxes
+  examples: |
+    - ¿con cuánto debo contribuir?
+    - ¿Cuánto tengo que dar?
+    - ¿Qué cantidad debo entregar?
+    - ¿Cuánto es lo que tengo que pagar?
+    - ¿Cuánto debería pagar?
+    - ¿Cuál es el impuesto que debo pagar?
+    - ¿Cuánto es lo que debo?
+    - ¿Cuál es mi contribución?
+    - ¿Cuánto me corresponde pagar?
+    - ¿Cuánto tengo que pagar?
+    - ¿Cuál es el monto que debo pagar?
+- intent: deny
+  examples: |
+    - No quiero dar ni un penique.
+    - No pienso pagar ni un penique.
+    - No me parece justo pagar.
+    - No quiero aportar nada.
+    - No quiero pagar.
+    - No voy a pagar.
+    - No voy a pagar ese impuesto.
+    - No pago impuestos.
+    - No pago nada de eso.
+    - No voy a pagar nada.
+- intent: challenge
+  examples: |
+    - No tengo más.
+    - Con lo que gano, no me alcanza.
+    - No tengo suficiente para pagar eso.
+    - No me alcanza.
+    - No tengo ni para mí, ¿cómo voy a pagar más?
+    - Con lo que tengo, no puedo cumplir con eso.
+    - No puedo pagar más, ya es todo lo que tengo.
+    - Es lo máximo que puedo darte.
+    - No me alcanza el dinero.
+    - Mis ingresos no cubren esa cantidad.
+    - Con esto no me alcanza ni para vivir.
+    - No me alcanza ni para lo básico.
+- intent: pay
+  examples: |
+    - Esto es lo que acordamos, [4](amount) peniques.
+    - Esto es lo que se debe, [4](amount) peniques.
+    - Claro, aquí tienes lo que corresponde por completo.
+    - De acuerdo, aquí tienes los [4](amount) peniques que debo pagar.
+    - Estoy dispuesto a pagar los [4](amount) peniques correspondientes.
+    - Te dejo [4](amount) peniques, ni más ni menos.
+    - Esto es lo que acordamos, está completo.
+    - Aquí tienes todo lo que se debe, [4](amount) peniques exactos.
+    - Esto es lo que se acordó, está completo.
+    - Como dijimos, aquí tienes lo justo.
+    - Te dejo la cantidad exacta que corresponde por los impuestos.
+    - Voy a pagar los [4](amount) peniques.
+    - Claro, aquí tienes los [4](amount) peniques justos.
+    - Toma.
+- intent: out_of_scope
+  examples: |
+    - Cuéntame una historia de terror.
+    - Dime algo interesante.
+    - 1700
+    - ¿Cómo puedo aprender a tocar un instrumento musical?
+    - 1550
+    - Dame ideas para una cita romántica.
+    - Dame información sobre el arte contemporáneo.
+    - No se
+    - ¿Cómo puedo aprender a bailar?
+    - ¿Cómo se celebra tu cumpleaños?
+    - Cuéntame sobre las tradiciones de Navidad.
+    - ¿Qué es la meditación?
+    - 1950
+    - ¿Qué hace a un buen amigo?
+    - No estoy informada.
+    - ¿Cómo está el tráfico hoy?
+    - No tengo idea.
+    - ¿Qué serie de televisión me recomendarías?
+    - No estoy seguro.
+    - Quiero hacer una pregunta.
+    - 1850
+    - No tengo información al respecto.
+    - Cuéntame un chiste.
+    - 1750
+    - no se
+    - 2000
+    - ¿Cómo se dice "hola" en japonés?
+    - Cuéntame sobre un sueño que hayas tenido.
+    - 1800
+    - Lo desconozco completamente.
+    - No estoy segura de la respuesta.
+    - Cuéntame sobre tus hobbies.
+    - ¿Quién es el presidente de Francia?
+    - Dame información sobre la historia de España.
+    - ¿Qué es lo que te inspira a ser mejor?
+    - ¿Qué habilidades te gustaría aprender en el futuro?
+    - No estoy familiarizada con eso.
+    - 1300
+    - Cuéntame un secreto interesante.
+    - Dime el clima de hoy.
+    - Dame ideas para un regalo de cumpleaños.
+    - 1600
+    - ¿Qué opinas de las películas de ciencia ficción?
+    - ¿Qué hora es?
+    - ¿Cómo puedo ser más productivo en mi trabajo?
+    - ¿Cuál es tu destino de viaje soñado?
+    - No sé
+    - 1500
+    - ¿Qué harías si tuvieras un millón de dólares?
+    - ¿Cómo te sientes sobre el voluntariado?
+    - 1400
+    - Dime una frase inspiradora.
+    - ¿Qué tal está tu semana?
+    - ¿Cómo puedo mejorar mis habilidades de escritura?
+    - 1900
+    - Dame recomendaciones de películas.
+    - ¿Qué es lo que más te gusta hacer en tu tiempo libre?
+    - Recomiéndame un libro.
+    - Cuéntame sobre una tradición en tu país.
+    - ¿Qué harías en un día perfecto?
+    - Cuéntame sobre una comida típica de tu país.
+    - Cuéntame una anécdota divertida.
+    - ¿Cómo puedo mejorar mis habilidades interpersonales?
+    - ¿Cuál es tu videojuego favorito?
+    - ¿Cuál es tu comida favorita?
+    - Dime algo sobre la biología.
+    - ¿Qué opinas sobre la inteligencia artificial?
+    - No puedo responder eso.
+    - Recomiéndame un destino turístico.
+    - No lo sé
+    - Dame tips para una vida saludable.
+    - Cuéntame sobre las últimas tendencias en tecnología.
+    - ¿Cuál es la última película que has visto?
+    - ¿Dónde puedo comprar zapatos en línea?
+    - ¿Dónde está el mejor café de la ciudad?
+    - ¿Cómo puedo organizar mi tiempo mejor?
+    - ¿Qué opinas de la música clásica?
+    - Me temo que no lo sé.
+    - ¿Qué opinas sobre el cambio climático?
+    - no sé
+    - Recomiéndame una serie de televisión.
+    - ¿Cuál es el evento histórico más importante para ti?
+    - ¿Qué es lo que más te apasiona en la vida?
+    - Enséñame a programar en Python.
+    - ¿Cuál es la canción que más te gusta?
+    - No me queda claro.
+    - Dame consejos para viajar solo.
+    - ¿Cuál es la mejor manera de aprender un nuevo idioma?
+    - ¿Qué harías si tuvieras un día libre?
+    - ¿Cómo se hace un cóctel margarita?

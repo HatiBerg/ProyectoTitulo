@@ -1,0 +1,154 @@
+version: "3.1"
+stories:
+- story: pagar impuestos (.\tests\test_stories.yml)
+  steps:
+  - user: |-
+      Hola.
+  - action: action_listen  # predicted: action_default_fallback
+  - intent: greet
+  - action: utter_greet
+  - user: |-
+      ¿Debo pagar?
+  - action: action_listen  # predicted: action_default_fallback
+  - intent: request_taxes
+  - action: utter_inform_taxes  # predicted: action_unlikely_intent
+  - entities:
+    - amount: '4'
+    user: |-
+      Aqui tienes [4](amount) peniques.
+  - slot_was_set:
+    - amount: '4'
+  - action: action_listen  # predicted: action_default_fallback
+  - intent: pay
+  - action: action_extract_data  # predicted: action_default_fallback after action_unlikely_intent
+  - action: action_check_amount  # predicted: action_listen
+  - action: action_listen  # predicted: action_default_fallback
+- story: pagar de más y el soldado devuelve el sobrante (.\tests\test_stories.yml)
+  steps:
+  - user: |-
+      Buenos dias.
+  - action: action_listen  # predicted: action_default_fallback
+  - intent: greet
+  - action: utter_greet
+  - user: |-
+      ¿Cuanto?
+  - action: action_listen  # predicted: action_default_fallback
+  - intent: request_taxes
+  - action: utter_inform_taxes  # predicted: action_unlikely_intent
+  - entities:
+    - amount: '8'
+    user: |-
+      ten [8](amount) peniques.
+  - slot_was_set:
+    - amount: '8'
+  - action: action_listen  # predicted: action_default_fallback
+  - intent: pay_more
+  - action: action_extract_data  # predicted: action_default_fallback after action_unlikely_intent
+  - action: action_check_amount  # predicted: action_listen
+  - action: action_listen  # predicted: action_default_fallback
+- story: pagar menos de lo solicitado y pelear (.\tests\test_stories.yml)
+  steps:
+  - user: |-
+      ¿Cómo estas?
+  - action: action_listen  # predicted: action_default_fallback
+  - intent: greet
+  - action: utter_greet
+  - user: |-
+      ¿cuanto debo pagar?
+  - action: action_listen  # predicted: action_default_fallback
+  - intent: request_taxes
+  - action: utter_inform_taxes  # predicted: action_unlikely_intent
+  - entities:
+    - amount: '2'
+    user: |-
+      solo te puedo dar [2](amount) peniques.
+  - slot_was_set:
+    - amount: '2'
+  - action: action_listen  # predicted: action_default_fallback
+  - intent: pay_less
+  - action: action_check_amount  # predicted: action_default_fallback after action_unlikely_intent
+  - action: action_listen  # predicted: action_default_fallback
+  - user: |-
+      No tengo mas peniques.
+  - action: action_listen  # predicted: action_default_fallback
+  - intent: deny
+  - action: action_extract_data  # predicted: action_default_fallback
+  - action: utter_fight  # predicted: action_listen
+  - action: action_listen  # predicted: action_extract_data
+- story: pagar menos de lo solicitado y pelear (.\tests\test_stories.yml)
+  steps:
+  - user: |-
+      ¿Cómo estas?
+  - action: action_listen  # predicted: action_default_fallback
+  - intent: greet
+  - action: utter_greet
+  - user: |-
+      ¿cuanto debo pagar?
+  - action: action_listen  # predicted: action_default_fallback
+  - intent: request_taxes
+  - action: utter_inform_taxes  # predicted: action_unlikely_intent
+  - entities:
+    - amount: '2'
+    user: |-
+      solo te puedo dar [2](amount) peniques.
+  - slot_was_set:
+    - amount: '2'
+  - action: action_listen  # predicted: action_default_fallback
+  - intent: pay_less
+  - action: action_check_amount  # predicted: action_default_fallback after action_unlikely_intent
+  - action: action_listen  # predicted: action_default_fallback
+  - user: |-
+      No tengo mas peniques.
+  - action: action_listen  # predicted: action_default_fallback
+  - intent: challenge
+  - action: action_extract_data  # predicted: utter_fight
+  - action: utter_fight  # predicted: action_listen
+  - action: action_listen  # predicted: action_extract_data
+- story: negarse a pagar impuestos y pelear (.\tests\test_stories.yml)
+  steps:
+  - user: |-
+      ¿Qué tal?
+  - action: action_listen  # predicted: action_default_fallback
+  - intent: greet
+  - action: utter_greet
+  - user: |-
+      ¿Y debo pagar cuanto?
+  - action: action_listen  # predicted: action_default_fallback
+  - intent: request_taxes
+  - action: utter_inform_taxes  # predicted: action_unlikely_intent
+  - user: |-
+      No pienso pagarte ni un penique
+  - action: action_listen  # predicted: action_default_fallback
+  - intent: deny
+  - action: utter_refuse_payment  # predicted: action_default_fallback
+  - user: |-
+      porque no puedo pagarlo
+  - action: action_listen  # predicted: action_default_fallback
+  - intent: challenge
+  - action: action_extract_data  # predicted: utter_fight
+  - action: utter_fight  # predicted: action_listen
+  - action: action_listen  # predicted: action_extract_data
+- story: negarse a pagar impuestos y pelear (.\tests\test_stories.yml)
+  steps:
+  - user: |-
+      ¿Qué tal?
+  - action: action_listen  # predicted: action_default_fallback
+  - intent: greet
+  - action: utter_greet
+  - user: |-
+      ¿Y debo pagar cuanto?
+  - action: action_listen  # predicted: action_default_fallback
+  - intent: request_taxes
+  - action: utter_inform_taxes  # predicted: action_unlikely_intent
+  - user: |-
+      No pienso pagarte ni un penique
+  - action: action_listen  # predicted: action_default_fallback
+  - intent: challenge
+  - action: utter_refuse_payment  # predicted: utter_fight
+  - user: |-
+      porque no puedo pagarlo
+  - action: action_listen  # predicted: action_default_fallback
+  - intent: challenge
+  - action: action_extract_data  # predicted: utter_fight
+  - action: utter_fight  # predicted: action_listen
+  - action: action_listen  # predicted: action_extract_data

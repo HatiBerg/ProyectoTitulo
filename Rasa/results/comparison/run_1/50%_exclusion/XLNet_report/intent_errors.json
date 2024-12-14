@@ -1,0 +1,106 @@
+[
+  {
+    "text": "Voy a darte 6 peniques, espero que sea suficiente.",
+    "intent": "pay_more",
+    "intent_prediction": {
+      "name": "out_of_scope",
+      "confidence": 0.9957583546638489
+    }
+  },
+  {
+    "text": "Esto es lo que se debe, y te doy 5 peniques en total.",
+    "intent": "pay_more",
+    "intent_prediction": {
+      "name": "pay",
+      "confidence": 0.9536638259887695
+    }
+  },
+  {
+    "text": "Esto es lo que logré juntar, 3 peniques.",
+    "intent": "pay_less",
+    "intent_prediction": {
+      "name": "pay",
+      "confidence": 0.49803218245506287
+    }
+  },
+  {
+    "text": "Voy a pagarte solo 3 peniques por ahora.",
+    "intent": "pay_less",
+    "intent_prediction": {
+      "name": "out_of_scope",
+      "confidence": 0.5319201946258545
+    }
+  },
+  {
+    "text": "¿Cómo estás hoy?",
+    "intent": "greet",
+    "intent_prediction": {
+      "name": "out_of_scope",
+      "confidence": 0.9272381067276001
+    }
+  },
+  {
+    "text": "¡Buenos días!",
+    "intent": "greet",
+    "intent_prediction": {
+      "name": "out_of_scope",
+      "confidence": 0.7702291011810303
+    }
+  },
+  {
+    "text": "¿Cómo va todo?",
+    "intent": "greet",
+    "intent_prediction": {
+      "name": "out_of_scope",
+      "confidence": 0.9766364693641663
+    }
+  },
+  {
+    "text": "No pago impuestos.",
+    "intent": "deny",
+    "intent_prediction": {
+      "name": "challenge",
+      "confidence": 0.3473845422267914
+    }
+  },
+  {
+    "text": "No voy a ceder.",
+    "intent": "deny",
+    "intent_prediction": {
+      "name": "out_of_scope",
+      "confidence": 0.6561470031738281
+    }
+  },
+  {
+    "text": "No es justo, no tengo ese dinero.",
+    "intent": "challenge",
+    "intent_prediction": {
+      "name": "deny",
+      "confidence": 0.7804659605026245
+    }
+  },
+  {
+    "text": "No me llega para eso.",
+    "intent": "challenge",
+    "intent_prediction": {
+      "name": "out_of_scope",
+      "confidence": 0.6198676824569702
+    }
+  },
+  {
+    "text": "Aquí tienes todo lo que se debe, ni más ni menos.",
+    "intent": "pay",
+    "intent_prediction": {
+      "name": "challenge",
+      "confidence": 0.46483367681503296
+    }
+  },
+  {
+    "text": "No tengo datos sobre eso.",
+    "intent": "out_of_scope",
+    "intent_prediction": {
+      "name": "challenge",
+      "confidence": 0.4852421283721924
+    }
+  }
+]

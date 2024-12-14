@@ -1,0 +1,138 @@
+[
+  {
+    "text": "Quiero pagar más, aquí tienes 6 peniques.",
+    "intent": "pay_more",
+    "intent_prediction": {
+      "name": "pay",
+      "confidence": 0.7500419616699219
+    }
+  },
+  {
+    "text": "Te dejo 7 peniques para cubrir más de lo debido.",
+    "intent": "pay_more",
+    "intent_prediction": {
+      "name": "out_of_scope",
+      "confidence": 0.46326079964637756
+    }
+  },
+  {
+    "text": "No puedo cubrir todo, pero aquí tienes 2 peniques.",
+    "intent": "pay_less",
+    "intent_prediction": {
+      "name": "pay",
+      "confidence": 0.5489633083343506
+    }
+  },
+  {
+    "text": "Voy a pagarte solo 3 peniques por ahora.",
+    "intent": "pay_less",
+    "intent_prediction": {
+      "name": "pay_more",
+      "confidence": 0.6000520586967468
+    }
+  },
+  {
+    "text": "¿Cómo estás hoy?",
+    "intent": "greet",
+    "intent_prediction": {
+      "name": "out_of_scope",
+      "confidence": 0.5147005319595337
+    }
+  },
+  {
+    "text": "¡Qué hay!",
+    "intent": "greet",
+    "intent_prediction": {
+      "name": "out_of_scope",
+      "confidence": 0.944614052772522
+    }
+  },
+  {
+    "text": "¿Qué cantidad tengo que contribuir?",
+    "intent": "request_taxes",
+    "intent_prediction": {
+      "name": "challenge",
+      "confidence": 0.5987739562988281
+    }
+  },
+  {
+    "text": "No tengo dinero para eso.",
+    "intent": "deny",
+    "intent_prediction": {
+      "name": "challenge",
+      "confidence": 0.656603217124939
+    }
+  },
+  {
+    "text": "No quiero contribuir con eso.",
+    "intent": "deny",
+    "intent_prediction": {
+      "name": "challenge",
+      "confidence": 0.596969723701477
+    }
+  },
+  {
+    "text": "No tengo intención de pagar.",
+    "intent": "deny",
+    "intent_prediction": {
+      "name": "out_of_scope",
+      "confidence": 0.8490841388702393
+    }
+  },
+  {
+    "text": "No pienso seguir apoyando este impuesto",
+    "intent": "challenge",
+    "intent_prediction": {
+      "name": "out_of_scope",
+      "confidence": 0.7752319574356079
+    }
+  },
+  {
+    "text": "No puedes obligarme.",
+    "intent": "challenge",
+    "intent_prediction": {
+      "name": "out_of_scope",
+      "confidence": 0.9927136301994324
+    }
+  },
+  {
+    "text": "No me llega para eso.",
+    "intent": "challenge",
+    "intent_prediction": {
+      "name": "out_of_scope",
+      "confidence": 0.9000285267829895
+    }
+  },
+  {
+    "text": "Toma, aqui tienes.",
+    "intent": "pay",
+    "intent_prediction": {
+      "name": "out_of_scope",
+      "confidence": 0.5349473357200623
+    }
+  },
+  {
+    "text": "Lo prometido es deuda, aquí tienes lo exacto.",
+    "intent": "pay",
+    "intent_prediction": {
+      "name": "out_of_scope",
+      "confidence": 0.9385652542114258
+    }
+  },
+  {
+    "text": "No lo tengo claro.",
+    "intent": "out_of_scope",
+    "intent_prediction": {
+      "name": "challenge",
+      "confidence": 0.7163381576538086
+    }
+  },
+  {
+    "text": "No estoy al tanto.",
+    "intent": "out_of_scope",
+    "intent_prediction": {
+      "name": "deny",
+      "confidence": 0.2957722842693329
+    }
+  }
+]

@@ -1,0 +1,66 @@
+[
+  {
+    "text": "Voy a darte 6 peniques, espero que sea suficiente.",
+    "intent": "pay_more",
+    "intent_prediction": {
+      "name": "pay_less",
+      "confidence": 0.3758922219276428
+    }
+  },
+  {
+    "text": "Esto es lo que se debe, y te doy 5 peniques en total.",
+    "intent": "pay_more",
+    "intent_prediction": {
+      "name": "pay",
+      "confidence": 0.9946693778038025
+    }
+  },
+  {
+    "text": "Esto es lo que logré juntar, 3 peniques.",
+    "intent": "pay_less",
+    "intent_prediction": {
+      "name": "pay",
+      "confidence": 0.9679603576660156
+    }
+  },
+  {
+    "text": "¿Cómo estás hoy?",
+    "intent": "greet",
+    "intent_prediction": {
+      "name": "out_of_scope",
+      "confidence": 0.8559985756874084
+    }
+  },
+  {
+    "text": "¿Cómo va todo?",
+    "intent": "greet",
+    "intent_prediction": {
+      "name": "out_of_scope",
+      "confidence": 0.9844569563865662
+    }
+  },
+  {
+    "text": "No quiero dar ni un penique.",
+    "intent": "deny",
+    "intent_prediction": {
+      "name": "pay_less",
+      "confidence": 0.41593417525291443
+    }
+  },
+  {
+    "text": "Es lo máximo que puedo darte.",
+    "intent": "challenge",
+    "intent_prediction": {
+      "name": "out_of_scope",
+      "confidence": 0.641848087310791
+    }
+  },
+  {
+    "text": "Aquí tienes todo lo que se debe, ni más ni menos.",
+    "intent": "pay",
+    "intent_prediction": {
+      "name": "challenge",
+      "confidence": 0.8005898594856262
+    }
+  }
+]

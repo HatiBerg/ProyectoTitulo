@@ -1,0 +1,221 @@
+version: "3.1"
+nlu:
+- intent: pay_more
+  examples: |
+    - Esto es más de lo que acordamos, aquí tienes [7](amount) peniques.
+    - Lo prometido y algo más, aquí tienes [5](amount) peniques.
+    - Esto es lo que se debe, y te doy [5](amount) peniques en total.
+    - Voy a pagarte [6](amount) peniques, un poco más de lo acordado.
+    - Aquí tienes lo que pediste, más un extra, [5](amount) peniques.
+    - Aquí tienes [5](amount) peniques, es más de lo que debía.
+    - Voy a darte [6](amount) peniques, espero que sea suficiente.
+- intent: pay_less
+  examples: |
+    - Solo puedo darte [3](amount) peniques, no tengo más.
+    - Esto es lo que puedo aportar, [1](amount) penique.
+    - Aquí tienes [1](amount) penique, es lo único que tengo ahora.
+    - Esto es todo lo que puedo pagar por ahora, [2](amount) peniques.
+    - Lo siento, solo puedo aportar [3](amount) peniques.
+    - Esto es lo que logré juntar, [3](amount) peniques.
+    - Lo siento, no puedo pagar todo, aquí tienes [3](amount) peniques.
+- intent: greet
+  examples: |
+    - Hola, ¿qué tal?
+    - ¿Cómo estás?
+    - ¡Saludos!
+    - ¡Buenos días!
+    - Buen día.
+    - ¡Hola, buen día!
+    - ¡Qué tal!
+    - ¡Hola, hola!
+    - ¿Cómo va todo?
+    - ¡Hola, amigo!
+    - Saludos.
+    - Hola.
+- intent: request_taxes
+  examples: |
+    - ¿Qué tengo que aportar?
+    - ¿Cuánto tengo que pagar?
+    - ¿Cuánto debería pagar?
+    - ¿Cuál es el monto que debo pagar?
+    - ¿Cuánto debo de impuestos?
+    - ¿Cuánto es lo que debo?
+    - ¿Cuánto tengo que dar?
+    - ¿Cuánto debo pagar?
+    - ¿Cuál es mi contribución?
+    - ¿Qué cantidad debo entregar?
+    - ¿con cuánto debo contribuir?
+    - ¿Cuál es el impuesto que debo pagar?
+    - ¿Cuánto es lo que tengo que pagar?
+- intent: deny
+  examples: |
+    - No quiero pagar.
+    - No voy a pagar ese impuesto.
+    - No voy a ceder.
+    - No quiero aportar nada.
+    - No voy a pagar nada.
+    - No pienso dar nada.
+    - No me parece justo pagar.
+    - No voy a pagar.
+    - No pago impuestos.
+    - No pienso contribuir.
+    - No quiero dar ni un penique.
+    - No pienso pagar ni un penique.
+    - No tengo obligación de pagar.
+- intent: challenge
+  examples: |
+    - Con esto no me alcanza ni para vivir.
+    - No me alcanza el dinero.
+    - Eso es todo lo que tengo.
+    - Este es todo el dinero que puedo dar.
+    - Con lo que gano, no me alcanza.
+    - No tengo más.
+    - No me alcanza ni para lo básico.
+    - Es lo máximo que puedo darte.
+    - No tengo suficiente para pagar eso.
+    - Mis ingresos no cubren esa cantidad.
+    - No es justo, no tengo ese dinero.
+    - Con lo que tengo, no puedo cumplir con eso.
+    - No puedo pagar más, ya es todo lo que tengo.
+    - Ya pagué lo que pude.
+    - No me alcanza.
+- intent: pay
+  examples: |
+    - Como dijimos, aquí tienes los [4](amount) peniques justos.
+    - Te dejo la cantidad exacta que corresponde por los impuestos.
+    - Aquí tienes todo lo que se debe, [4](amount) peniques exactos.
+    - Claro, aquí tienes los [4](amount) peniques justos.
+    - Estoy dispuesto a pagar los [4](amount) peniques correspondientes.
+    - Aquí tienes todo lo que se debe, ni más ni menos.
+    - Como dijimos, aquí tienes lo justo.
+    - Esto es lo que acordamos, [4](amount) peniques.
+    - Estoy dispuesto a cubrir exactamente lo que debo.
+    - De acuerdo, aquí tienes los [4](amount) peniques que debo pagar.
+    - Te dejo [4](amount) peniques, ni más ni menos.
+    - Toma.
+    - Esto es lo que se debe, [4](amount) peniques.
+    - Claro, aquí tienes lo que corresponde por completo.
+    - Voy a pagar los [4](amount) peniques.
+    - Esto es lo que acordamos, está completo.
+    - Esto es lo que se acordó, está completo.
+- intent: out_of_scope
+  examples: |
+    - Dime algo sobre la biología.
+    - ¿Cuál es la canción que más te gusta?
+    - ¿Qué es lo que más te apasiona en la vida?
+    - ¿Cómo está el tráfico hoy?
+    - No lo sé
+    - Dame información sobre la historia de España.
+    - ¿Qué es lo que más te gusta hacer en tu tiempo libre?
+    - ¿Qué opinas de la música clásica?
+    - Cuéntame sobre un momento memorable de tu infancia.
+    - ¿Qué harías en un día perfecto?
+    - No te podría decir.
+    - No tengo datos sobre eso.
+    - Dame consejos para hacer ejercicio.
+    - ¿Cómo se celebra tu cumpleaños?
+    - ¿Qué habilidades te gustaría aprender en el futuro?
+    - No estoy informado.
+    - 1600
+    - ¿Qué es lo que más valoras en la vida?
+    - ¿Cuál es el evento histórico más importante para ti?
+    - Quiero hacer una pregunta.
+    - 1850
+    - ¿Cómo puedo aprender a bailar?
+    - Cuéntame un secreto interesante.
+    - ¿Qué tipo de música te gusta?
+    - Dime el clima de hoy.
+    - 2000
+    - 1550
+    - 1800
+    - Dame una receta para hacer pizza.
+    - No estoy seguro de la respuesta.
+    - ¿Qué opinas de las películas de ciencia ficción?
+    - No se
+    - Dame ideas para un regalo de cumpleaños.
+    - ¿Puedes ayudarme a estudiar para un examen?
+    - ¿Qué es la meditación?
+    - ¿Qué significa la palabra 'epistemología'?
+    - Dame información sobre el arte contemporáneo.
+    - Muéstrame las noticias más recientes.
+    - ¿Cómo puedo mejorar mis habilidades de escritura?
+    - ¿Cuál es tu videojuego favorito?
+    - Lo desconozco completamente.
+    - Dime algo interesante.
+    - ¿Qué opinas sobre la inteligencia artificial?
+    - ¿Qué tipo de arte prefieres?
+    - No tengo idea.
+    - Cuéntame sobre un sueño que hayas tenido.
+    - No estoy familiarizada con eso.
+    - ¿Cómo se dice "hola" en japonés?
+    - Recomiéndame un destino turístico.
+    - ¿Qué puedo hacer para relajarme?
+    - ¿Cuál es tu comida favorita?
+    - no se
+    - ¿Cómo puedo organizar mi tiempo mejor?
+    - No estoy seguro.
+    - ¿Cómo puedo ser más productivo en mi trabajo?
+    - Enséñame a programar en Python.
+    - 1900
+    - Cuéntame sobre una comida típica de tu país.
+    - Cuéntame sobre tus hobbies.
+    - ¿Cómo se hace un cóctel margarita?
+    - ¿Qué serie de televisión me recomendarías?
+    - Dame recomendaciones de películas.
+    - Cuéntame un chiste.
+    - Dame tips para una vida saludable.
+    - Dame consejos para superar el estrés.
+    - Me temo que no lo sé.
+    - ¿Qué es lo que te inspira a ser mejor?
+    - Recomiéndame un juego de mesa.
+    - no sé
+    - Dime una frase inspiradora.
+    - Ayúdame a encontrar un restaurante cercano.
+    - ¿Cuál es la mejor manera de aprender un nuevo idioma?
+    - ¿Dónde puedo comprar zapatos en línea?
+    - Háblame sobre el espacio exterior.
+    - Cuéntame una historia de terror.
+    - 1500
+    - ¿Cuál es la última película que has visto?
+    - No estoy informada.
+    - 1300
+    - 1750
+    - ¿Cómo te sientes sobre el voluntariado?
+    - ¿Puedes reservar un vuelo para mí?
+    - No estoy segura de la respuesta.
+    - No puedo responder eso.
+    - ¿Dónde está el mejor café de la ciudad?
+    - ¿Qué tal está tu semana?
+    - No estoy familiarizado con eso.
+    - No tengo información al respecto.
+    - ¿Cuánto es 2+2?
+    - ¿Qué es lo que más te gusta de tu ciudad?
+    - ¿Quién es el presidente de Francia?
+    - 1400
+    - Dame consejos sobre jardinería.
+    - ¿Cuál es tu destino de viaje soñado?
+    - ¿Cómo puedo mejorar mis habilidades interpersonales?
+    - Hazme una pregunta.
+    - ¿Qué opinas sobre el cambio climático?
+    - ¿Qué harías si tuvieras un millón de dólares?
+    - Dame ideas para una cita romántica.
+    - Recomiéndame un libro.
+    - No tengo la menor idea.
+    - ¿Qué harías si tuvieras un día libre?
+    - ¿Qué hace a un buen amigo?
+    - ¿Cómo se llama tu mascota?
+    - Cuéntame sobre una tradición en tu país.
+    - Recomiéndame una serie de televisión.
+    - Cuéntame sobre las tradiciones de Navidad.
+    - ¿Cómo te preparas para una entrevista de trabajo?
+    - ¿Qué hora es?
+    - Dame consejos para viajar solo.
+    - No lo sé con certeza.
+    - 1700
+    - 1950
+    - 1650
+    - ¿Cómo puedo aprender a tocar un instrumento musical?
+    - 1350
+    - Cuéntame una anécdota divertida.
+    - No me queda claro.
+    - No sé

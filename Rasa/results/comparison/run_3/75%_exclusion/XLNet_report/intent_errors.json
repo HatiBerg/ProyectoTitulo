@@ -1,0 +1,122 @@
+[
+  {
+    "text": "Estoy dispuesto a pagar 6 peniques esta vez.",
+    "intent": "pay_more",
+    "intent_prediction": {
+      "name": "pay",
+      "confidence": 0.9600076079368591
+    }
+  },
+  {
+    "text": "Aquí tienes lo que pediste, más un extra, 5 peniques.",
+    "intent": "pay_more",
+    "intent_prediction": {
+      "name": "pay_less",
+      "confidence": 0.5161492228507996
+    }
+  },
+  {
+    "text": "Lo siento, no puedo pagar todo, aquí tienes 3 peniques.",
+    "intent": "pay_less",
+    "intent_prediction": {
+      "name": "pay_more",
+      "confidence": 0.5887241363525391
+    }
+  },
+  {
+    "text": "¿Cómo va todo?",
+    "intent": "greet",
+    "intent_prediction": {
+      "name": "out_of_scope",
+      "confidence": 0.979568362236023
+    }
+  },
+  {
+    "text": "¡Hola, amigo!",
+    "intent": "greet",
+    "intent_prediction": {
+      "name": "out_of_scope",
+      "confidence": 0.9630550146102905
+    }
+  },
+  {
+    "text": "¿Cuál es mi contribución?",
+    "intent": "request_taxes",
+    "intent_prediction": {
+      "name": "out_of_scope",
+      "confidence": 0.9999861717224121
+    }
+  },
+  {
+    "text": "No pienso dar nada.",
+    "intent": "deny",
+    "intent_prediction": {
+      "name": "out_of_scope",
+      "confidence": 0.9163686633110046
+    }
+  },
+  {
+    "text": "No quiero dar ni un penique.",
+    "intent": "deny",
+    "intent_prediction": {
+      "name": "out_of_scope",
+      "confidence": 0.9780228734016418
+    }
+  },
+  {
+    "text": "No pienso contribuir.",
+    "intent": "deny",
+    "intent_prediction": {
+      "name": "out_of_scope",
+      "confidence": 0.9955736398696899
+    }
+  },
+  {
+    "text": "Mis ingresos no cubren esa cantidad.",
+    "intent": "challenge",
+    "intent_prediction": {
+      "name": "out_of_scope",
+      "confidence": 0.9998716115951538
+    }
+  },
+  {
+    "text": "Ya pagué lo que pude.",
+    "intent": "challenge",
+    "intent_prediction": {
+      "name": "request_taxes",
+      "confidence": 0.5947803854942322
+    }
+  },
+  {
+    "text": "Toma, aqui tienes.",
+    "intent": "pay",
+    "intent_prediction": {
+      "name": "out_of_scope",
+      "confidence": 0.9940051436424255
+    }
+  },
+  {
+    "text": "Lo prometido es deuda, aquí tienes los 4 peniques exactos.",
+    "intent": "pay",
+    "intent_prediction": {
+      "name": "pay_more",
+      "confidence": 0.7973980903625488
+    }
+  },
+  {
+    "text": "No tengo datos sobre eso.",
+    "intent": "out_of_scope",
+    "intent_prediction": {
+      "name": "deny",
+      "confidence": 0.9114230871200562
+    }
+  },
+  {
+    "text": "¿Cuánto es 2+2?",
+    "intent": "out_of_scope",
+    "intent_prediction": {
+      "name": "pay_less",
+      "confidence": 0.3186478316783905
+    }
+  }
+]

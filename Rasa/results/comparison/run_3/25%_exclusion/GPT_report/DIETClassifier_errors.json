@@ -1,0 +1,16 @@
+[
+  {
+    "text": "¿Cuánto es 2+2?",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "amount",
+        "start": 11,
+        "end": 14,
+        "confidence_entity": 0.9995645880699158,
+        "value": "2+2",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  }
+]

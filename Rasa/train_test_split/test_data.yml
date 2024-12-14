@@ -2,70 +2,70 @@ version: "3.1"
 nlu:
 - intent: pay_more
   examples: |
+    - Voy a pagarte [6](amount) peniques, un poco más de lo acordado.
     - Te dejo [7](amount) peniques para cubrir más de lo debido.
-    - Lo prometido y algo más, aquí tienes [5](amount) peniques.
 - intent: pay_less
   examples: |
-    - No puedo cubrir todo, pero aquí tienes [2](amount) peniques.
-    - Esto es todo lo que puedo pagar por ahora, [2](amount) peniques.
+    - Lo siento, solo puedo aportar [3](amount) peniques.
+    - Te voy a dar [2](amount) peniques, no puedo pagar todo.
 - intent: greet
   examples: |
-    - ¡Buenos días!
-    - ¿Cómo estás hoy?
-    - ¡Hola, hola!
-    - Saludos.
+    - ¡Hola, amigo!
+    - ¡Qué tal!
+    - Buenas.
+    - Hola, ¿qué tal?
 - intent: request_taxes
   examples: |
     - ¿Cuánto debo pagar?
-    - ¿Cuál es el impuesto que debo pagar?
-    - ¿Cuánto debo de impuestos?
+    - ¿Qué cantidad debo entregar?
+    - ¿Cuánto debería pagar?
 - intent: deny
   examples: |
-    - No quiero dar ni un penique.
-    - No tengo intención de pagar.
+    - No pienso pagar.
     - No voy a pagar nada.
-    - No tengo obligación de pagar.
+    - No tengo intención de pagar.
+    - No pago nada de eso.
 - intent: challenge
   examples: |
+    - Eso es todo lo que tengo.
     - No es justo, no tengo ese dinero.
-    - No me alcanza ni para lo básico.
-    - No puedes obligarme.
-    - No pienso seguir apoyando este impuesto
+    - Ya pagué lo que pude.
+    - No puedo pagar más, ya es todo lo que tengo.
 - intent: pay
   examples: |
-    - Te dejo la cantidad exacta que corresponde por los impuestos.
-    - Lo prometido es deuda, aquí tienes lo exacto.
-    - Claro, aquí tienes los [4](amount) peniques justos.
-    - De acuerdo, aquí tienes todo lo que corresponde.
+    - Lo prometido es deuda, aquí tienes los [4](amount) peniques exactos.
+    - Toma.
+    - Como dijimos, aquí tienes los [4](amount) peniques justos.
+    - Toma, aqui tienes.
 - intent: out_of_scope
   examples: |
-    - ¿Puedes ayudarme a estudiar para un examen?
-    - 1800
-    - Dime algo interesante.
-    - no se
-    - ¿Cuál es la capital de Australia?
-    - ¿Dónde está el mejor café de la ciudad?
-    - ¿Quién es el presidente de Francia?
     - ¿Qué serie de televisión me recomendarías?
     - No lo tengo claro.
-    - ¿Qué es la meditación?
-    - Cuéntame sobre tus hobbies.
-    - ¿Qué es lo que más te gusta hacer en tu tiempo libre?
-    - No estoy seguro.
-    - ¿Qué opinas sobre las redes sociales?
-    - No tengo respuesta para eso.
+    - No estoy segura de la respuesta.
+    - Cuéntame sobre las últimas tendencias en tecnología.
+    - ¿Qué opinas de las películas de ciencia ficción?
     - ¿Qué lugar del mundo te gustaría visitar y por qué?
-    - 1300
-    - ¿Quién ganó el último partido de fútbol?
-    - Recomiéndame un libro.
-    - ¿Puedes reservar un vuelo para mí?
-    - ¿Qué opinas de la música clásica?
-    - Cuéntame sobre las tradiciones de Navidad.
-    - ¿Cuál es tu comida favorita?
-    - ¿Qué harías si tuvieras un día libre?
-    - Enséñame a programar en Python.
-    - 1350
-    - 1900
-    - 1650
+    - ¿Cuál es la mejor manera de aprender un nuevo idioma?
+    - Recomiéndame un destino turístico.
+    - ¿Cuál es el evento histórico más importante para ti?
+    - ¿Cuál es tu libro favorito?
+    - 2024
+    - Quiero hacer una pregunta.
+    - No estoy informado.
+    - ¿Cuál es tu color favorito?
+    - ¿Qué puedo hacer para relajarme?
     - ¿Qué tipo de arte prefieres?
-    - 1750
+    - ¿Dónde está el mejor café de la ciudad?
+    - ¿Cómo se hace un cóctel margarita?
+    - 1900
+    - ¿Puedes reservar un vuelo para mí?
+    - No tengo idea.
+    - ¿Qué es lo que más te gusta de tu ciudad?
+    - ¿Qué opinas de la música clásica?
+    - ¿Qué significa la palabra 'epistemología'?
+    - ¿Cuál es tu videojuego favorito?
+    - Dame una receta para hacer pizza.
+    - 1650
+    - ¿Cuál es la mejor manera de ahorrar dinero?
+    - Me temo que no lo sé.
+    - ¿Cómo puedo mejorar mis habilidades de escritura?

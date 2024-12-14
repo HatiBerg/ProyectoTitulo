@@ -1,0 +1,130 @@
+[
+  {
+    "text": "Voy a darte 6 peniques, espero que sea suficiente.",
+    "intent": "pay_more",
+    "intent_prediction": {
+      "name": "out_of_scope",
+      "confidence": 0.9202561974525452
+    }
+  },
+  {
+    "text": "Esto es lo que se debe, y te doy 5 peniques en total.",
+    "intent": "pay_more",
+    "intent_prediction": {
+      "name": "pay",
+      "confidence": 0.9985164999961853
+    }
+  },
+  {
+    "text": "Esto es lo que logré juntar, 3 peniques.",
+    "intent": "pay_less",
+    "intent_prediction": {
+      "name": "pay",
+      "confidence": 0.8051380515098572
+    }
+  },
+  {
+    "text": "Voy a pagarte solo 3 peniques por ahora.",
+    "intent": "pay_less",
+    "intent_prediction": {
+      "name": "pay_more",
+      "confidence": 0.8103551864624023
+    }
+  },
+  {
+    "text": "¿Cómo estás hoy?",
+    "intent": "greet",
+    "intent_prediction": {
+      "name": "out_of_scope",
+      "confidence": 0.6393713355064392
+    }
+  },
+  {
+    "text": "¡Buenos días!",
+    "intent": "greet",
+    "intent_prediction": {
+      "name": "out_of_scope",
+      "confidence": 0.9886414408683777
+    }
+  },
+  {
+    "text": "¿Cómo va todo?",
+    "intent": "greet",
+    "intent_prediction": {
+      "name": "out_of_scope",
+      "confidence": 0.9685389399528503
+    }
+  },
+  {
+    "text": "No voy a ceder.",
+    "intent": "deny",
+    "intent_prediction": {
+      "name": "greet",
+      "confidence": 0.35973453521728516
+    }
+  },
+  {
+    "text": "No es justo, no tengo ese dinero.",
+    "intent": "challenge",
+    "intent_prediction": {
+      "name": "out_of_scope",
+      "confidence": 0.8613893985748291
+    }
+  },
+  {
+    "text": "Este es todo el dinero que puedo dar.",
+    "intent": "challenge",
+    "intent_prediction": {
+      "name": "out_of_scope",
+      "confidence": 0.9997255206108093
+    }
+  },
+  {
+    "text": "Es lo máximo que puedo darte.",
+    "intent": "challenge",
+    "intent_prediction": {
+      "name": "out_of_scope",
+      "confidence": 0.9820376634597778
+    }
+  },
+  {
+    "text": "Aquí tienes todo lo que se debe, ni más ni menos.",
+    "intent": "pay",
+    "intent_prediction": {
+      "name": "challenge",
+      "confidence": 0.41681554913520813
+    }
+  },
+  {
+    "text": "Lo prometido es deuda, aquí tienes lo exacto.",
+    "intent": "pay",
+    "intent_prediction": {
+      "name": "out_of_scope",
+      "confidence": 0.998958945274353
+    }
+  },
+  {
+    "text": "Como dijimos, aquí tienes los 4 peniques justos.",
+    "intent": "pay",
+    "intent_prediction": {
+      "name": "pay_more",
+      "confidence": 0.749626874923706
+    }
+  },
+  {
+    "text": "No te podría decir.",
+    "intent": "out_of_scope",
+    "intent_prediction": {
+      "name": "deny",
+      "confidence": 0.6784968376159668
+    }
+  },
+  {
+    "text": "No estoy informado.",
+    "intent": "out_of_scope",
+    "intent_prediction": {
+      "name": "deny",
+      "confidence": 0.716702401638031
+    }
+  }
+]

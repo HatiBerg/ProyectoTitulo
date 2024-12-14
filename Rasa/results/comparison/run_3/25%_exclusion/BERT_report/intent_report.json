@@ -1,0 +1,79 @@
+{
+  "deny": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 4,
+    "confused_with": {}
+  },
+  "greet": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 4,
+    "confused_with": {}
+  },
+  "pay": {
+    "precision": 0.8,
+    "recall": 1.0,
+    "f1-score": 0.888888888888889,
+    "support": 4,
+    "confused_with": {}
+  },
+  "pay_more": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 2,
+    "confused_with": {}
+  },
+  "challenge": {
+    "precision": 1.0,
+    "recall": 0.75,
+    "f1-score": 0.8571428571428571,
+    "support": 4,
+    "confused_with": {
+      "pay": 1
+    }
+  },
+  "out_of_scope": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 30,
+    "confused_with": {}
+  },
+  "request_taxes": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 3,
+    "confused_with": {}
+  },
+  "pay_less": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 2,
+    "confused_with": {}
+  },
+  "accuracy": 0.9811320754716981,
+  "macro avg": {
+    "precision": 0.975,
+    "recall": 0.96875,
+    "f1-score": 0.9682539682539683,
+    "support": 53
+  },
+  "weighted avg": {
+    "precision": 0.9849056603773585,
+    "recall": 0.9811320754716981,
+    "f1-score": 0.9808325846061696,
+    "support": 53
+  },
+  "micro avg": {
+    "precision": 0.9811320754716981,
+    "recall": 0.9811320754716981,
+    "f1-score": 0.9811320754716981,
+    "support": 53
+  }
+}

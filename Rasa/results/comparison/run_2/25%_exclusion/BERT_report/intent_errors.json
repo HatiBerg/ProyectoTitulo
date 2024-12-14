@@ -1,0 +1,42 @@
+[
+  {
+    "text": "¿Cómo estás hoy?",
+    "intent": "greet",
+    "intent_prediction": {
+      "name": "out_of_scope",
+      "confidence": 0.9969603419303894
+    }
+  },
+  {
+    "text": "No tengo dinero para eso.",
+    "intent": "deny",
+    "intent_prediction": {
+      "name": "challenge",
+      "confidence": 0.9984838366508484
+    }
+  },
+  {
+    "text": "No pienso seguir apoyando este impuesto",
+    "intent": "challenge",
+    "intent_prediction": {
+      "name": "deny",
+      "confidence": 0.9271396994590759
+    }
+  },
+  {
+    "text": "Eso es lo que puedo pagar.",
+    "intent": "challenge",
+    "intent_prediction": {
+      "name": "request_taxes",
+      "confidence": 0.6184437870979309
+    }
+  },
+  {
+    "text": "No puedes obligarme.",
+    "intent": "challenge",
+    "intent_prediction": {
+      "name": "out_of_scope",
+      "confidence": 0.9674414992332458
+    }
+  }
+]

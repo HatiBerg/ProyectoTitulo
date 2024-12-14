@@ -1,0 +1,124 @@
+version: "3.1"
+nlu:
+- intent: pay_more
+  examples: |
+    - Esto es lo que se debe, y te doy [5](amount) peniques en total.
+    - Voy a darte [6](amount) peniques, espero que sea suficiente.
+    - Voy a pagarte [6](amount) peniques, un poco más de lo acordado.
+    - Estoy dispuesto a pagar [6](amount) peniques esta vez.
+- intent: pay_less
+  examples: |
+    - Lo siento, solo puedo aportar [3](amount) peniques.
+    - Te voy a dar [2](amount) peniques, no puedo pagar todo.
+    - Solo puedo darte [3](amount) peniques, no tengo más.
+    - Esto es lo que logré juntar, [3](amount) peniques.
+- intent: greet
+  examples: |
+    - ¡Saludos!
+    - ¡Hola, buen día!
+    - ¿Cómo estás?
+    - Hola.
+    - ¡Hola, amigo!
+    - Buen día.
+    - ¡Qué tal!
+- intent: request_taxes
+  examples: |
+    - ¿Cuál es el monto que debo pagar?
+    - ¿con cuánto debo contribuir?
+    - ¿Cuánto debería pagar?
+    - ¿Qué cantidad debo entregar?
+    - ¿Cuánto es lo que debo?
+    - ¿Cuánto es lo que tengo que pagar?
+    - ¿Cuál es el impuesto que debo pagar?
+- intent: deny
+  examples: |
+    - No pago impuestos.
+    - No quiero aportar nada.
+    - No voy a pagar.
+    - No voy a ceder.
+    - No pago nada de eso.
+    - No pienso pagar ni un penique.
+    - No quiero dar ni un penique.
+- intent: challenge
+  examples: |
+    - No tengo ni para mí, ¿cómo voy a pagar más?
+    - No puedo pagar más, ya es todo lo que tengo.
+    - Eso es todo lo que tengo.
+    - Con esto no me alcanza ni para vivir.
+    - Ya pagué lo que pude.
+    - Mis ingresos no cubren esa cantidad.
+    - Con lo que tengo, no puedo cumplir con eso.
+    - No me alcanza.
+- intent: pay
+  examples: |
+    - De acuerdo, aquí tienes los [4](amount) peniques que debo pagar.
+    - Esto es lo que acordamos, está completo.
+    - Esto es lo que acordamos, [4](amount) peniques.
+    - Voy a pagar los [4](amount) peniques.
+    - Claro, aquí tienes los [4](amount) peniques justos.
+    - Estoy dispuesto a cubrir exactamente lo que debo.
+    - Toma.
+    - Te dejo la cantidad exacta que corresponde por los impuestos.
+    - Aquí tienes todo lo que se debe, [4](amount) peniques exactos.
+- intent: out_of_scope
+  examples: |
+    - Ayúdame a encontrar un restaurante cercano.
+    - 1550
+    - 1750
+    - ¿Qué hora es?
+    - Recomiéndame un libro.
+    - 1950
+    - ¿Qué habilidades te gustaría aprender en el futuro?
+    - ¿Qué opinas sobre la inteligencia artificial?
+    - ¿Quién es el presidente de Francia?
+    - ¿Cuál es tu destino de viaje soñado?
+    - Cuéntame sobre un momento memorable de tu infancia.
+    - Dime algo sobre la biología.
+    - Hazme una pregunta.
+    - Recomiéndame una serie de televisión.
+    - No estoy seguro.
+    - Recomiéndame un juego de mesa.
+    - Enséñame a programar en Python.
+    - Cuéntame un chiste.
+    - 1700
+    - No te podría decir.
+    - 1600
+    - Dame ideas para un regalo de cumpleaños.
+    - ¿Cómo puedo aprender a bailar?
+    - Dame consejos sobre jardinería.
+    - Cuéntame una historia de terror.
+    - 1650
+    - Recomiéndame un destino turístico.
+    - ¿Qué es lo que más valoras en la vida?
+    - Me temo que no lo sé.
+    - ¿Qué es lo que más te gusta hacer en tu tiempo libre?
+    - Dame información sobre la historia de España.
+    - Dame consejos para superar el estrés.
+    - ¿Qué significa la palabra 'epistemología'?
+    - ¿Cómo está el tráfico hoy?
+    - ¿Qué tipo de arte prefieres?
+    - ¿Qué serie de televisión me recomendarías?
+    - No lo sé con certeza.
+    - ¿Cuál es la mejor manera de aprender un nuevo idioma?
+    - ¿Cómo se celebra tu cumpleaños?
+    - ¿Qué es la meditación?
+    - Dime el clima de hoy.
+    - Cuéntame un secreto interesante.
+    - No puedo responder eso.
+    - Dame información sobre el arte contemporáneo.
+    - No lo sé
+    - Cuéntame sobre las últimas tendencias en tecnología.
+    - Dame consejos para viajar solo.
+    - ¿Qué es lo que te inspira a ser mejor?
+    - No estoy segura de la respuesta.
+    - ¿Cómo puedo mejorar mis habilidades interpersonales?
+    - No estoy familiarizado con eso.
+    - ¿Cómo te preparas para una entrevista de trabajo?
+    - Dame consejos para hacer ejercicio.
+    - Dime una frase inspiradora.
+    - No estoy familiarizada con eso.
+    - Cuéntame una anécdota divertida.
+    - No tengo información al respecto.
+    - Cuéntame sobre una comida típica de tu país.
+    - ¿Cómo se dice "hola" en japonés?
+    - Dame ideas para una cita romántica.

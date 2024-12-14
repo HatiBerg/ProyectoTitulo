@@ -1,0 +1,98 @@
+[
+  {
+    "text": "Quiero pagar más, aquí tienes 6 peniques.",
+    "intent": "pay_more",
+    "intent_prediction": {
+      "name": "pay",
+      "confidence": 0.9990037083625793
+    }
+  },
+  {
+    "text": "Te dejo 7 peniques para cubrir más de lo debido.",
+    "intent": "pay_more",
+    "intent_prediction": {
+      "name": "pay",
+      "confidence": 0.5728375315666199
+    }
+  },
+  {
+    "text": "No puedo cubrir todo, pero aquí tienes 2 peniques.",
+    "intent": "pay_less",
+    "intent_prediction": {
+      "name": "pay",
+      "confidence": 0.985893964767456
+    }
+  },
+  {
+    "text": "¡Qué hay!",
+    "intent": "greet",
+    "intent_prediction": {
+      "name": "out_of_scope",
+      "confidence": 0.727868914604187
+    }
+  },
+  {
+    "text": "No tengo dinero para eso.",
+    "intent": "deny",
+    "intent_prediction": {
+      "name": "challenge",
+      "confidence": 0.965238094329834
+    }
+  },
+  {
+    "text": "No tengo intención de pagar.",
+    "intent": "deny",
+    "intent_prediction": {
+      "name": "out_of_scope",
+      "confidence": 0.6891090869903564
+    }
+  },
+  {
+    "text": "No pienso seguir apoyando este impuesto",
+    "intent": "challenge",
+    "intent_prediction": {
+      "name": "deny",
+      "confidence": 0.8115168809890747
+    }
+  },
+  {
+    "text": "No puedes obligarme.",
+    "intent": "challenge",
+    "intent_prediction": {
+      "name": "out_of_scope",
+      "confidence": 0.9974467754364014
+    }
+  },
+  {
+    "text": "No me llega para eso.",
+    "intent": "challenge",
+    "intent_prediction": {
+      "name": "out_of_scope",
+      "confidence": 0.9155977964401245
+    }
+  },
+  {
+    "text": "No lo tengo claro.",
+    "intent": "out_of_scope",
+    "intent_prediction": {
+      "name": "challenge",
+      "confidence": 0.6636942028999329
+    }
+  },
+  {
+    "text": "No estoy al tanto.",
+    "intent": "out_of_scope",
+    "intent_prediction": {
+      "name": "deny",
+      "confidence": 0.6203902363777161
+    }
+  },
+  {
+    "text": "No tengo respuesta para eso.",
+    "intent": "out_of_scope",
+    "intent_prediction": {
+      "name": "challenge",
+      "confidence": 0.7535675168037415
+    }
+  }
+]

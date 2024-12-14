@@ -1,0 +1,98 @@
+{
+  "deny": {
+    "precision": 0.25,
+    "recall": 0.25,
+    "f1-score": 0.25,
+    "support": 4,
+    "confused_with": {
+      "out_of_scope": 2,
+      "challenge": 1
+    }
+  },
+  "greet": {
+    "precision": 1.0,
+    "recall": 0.5,
+    "f1-score": 0.6666666666666666,
+    "support": 4,
+    "confused_with": {
+      "out_of_scope": 2
+    }
+  },
+  "pay": {
+    "precision": 1.0,
+    "recall": 0.25,
+    "f1-score": 0.4,
+    "support": 4,
+    "confused_with": {
+      "pay_more": 2,
+      "deny": 1
+    }
+  },
+  "pay_more": {
+    "precision": 0.2,
+    "recall": 0.5,
+    "f1-score": 0.28571428571428575,
+    "support": 2,
+    "confused_with": {
+      "out_of_scope": 1
+    }
+  },
+  "challenge": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1-score": 0.0,
+    "support": 4,
+    "confused_with": {
+      "out_of_scope": 2,
+      "request_taxes": 1,
+      "deny": 1
+    }
+  },
+  "out_of_scope": {
+    "precision": 0.7837837837837838,
+    "recall": 0.9666666666666667,
+    "f1-score": 0.8656716417910447,
+    "support": 30,
+    "confused_with": {
+      "challenge": 1
+    }
+  },
+  "request_taxes": {
+    "precision": 0.5,
+    "recall": 0.3333333333333333,
+    "f1-score": 0.4,
+    "support": 3,
+    "confused_with": {
+      "out_of_scope": 1,
+      "deny": 1
+    }
+  },
+  "pay_less": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1-score": 0.0,
+    "support": 2,
+    "confused_with": {
+      "pay_more": 2
+    }
+  },
+  "accuracy": 0.660377358490566,
+  "macro avg": {
+    "precision": 0.466722972972973,
+    "recall": 0.35,
+    "f1-score": 0.3585065742714997,
+    "support": 53
+  },
+  "weighted avg": {
+    "precision": 0.6493115757266701,
+    "recall": 0.660377358490566,
+    "f1-score": 0.6227970658835204,
+    "support": 53
+  },
+  "micro avg": {
+    "precision": 0.660377358490566,
+    "recall": 0.660377358490566,
+    "f1-score": 0.660377358490566,
+    "support": 53
+  }
+}

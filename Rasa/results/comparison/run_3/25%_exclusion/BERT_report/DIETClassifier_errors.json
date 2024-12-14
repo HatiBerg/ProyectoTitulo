@@ -1,0 +1,30 @@
+[
+  {
+    "text": "2024",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "amount",
+        "start": 0,
+        "end": 4,
+        "confidence_entity": 0.6889443397521973,
+        "value": "2024",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "¿Cuánto es 2+2?",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "amount",
+        "start": 11,
+        "end": 14,
+        "confidence_entity": 0.9986308217048645,
+        "value": "2+2",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  }
+]

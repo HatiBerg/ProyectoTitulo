@@ -1,0 +1,50 @@
+[
+  {
+    "text": "No puedo cubrir todo, pero aquí tienes 2 peniques.",
+    "intent": "pay_less",
+    "intent_prediction": {
+      "name": "pay",
+      "confidence": 0.6233856081962585
+    }
+  },
+  {
+    "text": "¿Cómo estás hoy?",
+    "intent": "greet",
+    "intent_prediction": {
+      "name": "out_of_scope",
+      "confidence": 0.6625145673751831
+    }
+  },
+  {
+    "text": "No tengo dinero para eso.",
+    "intent": "deny",
+    "intent_prediction": {
+      "name": "challenge",
+      "confidence": 0.9779213070869446
+    }
+  },
+  {
+    "text": "No pienso seguir apoyando este impuesto",
+    "intent": "challenge",
+    "intent_prediction": {
+      "name": "deny",
+      "confidence": 0.9336749315261841
+    }
+  },
+  {
+    "text": "No puedes obligarme.",
+    "intent": "challenge",
+    "intent_prediction": {
+      "name": "out_of_scope",
+      "confidence": 0.9548354148864746
+    }
+  },
+  {
+    "text": "2024",
+    "intent": "out_of_scope",
+    "intent_prediction": {
+      "name": "pay",
+      "confidence": 0.614294171333313
+    }
+  }
+]
