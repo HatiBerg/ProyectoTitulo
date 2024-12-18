@@ -5,6 +5,8 @@ stories:
     steps:
       - intent: greet
       - action: utter_greet
+      - intent: what_tax
+      - action: utter_what_tax
       - intent: request_taxes
       - action: utter_inform_taxes
       - intent: pay
@@ -15,6 +17,8 @@ stories:
     steps:
       - intent: greet
       - action: utter_greet
+      - intent: what_tax
+      - action: utter_what_tax
       - intent: request_taxes
       - action: utter_inform_taxes
       - intent: pay_more
@@ -25,6 +29,8 @@ stories:
     steps:
       - intent: greet
       - action: utter_greet
+      - intent: what_tax
+      - action: utter_what_tax
       - intent: request_taxes
       - action: utter_inform_taxes
       - intent: pay_less
@@ -39,6 +45,8 @@ stories:
     steps:
       - intent: greet
       - action: utter_greet
+      - intent: what_tax
+      - action: utter_what_tax
       - intent: request_taxes
       - action: utter_inform_taxes
       - intent: deny

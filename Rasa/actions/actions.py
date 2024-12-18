@@ -36,15 +36,15 @@ class ActionCheckAmount(Action):
         amount = tracker.get_slot("amount")
 
         if amount is None:
-            amount = 4
+            amount = 12
 
-        # Comprobar si el monto es exactamente 4
-        if int(amount) == 4:
+        # Comprobar si el monto es exactamente 12
+        if int(amount) == 12:
             dispatcher.utter_message(text = "Gracias por tu contribución. Se lo haré saber al duque.")
         
-        # Comprobar si el monto es mayor a 4
-        if int(amount) > 4:
-            dispatcher.utter_message(text = f"{amount} peniques es demasiado, solo necesitas pagar 4 peniques.")
+        # Comprobar si el monto es mayor a 12
+        if int(amount) > 12:
+            dispatcher.utter_message(text = f"{amount} peniques es demasiado, solo necesitas pagar 12 peniques.")
         
         # Comprobar si el monto es 0
         if int(amount) == 0:

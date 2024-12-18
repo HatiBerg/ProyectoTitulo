@@ -2,6 +2,7 @@ version: "3.1"
 
 intents:
   - greet
+  - what_tax
   - request_taxes
   - pay
   - pay_more
@@ -28,10 +29,13 @@ slots:
 
 responses:
   utter_greet:
-    - text: "Saludos herrero, llegó la hora de pagar el impuesto de capitación."
+    - text: "Saludos herrero, llegó la hora de pagar el impuesto"
+
+  utter_what_tax:
+    - text: "El impuesto de capitación, herrero"
 
   utter_inform_taxes:
-    - text: "Debes pagar 4 peniques."
+    - text: "Debes pagar 12 peniques."
 
   utter_refuse_payment:
     - text: "¿Qué no quieres pagar? ¡Esto es inaceptable!, ¿cuál es tu excusa?"

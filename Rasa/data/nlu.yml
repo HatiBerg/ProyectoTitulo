@@ -22,6 +22,29 @@ nlu:
     - ¿Cómo estás hoy?
     - ¡Hola, amigo!
 
+- intent: what_tax
+  examples: |
+    - ¿Cuál impuesto?
+    - ¿Qué impuesto?
+    - ¿A qué impuesto te refieres?
+    - ¿Cuál de los impuestos?
+    - ¿Qué impuesto mencionas?
+    - ¿Cuál es el impuesto?
+    - ¿Qué clase de impuesto?
+    - ¿A cuál impuesto haces alusión?
+    - ¿De qué impuesto hablas?
+    - ¿Qué impuesto dices?
+    - ¿Qué impuesto sería?
+    - ¿Cuál sería el impuesto?
+    - ¿Qué tipo de impuesto?
+    - ¿De cuál impuesto estás hablando?
+    - ¿Qué impuesto en particular?
+    - ¿Cuál es ese impuesto?
+    - ¿Qué impuesto exactamente?
+    - ¿A cuál impuesto te refieres?
+    - ¿Qué impuesto específico?
+    - ¿Cuál impuesto estás mencionando?
+
 - intent: request_taxes
   examples: |
     - ¿Cuánto debo pagar?
@@ -44,16 +67,16 @@ nlu:
 
 - intent: pay
   examples: |
-    - De acuerdo, aquí tienes los [4](amount) peniques que debo pagar.
-    - Voy a pagar los [4](amount) peniques.
-    - Claro, aquí tienes los [4](amount) peniques justos.
-    - Esto es lo que acordamos, [4](amount) peniques.
-    - Te dejo [4](amount) peniques, ni más ni menos.
-    - Aquí tienes todo lo que se debe, [4](amount) peniques exactos.
-    - Estoy dispuesto a pagar los [4](amount) peniques correspondientes.
-    - Como dijimos, aquí tienes los [4](amount) peniques justos.
-    - Esto es lo que se debe, [4](amount) peniques.
-    - Lo prometido es deuda, aquí tienes los [4](amount) peniques exactos.
+    - De acuerdo, aquí tienes los [12](amount) peniques que debo pagar.
+    - Voy a pagar los [12](amount) peniques.
+    - Claro, aquí tienes los [12](amount) peniques justos.
+    - Esto es lo que acordamos, [12](amount) peniques.
+    - Te dejo [12](amount) peniques, ni más ni menos.
+    - Aquí tienes todo lo que se debe, [12](amount) peniques exactos.
+    - Estoy dispuesto a pagar los [12](amount) peniques correspondientes.
+    - Como dijimos, aquí tienes los [12](amount) peniques justos.
+    - Esto es lo que se debe, [12](amount) peniques.
+    - Lo prometido es deuda, aquí tienes los [12](amount) peniques exactos.
     - De acuerdo, aquí tienes todo lo que corresponde.
     - Voy a pagar exactamente lo que debo.
     - Claro, aquí tienes lo que corresponde por completo.
@@ -69,16 +92,16 @@ nlu:
 
 - intent: pay_more
   examples: |
-    - Aquí tienes [5](amount) peniques, es más de lo que debía.
-    - Voy a pagarte [6](amount) peniques, un poco más de lo acordado.
-    - Esto es lo que se debe, y te doy [5](amount) peniques en total.
-    - Te dejo [7](amount) peniques para cubrir más de lo debido.
-    - Estoy dispuesto a pagar [6](amount) peniques esta vez.
-    - Aquí tienes lo que pediste, más un extra, [5](amount) peniques.
-    - Voy a darte [6](amount) peniques, espero que sea suficiente.
-    - Esto es más de lo que acordamos, aquí tienes [7](amount) peniques.
-    - Quiero pagar más, aquí tienes [6](amount) peniques.
-    - Lo prometido y algo más, aquí tienes [5](amount) peniques.
+    - Aquí tienes [15](amount) peniques, es más de lo que debía.
+    - Voy a pagarte [16](amount) peniques, un poco más de lo acordado.
+    - Esto es lo que se debe, y te doy [15](amount) peniques en total.
+    - Te dejo [17](amount) peniques para cubrir más de lo debido.
+    - Estoy dispuesto a pagar [16](amount) peniques esta vez.
+    - Aquí tienes lo que pediste, más un extra, [15](amount) peniques.
+    - Voy a darte [16](amount) peniques, espero que sea suficiente.
+    - Esto es más de lo que acordamos, aquí tienes [17](amount) peniques.
+    - Quiero pagar más, aquí tienes [16](amount) peniques.
+    - Lo prometido y algo más, aquí tienes [15](amount) peniques.
 
 - intent: pay_less
   examples: |
@@ -113,29 +136,6 @@ nlu:
     - No pienso pagar ni un penique.
     - No voy a ceder.
     - No pago nada de eso.
-
-# - intent: challenge_with_entities
-#   examples: |
-#     - [Eso es lo que puedo pagar.](excuse)
-#     - [No puedes obligarme.](excuse)
-#     - [No tengo más.](excuse)
-#     - [Gano muy poco.](excuse)
-#     - [No me alcanza.](excuse)
-#     - [No me alcanza el dinero.](excuse)
-#     - [Eso es todo lo que tengo.](excuse)
-#     - [Es lo máximo que puedo darte.](excuse)
-#     - [Con esto no me alcanza ni para vivir.](excuse)
-#     - No puedo pagar más, ya [es todo lo que tengo.](excuse)
-#     - [No tengo suficiente para pagar eso.](excuse)
-#     - No es justo, [no tengo ese dinero.](excuse)
-#     - [Mis ingresos no cubren esa cantidad.](excuse)
-#     - [Ya pagué lo que pude.](excuse)
-#     - [No me alcanza ni para lo básico.](excuse)
-#     - [No tengo ni para mí](excuse), ¿cómo voy a pagar más?
-#     - [Este es todo el dinero que puedo dar.](excuse)
-#     - [No me llega para eso.](excuse)
-#     - Con lo que tengo, [no puedo cumplir con eso.](excuse)
-#     - [No pienso seguir apoyando este impuesto](excuse)
 
 - intent: challenge
   examples: |

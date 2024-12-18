@@ -9,11 +9,15 @@ stories:
   - intent: greet
   - action: utter_greet
   - user: |
+      ¿Que impuesto debo pagar?
+  - intent: what_tax
+  - action: utter_what_tax
+  - user: |
       ¿Debo pagar?
   - intent: request_taxes
   - action: utter_inform_taxes
   - user: |
-      Aqui tienes [4]{"entity": "amount"} peniques.
+      Aqui tienes [12]{"entity": "amount"} peniques.
   - intent: pay
   - action: action_extract_data
   - action: action_check_amount
@@ -25,11 +29,15 @@ stories:
   - intent: greet
   - action: utter_greet
   - user: |
+      ¿Cual de los impuestos debo pagar?
+  - intent: what_tax
+  - action: utter_what_tax
+  - user: |
       ¿Cuanto?
   - intent: request_taxes
   - action: utter_inform_taxes
   - user: |
-      ten [8]{"entity": "amount"} peniques.
+      ten [18]{"entity": "amount"} peniques.
   - intent: pay_more
   - action: action_extract_data
   - action: action_check_amount
@@ -41,11 +49,15 @@ stories:
   - intent: greet
   - action: utter_greet
   - user: |
+      ¿De todos los impuestos? ¿Cual tengo que pagar?
+  - intent: what_tax
+  - action: utter_what_tax
+  - user: |
       ¿cuanto debo pagar?
   - intent: request_taxes
   - action: utter_inform_taxes
   - user: |
-      solo te puedo dar [2]{"entity": "amount"} peniques.
+      solo te puedo dar [7]{"entity": "amount"} peniques.
   - intent: pay_less
   - action: action_check_amount
   - user: |
@@ -62,6 +74,10 @@ stories:
       ¿Qué tal?
   - intent: greet
   - action: utter_greet
+  - user: |
+      ¿A cual de todos se refiere?
+  - intent: what_tax
+  - action: utter_what_tax
   - user: |
       ¿Y debo pagar cuanto?
   - intent: request_taxes
