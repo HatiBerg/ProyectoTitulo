@@ -1555,6 +1555,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 7588676610439897903, guid: b3086ee2893f6ec4a80d646e02a75eb3, type: 3}
       insertIndex: -1
       addedObject: {fileID: 677474875}
+    - targetCorrespondingSourceObject: {fileID: 7588676610439897903, guid: b3086ee2893f6ec4a80d646e02a75eb3, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 677474876}
   m_SourcePrefab: {fileID: 100100000, guid: b3086ee2893f6ec4a80d646e02a75eb3, type: 3}
 --- !u!1 &677474874 stripped
 GameObject:
@@ -1575,6 +1578,24 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   npcMsg: 
   npcText: {fileID: 2021087338}
+--- !u!114 &677474876
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 677474874}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c0a9539a8d3dcf84abb834ef887b023c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dbPath: URI=file:D:\Unity\Projects\ProyectoTitulo\Unity\Assets\Database\db.db
+  watTyler: {fileID: 19145979}
+  spriteRenderer: {fileID: 1658192472}
+  soldierSprite: {fileID: 21300000, guid: 30f49bffe64d1804cb78096f1929ee27, type: 3}
+  animator: {fileID: 1658192468}
+  soldierController: {fileID: 9100000, guid: 309750f07e877ff45b5b2cf39f1194f7, type: 2}
 --- !u!1 &792559688
 GameObject:
   m_ObjectHideFlags: 0
@@ -2490,7 +2511,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1321889000
 RectTransform:
   m_ObjectHideFlags: 0
@@ -14649,6 +14670,16 @@ Transform:
 --- !u!82 &1658192467 stripped
 AudioSource:
   m_CorrespondingSourceObject: {fileID: 1365365222434953034, guid: 7858c9a7c8e387a49b8852e0142045de, type: 3}
+  m_PrefabInstance: {fileID: 1513511955}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &1658192468 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 1447149977330256117, guid: 7858c9a7c8e387a49b8852e0142045de, type: 3}
+  m_PrefabInstance: {fileID: 1513511955}
+  m_PrefabAsset: {fileID: 0}
+--- !u!212 &1658192472 stripped
+SpriteRenderer:
+  m_CorrespondingSourceObject: {fileID: 3516242157062359046, guid: 7858c9a7c8e387a49b8852e0142045de, type: 3}
   m_PrefabInstance: {fileID: 1513511955}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1731591694

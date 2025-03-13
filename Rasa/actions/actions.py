@@ -12,6 +12,7 @@ from rasa_sdk import Action, Tracker
 from rasa_sdk.executor import CollectingDispatcher
 from rasa_sdk.events import SlotSet
 import sqlite3
+import os
 
 class ActionSaveUnclassifiedExample(Action):
     def name(self) -> str:
@@ -69,15 +70,22 @@ class ActionExtractData(Action):
             domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
 
         amount = tracker.get_slot("amount")
-        # excuse = tracker.get_slot("excuse")
         intent = tracker.latest_message["intent"].get("name")    
         excuse = tracker.latest_message['text']  # Obtener el texto de la excusa
 
-        # Conectar a la base de datos SQLite
-        conn = sqlite3.connect('db.db')
+        # Definir la ruta de la base de datos en el proyecto de Unity
+        db_folder = os.path.join("..", "Unity", "Assets", "Database")  # Ir un nivel arriba para acceder a Unity
+        db_path = os.path.join(db_folder, "db.db")
+
+        # Crear la carpeta si no existe
+        if not os.path.exists(db_folder):
+            os.makedirs(db_folder)
+
+        # Conectar a la base de datos SQLite en la ubicación deseada
+        conn = sqlite3.connect(db_path)
         cursor = conn.cursor()
 
-        # Crear la tabla 'DIALOGUES' con una columna 'monto'
+        # Crear la tabla 'DIALOGUES' si no existe
         cursor.execute('''
         CREATE TABLE IF NOT EXISTS DIALOGUES (
             id INTEGER PRIMARY KEY AUTOINCREMENT,
@@ -86,23 +94,18 @@ class ActionExtractData(Action):
         )
         ''')
 
-        # Caso 1: Si hay un monto y excusa"
+        # Insertar los datos según las condiciones
         if amount is not None and (intent == "challenge" or intent == "deny"):
-        # if amount is not None and excuse is not None:
             cursor.execute('''
             INSERT INTO DIALOGUES (monto, excusa) VALUES (?, ?)
             ''', (amount, excuse))
 
-        # Caso 2: Si solo hay un monto y no hay excusa, excusa será None
-        if amount is not None and (intent != "challenge" or intent != "deny"):
-        # if amount is not None and excuse is None:
+        elif amount is not None:
             cursor.execute('''
             INSERT INTO DIALOGUES (monto, excusa) VALUES (?, ?)
             ''', (amount, None))
 
-        # Caso 3: Si no hay monto pero sí hay excusa, monto será 0 y se guardará excusa
-        if amount is None and (intent == "challenge" or intent == "deny"):
-        # if amount is None and excuse is not None:
+        elif amount is None and (intent == "challenge" or intent == "deny"):
             cursor.execute('''
             INSERT INTO DIALOGUES (monto, excusa) VALUES (?, ?)
             ''', (0, excuse))

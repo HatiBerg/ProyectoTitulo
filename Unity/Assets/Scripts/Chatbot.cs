@@ -70,13 +70,21 @@ public class Chatbot : MonoBehaviour
 
     public void ReceiveResponse(string response)
     {
-        // Deserialize response recieved from the bot
+        // Deserialize response received from the bot
         RootReceiveMessageJson root = JsonUtility.FromJson<RootReceiveMessageJson>("{\"messages\":" + response + "}");
 
         // Mostrar la respuesta del chatbot en la consola
-        Debug.Log("Bot: " + root.messages[0].text);
+        string botResponse = root.messages[0].text;
+        Debug.Log("Bot: " + botResponse);
 
-        // Mostrar la respuesta del chatbot
-        npcText.text = root.messages[0].text;
+        // Mostrar la respuesta del chatbot en pantalla
+        npcText.text = botResponse;
+
+        // Verificar si el chatbot dijo "Te arrepentirás de tus acciones."
+        if (botResponse == "Te arrepentirás de tus acciones.")
+        {
+            Debug.Log("El diálogo ha terminado. Revisando SQLite...");
+            FindObjectOfType<DialogListener>().CheckSQLite();
+        }
     }
 }
